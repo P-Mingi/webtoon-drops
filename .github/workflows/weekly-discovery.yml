@@ -1,0 +1,40 @@
+name: Weekly Series Discovery
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'   # Every Monday 9am UTC
+  workflow_dispatch:        # Allow manual trigger
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm ci
+
+      - run: node scripts/auto-discover.js
+
+      - name: Create PR if new series found
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore: weekly series discovery report'
+          title: '🔍 New series candidates found'
+          body: |
+            AniList discovery found new popular KR manhwa not yet in the site.
+
+            See `DISCOVERY_REPORT.md` for candidates with pre-filled JSON stubs.
+
+            **For each candidate you want to add:**
+            1. Verify `update_day` on the official platform page
+            2. Verify `read_url` is the correct official platform URL
+            3. Copy the JSON stub into `src/data/series-data.json`
+            4. Replace all `NEEDS_MANUAL_VERIFICATION` values
+            5. Merge this PR — Vercel auto-deploys
+          branch: discovery/weekly-${{ github.run_number }}
+          add-paths: DISCOVERY_REPORT.md

@@ -12,7 +12,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Fantasy",
-    "tags": ["action", "fantasy", "adventure", "korean"],
+    "tags": [
+      "action",
+      "fantasy",
+      "adventure",
+      "korean"
+    ],
     "amazon_vol1": "https://www.amazon.com/dp/1990259766?tag=YOUR_TAG",
     "seo_description": "Tower of God drops every Monday at midnight KST on WEBTOON. Live countdown to the next episode. Never miss a release."
   },
@@ -20,7 +25,7 @@
     "id": "omniscient-readers-viewpoint",
     "title": "Omniscient Reader's Viewpoint",
     "title_kr": "전지적 독자 시점",
-    "anilist_id": 126146,
+    "anilist_id": 130136,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154",
@@ -29,7 +34,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Action",
-    "tags": ["action", "apocalypse", "fantasy", "korean"],
+    "tags": [
+      "action",
+      "apocalypse",
+      "fantasy",
+      "korean"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=omniscient+reader+viewpoint+manga&tag=YOUR_TAG",
     "seo_description": "Omniscient Reader's Viewpoint drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter release."
   },
@@ -37,7 +47,7 @@
     "id": "eleceed",
     "title": "Eleceed",
     "title_kr": "엘리시드",
-    "anilist_id": 118228,
+    "anilist_id": 107441,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/action/eleceed/list?title_no=1571",
@@ -46,7 +56,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Action",
-    "tags": ["action", "supernatural", "comedy", "korean"],
+    "tags": [
+      "action",
+      "supernatural",
+      "comedy",
+      "korean"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=eleceed+manga&tag=YOUR_TAG",
     "seo_description": "Eleceed drops every Wednesday at midnight KST on WEBTOON. See the live countdown to the next episode."
   },
@@ -54,7 +69,7 @@
     "id": "nano-machine",
     "title": "Nano Machine",
     "title_kr": "나노 마신",
-    "anilist_id": 131458,
+    "anilist_id": 114148,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/action/nano-machine/list?title_no=2202",
@@ -63,7 +78,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Martial Arts",
-    "tags": ["martial arts", "fantasy", "action", "korean"],
+    "tags": [
+      "martial arts",
+      "fantasy",
+      "action",
+      "korean"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=nano+machine+manhwa&tag=YOUR_TAG",
     "seo_description": "Nano Machine drops every Thursday at midnight KST on WEBTOON. Live countdown to the next episode release."
   },
@@ -71,7 +91,7 @@
     "id": "mercenary-enrollment",
     "title": "Mercenary Enrollment",
     "title_kr": "용병으로 살아남기",
-    "anilist_id": 127230,
+    "anilist_id": 132052,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/action/mercenary-enrollment/list?title_no=2304",
@@ -80,7 +100,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Action",
-    "tags": ["action", "school", "fighting", "korean"],
+    "tags": [
+      "action",
+      "school",
+      "fighting",
+      "korean"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=mercenary+enrollment+manhwa&tag=YOUR_TAG",
     "seo_description": "Mercenary Enrollment drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode."
   },
@@ -88,7 +113,7 @@
     "id": "the-beginning-after-the-end",
     "title": "The Beginning After the End",
     "title_kr": "The Beginning After the End",
-    "anilist_id": 104091,
+    "anilist_id": 104652,
     "platform": "tapas",
     "platform_label": "TAPAS",
     "read_url": "https://tapas.io/series/tbate-comic/info",
@@ -97,7 +122,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Fantasy",
-    "tags": ["fantasy", "isekai", "action", "reincarnation"],
+    "tags": [
+      "fantasy",
+      "isekai",
+      "action",
+      "reincarnation"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=the+beginning+after+the+end+manhwa&tag=YOUR_TAG",
     "seo_description": "The Beginning After the End drops every Saturday on Tapas. Live countdown to the next episode."
   },
@@ -105,7 +135,7 @@
     "id": "reaper-of-the-drifting-moon",
     "title": "Reaper of the Drifting Moon",
     "title_kr": "방랑의 달 리퍼",
-    "anilist_id": 128799,
+    "anilist_id": 158396,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/action/reaper-of-the-drifting-moon/list?title_no=2306",
@@ -114,7 +144,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Fantasy",
-    "tags": ["fantasy", "martial arts", "action", "korean"],
+    "tags": [
+      "fantasy",
+      "martial arts",
+      "action",
+      "korean"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=reaper+drifting+moon+manhwa&tag=YOUR_TAG",
     "seo_description": "Reaper of the Drifting Moon drops every Sunday at midnight KST on WEBTOON. Live countdown to the next episode."
   },
@@ -122,7 +157,7 @@
     "id": "i-love-yoo",
     "title": "I Love Yoo",
     "title_kr": "I Love Yoo",
-    "anilist_id": null,
+    "anilist_id": 98938,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/romance/i-love-yoo/list?title_no=986",
@@ -131,7 +166,11 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Romance",
-    "tags": ["romance", "drama", "slice of life"],
+    "tags": [
+      "romance",
+      "drama",
+      "slice of life"
+    ],
     "amazon_vol1": null,
     "seo_description": "I Love Yoo drops every Monday at midnight KST on WEBTOON. Live countdown to the next chapter."
   },
@@ -139,7 +178,7 @@
     "id": "unordinary",
     "title": "unOrdinary",
     "title_kr": "unOrdinary",
-    "anilist_id": null,
+    "anilist_id": 87600,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/super-hero/unordinary/list?title_no=679",
@@ -148,7 +187,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Action",
-    "tags": ["action", "superpower", "school", "drama"],
+    "tags": [
+      "action",
+      "superpower",
+      "school",
+      "drama"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=unordinary+webtoon+book&tag=YOUR_TAG",
     "seo_description": "unOrdinary drops every Wednesday at midnight KST on WEBTOON. Live countdown to the next episode."
   },
@@ -156,7 +200,7 @@
     "id": "lore-olympus",
     "title": "Lore Olympus",
     "title_kr": "Lore Olympus",
-    "anilist_id": null,
+    "anilist_id": 101471,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/romance/lore-olympus/list?title_no=1320",
@@ -165,7 +209,12 @@
     "release_hour_kst": 0,
     "on_hiatus": true,
     "genre": "Romance",
-    "tags": ["romance", "mythology", "drama", "fantasy"],
+    "tags": [
+      "romance",
+      "mythology",
+      "drama",
+      "fantasy"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=lore+olympus+book&tag=YOUR_TAG",
     "seo_description": "Lore Olympus release schedule and next episode countdown on WEBTOON. Check the latest episode release date."
   },
@@ -173,7 +222,7 @@
     "id": "true-beauty",
     "title": "True Beauty",
     "title_kr": "여신강림",
-    "anilist_id": null,
+    "anilist_id": 101562,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/romance/truebeauty/list?title_no=1436",
@@ -182,7 +231,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Romance",
-    "tags": ["romance", "drama", "slice of life", "korean"],
+    "tags": [
+      "romance",
+      "drama",
+      "slice of life",
+      "korean"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=true+beauty+manhwa&tag=YOUR_TAG",
     "seo_description": "True Beauty drops every Thursday on WEBTOON. Live countdown to the next episode of 여신강림."
   },
@@ -190,7 +244,7 @@
     "id": "subzero",
     "title": "SubZero",
     "title_kr": "SubZero",
-    "anilist_id": null,
+    "anilist_id": 103039,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/romance/subzero/list?title_no=1468",
@@ -199,7 +253,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Romance",
-    "tags": ["romance", "fantasy", "dragons", "drama"],
+    "tags": [
+      "romance",
+      "fantasy",
+      "dragons",
+      "drama"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=subzero+webtoon+book&tag=YOUR_TAG",
     "seo_description": "SubZero drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter."
   },
@@ -207,7 +266,7 @@
     "id": "lets-play",
     "title": "Let's Play",
     "title_kr": "Let's Play",
-    "anilist_id": null,
+    "anilist_id": 98835,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/romance/letsplay/list?title_no=1218",
@@ -216,7 +275,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Romance",
-    "tags": ["romance", "comedy", "gaming", "slice of life"],
+    "tags": [
+      "romance",
+      "comedy",
+      "gaming",
+      "slice of life"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=lets+play+webtoon+book&tag=YOUR_TAG",
     "seo_description": "Let's Play drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode."
   },
@@ -224,7 +288,7 @@
     "id": "jungle-juice",
     "title": "Jungle Juice",
     "title_kr": "정글쥬스",
-    "anilist_id": null,
+    "anilist_id": 132429,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/action/jungle-juice/list?title_no=2535",
@@ -233,7 +297,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Action",
-    "tags": ["action", "supernatural", "insect", "korean"],
+    "tags": [
+      "action",
+      "supernatural",
+      "insect",
+      "korean"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=jungle+juice+manhwa&tag=YOUR_TAG",
     "seo_description": "Jungle Juice drops every Wednesday at midnight KST on WEBTOON. Live countdown to the next episode."
   },
@@ -250,7 +319,12 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Fantasy",
-    "tags": ["fantasy", "action", "time travel", "korean"],
+    "tags": [
+      "fantasy",
+      "action",
+      "time travel",
+      "korean"
+    ],
     "amazon_vol1": null,
     "seo_description": "Doom Breaker drops every Saturday at midnight KST on WEBTOON. Live countdown to the next chapter release."
   },
@@ -258,7 +332,7 @@
     "id": "solo-leveling-ragnarok",
     "title": "Solo Leveling: Ragnarok",
     "title_kr": "Solo Leveling: Ragnarok",
-    "anilist_id": 170986,
+    "anilist_id": 166840,
     "platform": "tapas",
     "platform_label": "TAPAS",
     "read_url": "https://tapas.io/series/solo-leveling-ragnarok/info",
@@ -267,42 +341,603 @@
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Action",
-    "tags": ["action", "fantasy", "overpowered", "korean"],
+    "tags": [
+      "action",
+      "fantasy",
+      "overpowered",
+      "korean"
+    ],
     "amazon_vol1": "https://www.amazon.com/s?k=solo+leveling+ragnarok+manhwa&tag=YOUR_TAG",
     "seo_description": "Solo Leveling: Ragnarok drops every Thursday on Tapas. Live countdown to the next chapter release."
   },
   {
-    "id": "one-piece",
-    "title": "One Piece",
-    "title_kr": "ONE PIECE",
-    "anilist_id": 30013,
-    "platform": "mangaplus",
-    "platform_label": "MANGA PLUS",
-    "read_url": "https://mangaplus.shueisha.co.jp/titles/0000001",
-    "update_day": 0,
-    "update_day_name": "Sunday",
+    "id": "second-life-ranker",
+    "title": "Second Life Ranker",
+    "title_kr": "랭커의 귀환",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/second-life-ranker/list?title_no=1966",
+    "update_day": 6,
+    "update_day_name": "Saturday",
     "release_hour_kst": 0,
     "on_hiatus": false,
-    "genre": "Action",
-    "tags": ["action", "adventure", "pirate", "japanese"],
-    "amazon_vol1": "https://www.amazon.com/s?k=one+piece+manga+vol+1&tag=YOUR_TAG",
-    "seo_description": "One Piece drops every Sunday on MANGA Plus. Live countdown to the next chapter release."
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "regression"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Second Life Ranker drops every Saturday on WEBTOON. Live countdown to the next chapter."
   },
   {
-    "id": "jujutsu-kaisen",
-    "title": "Jujutsu Kaisen",
-    "title_kr": "呪術廻戦",
-    "anilist_id": 113415,
-    "platform": "mangaplus",
-    "platform_label": "MANGA PLUS",
-    "read_url": "https://mangaplus.shueisha.co.jp/titles/0000016",
+    "id": "overgeared",
+    "title": "Overgeared",
+    "title_kr": "오버기어드",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/overgeared/list?title_no=2057",
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 0,
     "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "game"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Overgeared updates every Sunday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "kill-the-hero",
+    "title": "Kill the Hero",
+    "title_kr": "영웅을 죽여라",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/kill-the-hero/list?title_no=1948",
+    "update_day": 1,
+    "update_day_name": "Monday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "regression"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Kill the Hero drops every Monday on WEBTOON. Countdown to the next episode."
+  },
+  {
+    "id": "return-of-the-mount-hua-sect",
+    "title": "Return of the Mount Hua Sect",
+    "title_kr": "화산귀환",
+    "anilist_id": 145514,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/return-of-the-mount-hua-sect/list?title_no=3892",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Martial Arts",
+    "tags": [
+      "action",
+      "martial-arts",
+      "regression",
+      "historical"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Return of the Mount Hua Sect drops every Saturday on WEBTOON."
+  },
+  {
+    "id": "murim-login",
+    "title": "Murim Login",
+    "title_kr": "무림 로그인",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/murim-login/list?title_no=2676",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Martial Arts",
+    "tags": [
+      "action",
+      "martial-arts",
+      "game"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Murim Login drops every Sunday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "teenage-mercenary",
+    "title": "Teenage Mercenary",
+    "title_kr": "용병으로 살아남기",
+    "anilist_id": 130189,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/teenage-mercenary/list?title_no=2116",
+    "update_day": 5,
+    "update_day_name": "Friday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
     "genre": "Action",
-    "tags": ["action", "supernatural", "horror", "japanese"],
-    "amazon_vol1": "https://www.amazon.com/s?k=jujutsu+kaisen+manga+vol+1&tag=YOUR_TAG",
-    "seo_description": "Jujutsu Kaisen drops every Sunday on MANGA Plus. Live countdown to the next chapter."
+    "tags": [
+      "action",
+      "school",
+      "thriller"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Teenage Mercenary drops every Friday on WEBTOON. Countdown."
+  },
+  {
+    "id": "lookism",
+    "title": "Lookism",
+    "title_kr": "외모지상주의",
+    "anilist_id": 87136,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/slice-of-life/lookism/list?title_no=1049",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Drama",
+    "tags": [
+      "drama",
+      "school",
+      "action"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Lookism drops every Saturday on WEBTOON. Countdown."
+  },
+  {
+    "id": "the-boxer",
+    "title": "The Boxer",
+    "title_kr": "더 복서",
+    "anilist_id": 121496,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/sports/the-boxer/list?title_no=2027",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Sports",
+    "tags": [
+      "sports",
+      "action",
+      "drama"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Boxer drops every Sunday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "windbreaker",
+    "title": "Windbreaker",
+    "title_kr": "윈드브레이커",
+    "anilist_id": 105430,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/sports/wind-breaker/list?title_no=372",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Sports",
+    "tags": [
+      "sports",
+      "action",
+      "school"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Windbreaker releases every Sunday on WEBTOON. Countdown."
+  },
+  {
+    "id": "the-god-of-high-school",
+    "title": "The God of High School",
+    "title_kr": "갓 오브 하이스쿨",
+    "anilist_id": 83275,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/the-god-of-high-school/list?title_no=66",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Martial Arts",
+    "tags": [
+      "action",
+      "martial-arts",
+      "tournament"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The God of High School releases every Sunday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "worn-and-torn-newbie",
+    "title": "Worn and Torn Newbie",
+    "title_kr": "닳고 닳은 뉴비",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/worn-and-torn-newbie/list?title_no=2720",
+    "update_day": 2,
+    "update_day_name": "Tuesday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "game"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Worn and Torn Newbie drops every Tuesday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "legend-of-the-northern-blade",
+    "title": "Legend of the Northern Blade",
+    "title_kr": "북검전기",
+    "anilist_id": 114980,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/legend-of-the-northern-blade/list?title_no=1874",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Martial Arts",
+    "tags": [
+      "action",
+      "martial-arts",
+      "historical"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Legend of the Northern Blade drops every Saturday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "the-s-classes-that-i-raised",
+    "title": "The S-Classes That I Raised",
+    "title_kr": "내가 키운 S급들",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-s-classes-that-i-raised/list?title_no=2085",
+    "update_day": 4,
+    "update_day_name": "Thursday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "regression"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The S-Classes That I Raised updates every Thursday on WEBTOON."
+  },
+  {
+    "id": "the-tutorial-is-too-hard",
+    "title": "The Tutorial Is Too Hard",
+    "title_kr": "튜토리얼이 너무 어렵다",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-tutorial-is-too-hard/list?title_no=1891",
+    "update_day": 5,
+    "update_day_name": "Friday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "game"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Tutorial Is Too Hard drops every Friday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "the-live",
+    "title": "The Live",
+    "title_kr": "더 라이브",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-live/list?title_no=2119",
+    "update_day": 2,
+    "update_day_name": "Tuesday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "regression",
+      "action"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Live updates every Tuesday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "remarried-empress",
+    "title": "Remarried Empress",
+    "title_kr": "재혼황후",
+    "anilist_id": 109513,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/romance/remarried-empress/list?title_no=2135",
+    "update_day": 4,
+    "update_day_name": "Thursday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance",
+      "fantasy",
+      "historical"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Remarried Empress updates every Thursday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "under-the-oak-tree",
+    "title": "Under the Oak Tree",
+    "title_kr": "참나무 아래서",
+    "anilist_id": null,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/under-the-oak-tree-official/info",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance",
+      "fantasy",
+      "historical"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Under the Oak Tree releases every Saturday on Tapas. Countdown."
+  },
+  {
+    "id": "who-made-me-a-princess",
+    "title": "Who Made Me a Princess",
+    "title_kr": "나에게 공주님이 생겼어요",
+    "anilist_id": null,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/who-made-me-a-princess/info",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance",
+      "fantasy",
+      "isekai"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Who Made Me a Princess releases every Sunday on Tapas. Countdown."
+  },
+  {
+    "id": "the-villainess-turns-the-hourglass",
+    "title": "The Villainess Turns the Hourglass",
+    "title_kr": "악녀는 모래시계를 되돌린다",
+    "anilist_id": null,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-villainess-turns-the-hourglass/info",
+    "update_day": 3,
+    "update_day_name": "Wednesday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance",
+      "fantasy",
+      "villainess"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Villainess Turns the Hourglass drops every Wednesday on Tapas. Countdown."
+  },
+  {
+    "id": "doctor-elise",
+    "title": "Doctor Elise",
+    "title_kr": "엘리제가 사랑한 의사",
+    "anilist_id": null,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/doctor-elise/info",
+    "update_day": 5,
+    "update_day_name": "Friday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance",
+      "fantasy",
+      "medical"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Doctor Elise updates every Friday on Tapas. Live countdown."
+  },
+  {
+    "id": "my-gently-raised-beast",
+    "title": "My Gently Raised Beast",
+    "title_kr": "부드럽게 키운 짐승",
+    "anilist_id": null,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/my-gently-raised-beast/info",
+    "update_day": 2,
+    "update_day_name": "Tuesday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance",
+      "fantasy",
+      "historical"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "My Gently Raised Beast drops every Tuesday on Tapas. Live countdown."
+  },
+  {
+    "id": "the-villainess-lives-twice",
+    "title": "The Villainess Lives Twice",
+    "title_kr": "악녀는 두 번 산다",
+    "anilist_id": null,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-villainess-lives-twice/info",
+    "update_day": 5,
+    "update_day_name": "Friday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance",
+      "fantasy",
+      "villainess"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Villainess Lives Twice drops every Friday on Tapas. Countdown."
+  },
+  {
+    "id": "noblesse",
+    "title": "Noblesse",
+    "title_kr": "노블레스",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/supernatural/noblesse/list?title_no=87",
+    "update_day": 4,
+    "update_day_name": "Thursday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Action",
+    "tags": [
+      "action",
+      "supernatural",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Noblesse updates every Thursday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "magic-emperor",
+    "title": "Magic Emperor",
+    "title_kr": "마법황제",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/magic-emperor/list?title_no=2282",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "magic"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Magic Emperor drops every Sunday on WEBTOON. Countdown to next chapter."
+  },
+  {
+    "id": "the-great-mage-returns-after-4000-years",
+    "title": "The Great Mage Returns After 4000 Years",
+    "title_kr": "4000년 만에 귀환한 대마법사",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-great-mage-returns-after-4000-years/list?title_no=1963",
+    "update_day": 4,
+    "update_day_name": "Thursday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "magic"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Great Mage Returns After 4000 Years updates every Thursday on WEBTOON."
+  },
+  {
+    "id": "talent-swallowing-magician",
+    "title": "Talent-Swallowing Magician",
+    "title_kr": "재능을 삼키는 마법사",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/talent-swallowing-magician/list?title_no=2755",
+    "update_day": 5,
+    "update_day_name": "Friday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "magic"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Talent-Swallowing Magician drops every Friday on WEBTOON. Live countdown."
+  },
+  {
+    "id": "a-returners-magic-should-be-special",
+    "title": "A Returner's Magic Should Be Special",
+    "title_kr": "귀환자의 마법은 특별해야 합니다",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/a-returners-magic-should-be-special/list?title_no=1697",
+    "update_day": 3,
+    "update_day_name": "Wednesday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "regression",
+      "magic"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "A Returner's Magic Should Be Special drops every Wednesday on WEBTOON."
+  },
+  {
+    "id": "the-swordmasters-youngest-son",
+    "title": "The Swordmaster's Youngest Son",
+    "title_kr": "검술명가 막내아들",
+    "anilist_id": null,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-swordmasters-youngest-son/list?title_no=4751",
+    "update_day": 1,
+    "update_day_name": "Monday",
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "regression"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Swordmaster's Youngest Son drops every Monday on WEBTOON. Countdown."
   }
 ]

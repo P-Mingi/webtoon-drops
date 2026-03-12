@@ -2,7 +2,7 @@ export async function fetchManhwaCovers(anilistIds) {
   const query = `
     query ($ids: [Int]) {
       Page(page: 1, perPage: 50) {
-        media(id_in: $ids, type: MANGA) {
+        media(id_in: $ids, type: MANGA, countryOfOrigin: "KR") {
           id
           title { english romaji }
           coverImage { large extraLarge }

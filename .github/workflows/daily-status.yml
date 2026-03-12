@@ -1,0 +1,34 @@
+name: Daily Status Sync
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Every day 6am UTC
+  workflow_dispatch:        # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm ci
+
+      - id: update
+        run: node scripts/auto-update.js
+        continue-on-error: true   # exit 1 = changes found, not a real error
+
+      - name: Commit status changes
+        if: steps.update.outcome == 'failure'   # exit code 1 = changes were made
+        run: |
+          git config user.name 'webtoon-bot'
+          git config user.email 'bot@webtoondrops.com'
+          git add src/data/series-data.json
+          git commit -m 'chore(data): auto-sync hiatus/completion status'
+          git push
