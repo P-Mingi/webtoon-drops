@@ -939,5 +939,741 @@
     ],
     "amazon_vol1": null,
     "seo_description": "The Swordmaster's Youngest Son drops every Monday on WEBTOON. Countdown."
+  },
+  {
+    "id": "omniscient-reader",
+    "title": "Omniscient Reader",
+    "title_kr": "전지적 독자 시점",
+    "anilist_id": 119257,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154",
+    "update_day": 2,
+    "update_day_name": "Tuesday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Omniscient Reader drops every Tuesday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "i-m-the-max-level-newbie",
+    "title": "I’m the Max-Level Newbie",
+    "title_kr": "나 혼자 만렙 뉴비",
+    "anilist_id": 137280,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/im-the-max-level-newbie/list?title_no=3915",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "I’m the Max-Level Newbie drops every Saturday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-world-after-the-fall",
+    "title": "The World After the Fall",
+    "title_kr": "멸망 이후의 세계",
+    "anilist_id": 144957,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/the-world-after-the-fall/list?title_no=4011",
+    "update_day": 1,
+    "update_day_name": "Monday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The World After the Fall drops every Monday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-return-of-the-disaster-class-hero",
+    "title": "The Return of the Disaster-Class Hero",
+    "title_kr": "재앙급 영웅님이 귀환하셨다",
+    "anilist_id": 143056,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/the-return-of-the-disaster-class-hero/list?title_no=9013",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Return of the Disaster-Class Hero drops every Sunday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-extra-s-academy-survival-guide",
+    "title": "The Extra’s Academy Survival Guide",
+    "title_kr": "아카데미에서 살아남기",
+    "anilist_id": 172619,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-extras-academy-survival-guide/list?title_no=6465",
+    "update_day": 1,
+    "update_day_name": "Monday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Extra’s Academy Survival Guide drops every Monday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "66-666-years-advent-of-the-dark-mage",
+    "title": "66,666 Years: Advent of the Dark Mage",
+    "title_kr": "66666년만에 환생한 흑마법사",
+    "anilist_id": 137595,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/66666-years-advent-of-the-dark-mage/list?title_no=3441",
+    "update_day": 3,
+    "update_day_name": "Wednesday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "66,666 Years: Advent of the Dark Mage drops every Wednesday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "mythic-item-obtained",
+    "title": "Mythic Item Obtained",
+    "title_kr": "신화급 귀속 아이템을 손에 넣었다",
+    "anilist_id": 151025,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/mythic-item-obtained/list?title_no=4582",
+    "update_day": 4,
+    "update_day_name": "Thursday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Mythic Item Obtained drops every Thursday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-stellar-swordmaster",
+    "title": "The Stellar Swordmaster",
+    "title_kr": "별을 품은 소드마스터",
+    "anilist_id": 170400,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/the-stellar-swordmaster/list?title_no=5988",
+    "update_day": 3,
+    "update_day_name": "Wednesday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Stellar Swordmaster drops every Wednesday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "villain-to-kill",
+    "title": "Villain to Kill",
+    "title_kr": "빌런투킬",
+    "anilist_id": 130149,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/villain-to-kill/list?title_no=2857",
+    "update_day": 2,
+    "update_day_name": "Tuesday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Supernatural",
+    "tags": [
+      "action",
+      "supernatural"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Villain to Kill drops every Tuesday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-academy-s-undercover-professor",
+    "title": "The Academy's Undercover Professor",
+    "title_kr": "아카데미에 위장취업당했다",
+    "anilist_id": 150836,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-academys-undercover-professor/list?title_no=4636",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Academy's Undercover Professor drops every Saturday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-reborn-young-lord-is-an-assassin",
+    "title": "The Reborn Young Lord is an Assassin",
+    "title_kr": "회귀한 공작가의 막내도련님은 암살자",
+    "anilist_id": 175262,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-reborn-young-lord-is-an-assassin/list?title_no=6107",
+    "update_day": 1,
+    "update_day_name": "Monday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Reborn Young Lord is an Assassin drops every Monday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-knight-only-lives-today",
+    "title": "The Knight Only Lives Today",
+    "title_kr": "오늘만 사는 기사",
+    "anilist_id": 177706,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-knight-only-lives-today/list?title_no=6672",
+    "update_day": 5,
+    "update_day_name": "Friday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Knight Only Lives Today drops every Friday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "return-to-player",
+    "title": "Return to Player",
+    "title_kr": "리턴 투 플레이어",
+    "anilist_id": 124577,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/return-to-player/list?title_no=2574",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Return to Player drops every Sunday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "i-killed-the-main-player",
+    "title": "I Killed the Main Player",
+    "title_kr": "아카데미 플레이어를 죽였다",
+    "anilist_id": 173020,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/i-killed-the-main-player/list?title_no=6856",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "I Killed the Main Player drops every Sunday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "descended-from-divinity",
+    "title": "Descended from Divinity",
+    "title_kr": "천마는 평범하게 살 수 없다",
+    "anilist_id": 136204,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/descended-from-divinity/list?title_no=3450",
+    "update_day": 3,
+    "update_day_name": "Wednesday",
+    "release_hour_kst": 7,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Descended from Divinity drops every Wednesday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "study-group",
+    "title": "Study Group",
+    "title_kr": "스터디그룹",
+    "anilist_id": 110472,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/study-group/list?title_no=3595",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Comedy",
+    "tags": [
+      "action",
+      "comedy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Study Group drops every Sunday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-regressed-mercenary-has-a-plan",
+    "title": "The Regressed Mercenary Has a Plan",
+    "title_kr": "회귀한 용병은 다 계획이 있다",
+    "anilist_id": 182066,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/the-regressed-mercenary-has-a-plan/list?title_no=7261",
+    "update_day": 3,
+    "update_day_name": "Wednesday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Regressed Mercenary Has a Plan drops every Wednesday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "surviving-the-game-as-a-barbarian",
+    "title": "Surviving the Game as a Barbarian",
+    "title_kr": "게임 속 바바리안으로 살아남기",
+    "anilist_id": 164857,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/surviving-the-game-as-a-barbarian/list?title_no=5515",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Surviving the Game as a Barbarian drops every Saturday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "operation-true-love",
+    "title": "Operation: True Love",
+    "title_kr": "작전명 순정",
+    "anilist_id": 149483,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/romance/operation-true-love/list?title_no=4465",
+    "update_day": 5,
+    "update_day_name": "Friday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "drama",
+      "psychological",
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Operation: True Love drops every Friday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "time-limited-genius-dark-knight",
+    "title": "Time-Limited Genius Dark Knight",
+    "title_kr": "시한부 천재 암흑기사",
+    "anilist_id": 165182,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/time-limited-genius-dark-knight/list?title_no=5639",
+    "update_day": 3,
+    "update_day_name": "Wednesday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Time-Limited Genius Dark Knight drops every Wednesday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-lone-necromancer",
+    "title": "The Lone Necromancer",
+    "title_kr": "나 혼자 네크로맨서",
+    "anilist_id": 139572,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-lone-necromancer/list?title_no=3690",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Lone Necromancer drops every Sunday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "reality-quest",
+    "title": "Reality Quest",
+    "title_kr": "현실퀘스트",
+    "anilist_id": 141705,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/reality-quest/list?title_no=4697",
+    "update_day": 1,
+    "update_day_name": "Monday",
+    "release_hour_kst": 12,
+    "on_hiatus": false,
+    "genre": "Supernatural",
+    "tags": [
+      "action",
+      "supernatural"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Reality Quest drops every Monday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "hero-killer",
+    "title": "Hero Killer",
+    "title_kr": "히어로 킬러",
+    "anilist_id": 132093,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/hero-killer/list?title_no=2745",
+    "update_day": 4,
+    "update_day_name": "Thursday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Supernatural",
+    "tags": [
+      "action",
+      "drama",
+      "supernatural"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Hero Killer drops every Thursday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "absolute-sword-sense",
+    "title": "Absolute Sword Sense",
+    "title_kr": "절대검감",
+    "anilist_id": 151460,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/absolute-sword-sense/list?title_no=5100",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Absolute Sword Sense drops every Sunday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-player-hides-his-past",
+    "title": "The Player Hides His Past",
+    "title_kr": "플레이어가 과거를 숨김",
+    "anilist_id": 166154,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/the-player-hides-his-past/list?title_no=5655",
+    "update_day": 4,
+    "update_day_name": "Thursday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Player Hides His Past drops every Thursday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "returned-by-the-king",
+    "title": "Returned by the King",
+    "title_kr": "왕의 힘으로 회귀한다",
+    "anilist_id": 170724,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/returned-by-the-king/list?title_no=6213",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Drama",
+    "tags": [
+      "action",
+      "drama",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Returned by the King drops every Saturday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "absolute-regression",
+    "title": "Absolute Regression",
+    "title_kr": "절대회귀",
+    "anilist_id": 180891,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/absolute-regression/list?title_no=7004",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Absolute Regression drops every Saturday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "my-bias-gets-on-the-last-train",
+    "title": "My Bias Gets on the Last Train",
+    "title_kr": "내 최애는 막차를 탄다",
+    "anilist_id": 187944,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/romance/my-bias-gets-on-the-last-train/list?title_no=7857",
+    "update_day": 2,
+    "update_day_name": "Tuesday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "drama",
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "My Bias Gets on the Last Train drops every Tuesday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "chronicles-of-the-demon-faction",
+    "title": "Chronicles of the Demon Faction",
+    "title_kr": "마도전생기",
+    "anilist_id": 164222,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/chronicles-of-the-demon-faction/list?title_no=5832",
+    "update_day": 5,
+    "update_day_name": "Friday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Chronicles of the Demon Faction drops every Friday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "killer-peter",
+    "title": "Killer Peter",
+    "title_kr": "킬러 배드로",
+    "anilist_id": 170688,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/killer-peter/list?title_no=5816",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Comedy",
+    "tags": [
+      "action",
+      "comedy",
+      "drama"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Killer Peter drops every Saturday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "murim-rpg-simulation",
+    "title": "Murim RPG Simulation",
+    "title_kr": "천마육성",
+    "anilist_id": 141076,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/murim-rpg-simulation/list?title_no=3779",
+    "update_day": 5,
+    "update_day_name": "Friday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Murim RPG Simulation drops every Friday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-top-dungeon-farmer",
+    "title": "The Top Dungeon Farmer",
+    "title_kr": "나혼자 탑에서 농사",
+    "anilist_id": 166658,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-top-dungeon-farmer/list?title_no=5656",
+    "update_day": 4,
+    "update_day_name": "Thursday",
+    "release_hour_kst": 10,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Top Dungeon Farmer drops every Thursday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "99-reinforced-wooden-stick",
+    "title": "+99 Reinforced Wooden Stick",
+    "title_kr": "99강화나무몽둥이",
+    "anilist_id": 147102,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/comedy/99-reinforced-wooden-stick/list?title_no=4286",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Comedy",
+    "tags": [
+      "action",
+      "adventure",
+      "comedy",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "+99 Reinforced Wooden Stick drops every Saturday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "the-constellations-are-my-disciples",
+    "title": "The Constellations Are My Disciples",
+    "title_kr": "성좌들이 내 제자",
+    "anilist_id": 163448,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/the-constellations-are-my-disciples/list?title_no=5638",
+    "update_day": 0,
+    "update_day_name": "Sunday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Constellations Are My Disciples drops every Sunday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "enrolling-in-the-transcendent-academy",
+    "title": "Enrolling in the Transcendent Academy",
+    "title_kr": "초월자 학원의 수강생이 되었다",
+    "anilist_id": 152608,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/fantasy/enrolling-in-the-transcendent-academy/list?title_no=5420",
+    "update_day": 6,
+    "update_day_name": "Saturday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Enrolling in the Transcendent Academy drops every Saturday on WEBTOON. Live countdown to the next episode."
+  },
+  {
+    "id": "infinite-leveling-murim",
+    "title": "Infinite Leveling: Murim",
+    "title_kr": "무한 레벨업 in 무림",
+    "anilist_id": 134635,
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/action/infinite-leveling-murim/list?title_no=2676",
+    "update_day": 3,
+    "update_day_name": "Wednesday",
+    "release_hour_kst": 11,
+    "on_hiatus": false,
+    "genre": "Comedy",
+    "tags": [
+      "action",
+      "adventure",
+      "comedy",
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Infinite Leveling: Murim drops every Wednesday on WEBTOON. Live countdown to the next episode."
   }
 ]
