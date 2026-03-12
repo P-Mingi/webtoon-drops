@@ -1,0 +1,96 @@
+---
+const { genres, platforms } = Astro.props;
+---
+
+<div class="filter-bar">
+  <div class="filter-group">
+    <button class="filter-btn active" data-filter-type="platform" data-filter-value="all">All</button>
+    {platforms.map(p => (
+      <button class="filter-btn" data-filter-type="platform" data-filter-value={p.value}>{p.label}</button>
+    ))}
+  </div>
+  <div class="filter-group">
+    {genres.map(g => (
+      <button class="filter-btn" data-filter-type="genre" data-filter-value={g}>{g}</button>
+    ))}
+  </div>
+</div>
+
+<script>
+  const btns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.card');
+
+  let activePlatform = 'all';
+  let activeGenre = 'all';
+
+  function applyFilters() {
+    cards.forEach(card => {
+      const platform = card.dataset.platform;
+      const genre = card.dataset.genre;
+      const platformMatch = activePlatform === 'all' || platform === activePlatform;
+      const genreMatch = activeGenre === 'all' || genre === activeGenre;
+      card.style.display = (platformMatch && genreMatch) ? '' : 'none';
+    });
+  }
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const type = btn.dataset.filterType;
+      const value = btn.dataset.filterValue;
+
+      if (type === 'platform') {
+        activePlatform = value;
+        // deactivate all platform buttons, activate clicked
+        document.querySelectorAll('[data-filter-type="platform"]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      } else {
+        // genre toggle
+        if (activeGenre === value) {
+          activeGenre = 'all';
+          btn.classList.remove('active');
+        } else {
+          activeGenre = value;
+          document.querySelectorAll('[data-filter-type="genre"]').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        }
+      }
+      applyFilters();
+    });
+  });
+</script>
+
+<style>
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .filter-group + .filter-group {
+    padding-left: 12px;
+    border-left: 1px solid var(--border);
+  }
+  .filter-btn {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
+    letter-spacing: 0.3px;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .filter-btn.active,
+  .filter-btn:active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+  }
+</style>

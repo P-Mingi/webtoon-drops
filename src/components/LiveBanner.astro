@@ -1,0 +1,62 @@
+---
+const { series } = Astro.props;
+---
+
+<div class="live-banner" id="live-banner" style="display:none">
+  <span class="live-dot"></span>
+  <span class="live-label">LIVE NOW</span>
+  <span class="live-list" id="live-list"></span>
+</div>
+
+<script define:vars={{ series }}>
+  const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
+  const nowKST = new Date(Date.now() + KST_OFFSET_MS);
+  const todayDayKST = nowKST.getUTCDay();
+
+  const live = series.filter(s => !s.on_hiatus && s.update_day === todayDayKST);
+
+  if (live.length > 0) {
+    document.getElementById('live-banner').style.display = 'flex';
+    document.getElementById('live-list').textContent =
+      live.map(s => s.title).join(' · ');
+  }
+</script>
+
+<style>
+  .live-banner {
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: var(--surface);
+    border: 1px solid var(--live);
+    border-radius: 8px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  .live-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--live);
+    box-shadow: 0 0 6px var(--live);
+    flex-shrink: 0;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .live-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--live);
+    flex-shrink: 0;
+  }
+  .live-list {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+  }
+</style>

@@ -1,0 +1,38 @@
+---
+---
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+  <span class="icon-dark">☀</span>
+  <span class="icon-light">☽</span>
+</button>
+
+<script>
+  const btn = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+
+  function updateIcon() {
+    const isDark = html.dataset.theme === 'dark';
+    btn.querySelector('.icon-dark').style.display = isDark ? 'inline' : 'none';
+    btn.querySelector('.icon-light').style.display = isDark ? 'none' : 'inline';
+  }
+
+  btn.addEventListener('click', () => {
+    const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    html.dataset.theme = next;
+    localStorage.setItem('theme', next);
+    updateIcon();
+  });
+
+  updateIcon();
+</script>
+
+<style>
+  .theme-toggle {
+    color: var(--muted);
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 8px;
+    line-height: 1;
+    transition: color 0.2s;
+  }
+  .theme-toggle:active { color: var(--accent); }
+</style>

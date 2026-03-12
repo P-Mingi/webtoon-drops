@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'WebtoonDrops — WEBTOON Episode Release Countdown',
+  description = 'Live countdowns to every major WEBTOON Original episode release. Tower of God, Omniscient Reader, Eleceed and 50+ more. Know exactly when your next episode drops.',
+  canonical = 'https://webtoondrops.com',
+  ogImage = '/og-image.png',
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Apply saved theme before paint to prevent FOUC -->
+    <script is:inline>
+      (function() {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light') document.documentElement.dataset.theme = 'light';
+      })();
+    </script>
+
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
