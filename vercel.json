@@ -1,6 +1,5 @@
 {
   "crons": [
-    { "path": "/api/send-notifications", "schedule": "0 * * * *" },
     { "path": "/api/revalidate", "schedule": "0 2 * * 0" }
   ]
 }
