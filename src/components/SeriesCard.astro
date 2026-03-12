@@ -8,40 +8,62 @@ const PLATFORM_COLORS = {
 };
 ---
 
-<a
-  href={`/${series.id}`}
+<div
   class="card"
   data-genre={series.genre}
   data-platform={series.platform}
 >
-  <div class="card-cover">
-    {series.cover
-      ? <img src={series.cover} alt={series.title} loading="lazy" decoding="async" />
-      : <div class="cover-fallback">{series.title}</div>
-    }
-    <div class="cover-overlay"></div>
-    <span class="genre-pill">{series.genre}</span>
-    <span
-      class="platform-pill"
-      style={`background: ${PLATFORM_COLORS[series.platform] ?? '#6C63FF'}`}
-    >
-      {series.platform_label}
-    </span>
-  </div>
-  <div class="card-body">
-    <div class="card-title">{series.title}</div>
-    {series.on_hiatus
-      ? <span class="badge-hiatus">On Break</span>
-      : (
-        <>
-          <div class="countdown" data-countdown-day={series.update_day}>--:--:--</div>
-          <div class="countdown-units" data-countdown-units>D   H   M</div>
-          <div class="card-day">{DAYS[series.update_day]}</div>
-        </>
-      )
-    }
-  </div>
-</a>
+  <a href={`/${series.id}`} class="card-inner">
+    <div class="card-cover">
+      {series.cover
+        ? <img src={series.cover} alt={series.title} loading="lazy" decoding="async" />
+        : <div class="cover-fallback">{series.title}</div>
+      }
+      <div class="cover-overlay"></div>
+      <span class="genre-pill">{series.genre}</span>
+      <span
+        class="platform-pill"
+        style={`background: ${PLATFORM_COLORS[series.platform] ?? '#6C63FF'}`}
+      >
+        {series.platform_label}
+      </span>
+    </div>
+    <div class="card-body">
+      <div class="card-title">{series.title}</div>
+      {series.on_hiatus
+        ? <span class="badge-hiatus">On Break</span>
+        : (
+          <>
+            <div class="countdown" data-countdown-day={series.update_day}>--:--:--</div>
+            <div class="countdown-units" data-countdown-units>D   H   M</div>
+            <div class="card-day">{DAYS[series.update_day]}</div>
+          </>
+        )
+      }
+    </div>
+  </a>
+  <button
+    class="notify-btn"
+    data-series-id={series.id}
+    aria-label={`Notify me when ${series.title} drops`}
+  >🔔</button>
+</div>
+
+<script>
+  import { subscribeToSeries, isSubscribed } from '../lib/notifications.js';
+
+  document.querySelectorAll('.notify-btn').forEach(btn => {
+    const id = btn.dataset.seriesId;
+    if (isSubscribed(id)) btn.textContent = '🔔✓';
+
+    btn.addEventListener('click', async e => {
+      e.preventDefault();
+      e.stopPropagation();
+      const ok = await subscribeToSeries(id);
+      if (ok) btn.textContent = '🔔✓';
+    });
+  });
+</script>
 
 <style>
   .card {
@@ -49,12 +71,17 @@ const PLATFORM_COLORS = {
     border: 1px solid var(--border);
     border-radius: 10px;
     overflow: hidden;
-    text-decoration: none;
-    color: var(--text);
     display: block;
     transition: border-color 0.2s;
+    position: relative;
   }
-  .card:active { border-color: var(--accent); }
+  .card:has(.card-inner:active) { border-color: var(--accent); }
+
+  .card-inner {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+  }
 
   .card-cover {
     aspect-ratio: 3/4;
@@ -132,4 +159,18 @@ const PLATFORM_COLORS = {
     font-family: 'Space Grotesk', sans-serif;
     display: inline-block;
   }
+
+  .notify-btn {
+    position: absolute; bottom: 14px; right: 10px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    z-index: 1;
+  }
+  .notify-btn:hover { opacity: 1; }
 </style>

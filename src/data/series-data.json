@@ -10,7 +10,7 @@
     "update_day": 1,
     "update_day_name": "Monday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Fantasy",
     "tags": [
       "action",
