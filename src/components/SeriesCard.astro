@@ -12,8 +12,6 @@ const PLATFORM_COLORS = {
   class="card"
   data-genre={series.genre}
   data-platform={series.platform}
-  data-update-day={series.update_day ?? ''}
-  data-on-hiatus={series.on_hiatus ? 'true' : 'false'}
 >
   <a href={`/${series.id}`} class="card-inner">
     <div class="card-cover">
@@ -32,15 +30,17 @@ const PLATFORM_COLORS = {
     </div>
     <div class="card-body">
       <div class="card-title">{series.title}</div>
-      {series.on_hiatus
-        ? <span class="badge-hiatus">On Break</span>
-        : (
-          <>
-            <div class="countdown" data-countdown-day={series.update_day}>--:--:--</div>
-            <div class="countdown-units" data-countdown-units>D   H   M</div>
-            <div class="card-day">{DAYS[series.update_day]}</div>
-          </>
-        )
+      {series.update_day === null
+        ? <span class="badge-tbd">Schedule TBD</span>
+        : series.on_hiatus
+          ? <span class="badge-hiatus">On Break</span>
+          : (
+            <>
+              <div class="countdown" data-countdown-day={series.update_day}>--:--:--</div>
+              <div class="countdown-units" data-countdown-units>D   H   M</div>
+              <div class="card-day">{DAYS[series.update_day]}</div>
+            </>
+          )
       }
     </div>
   </a>
@@ -152,15 +152,16 @@ const PLATFORM_COLORS = {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 600; letter-spacing: 0.5px;
   }
-  .badge-hiatus {
+  .badge-hiatus, .badge-tbd {
     font-size: 10px; font-weight: 700;
     letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--hiatus); background: var(--tag-bg);
     padding: 4px 10px; border-radius: 4px;
     border: 1px solid var(--border);
     font-family: 'Space Grotesk', sans-serif;
     display: inline-block;
   }
+  .badge-hiatus { color: var(--hiatus); background: var(--tag-bg); }
+  .badge-tbd    { color: var(--muted);  background: var(--surface2); }
 
   .notify-btn {
     position: absolute; bottom: 14px; right: 10px;

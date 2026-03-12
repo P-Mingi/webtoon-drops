@@ -19,7 +19,14 @@
       "korean"
     ],
     "amazon_vol1": "https://www.amazon.com/dp/1990259766?tag=YOUR_TAG",
-    "seo_description": "Tower of God drops every Monday at midnight KST on WEBTOON. Live countdown to the next episode. Never miss a release."
+    "seo_description": "Tower of God drops every Monday at midnight KST on WEBTOON. Live countdown to the next episode. Never miss a release.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95"
+      }
+    ]
   },
   {
     "id": "omniscient-readers-viewpoint",
@@ -41,7 +48,14 @@
       "korean"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=omniscient+reader+viewpoint+manga&tag=YOUR_TAG",
-    "seo_description": "Omniscient Reader's Viewpoint drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter release."
+    "seo_description": "Omniscient Reader's Viewpoint drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter release.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154"
+      }
+    ]
   },
   {
     "id": "eleceed",
@@ -63,7 +77,14 @@
       "korean"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=eleceed+manga&tag=YOUR_TAG",
-    "seo_description": "Eleceed drops every Wednesday at midnight KST on WEBTOON. See the live countdown to the next episode."
+    "seo_description": "Eleceed drops every Wednesday at midnight KST on WEBTOON. See the live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/eleceed/list?title_no=1571"
+      }
+    ]
   },
   {
     "id": "nano-machine",
@@ -85,7 +106,14 @@
       "korean"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=nano+machine+manhwa&tag=YOUR_TAG",
-    "seo_description": "Nano Machine drops every Thursday at midnight KST on WEBTOON. Live countdown to the next episode release."
+    "seo_description": "Nano Machine drops every Thursday at midnight KST on WEBTOON. Live countdown to the next episode release.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/nano-machine/list?title_no=2202"
+      }
+    ]
   },
   {
     "id": "mercenary-enrollment",
@@ -107,7 +135,14 @@
       "korean"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=mercenary+enrollment+manhwa&tag=YOUR_TAG",
-    "seo_description": "Mercenary Enrollment drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Mercenary Enrollment drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/mercenary-enrollment/list?title_no=2304"
+      }
+    ]
   },
   {
     "id": "the-beginning-after-the-end",
@@ -129,7 +164,14 @@
       "reincarnation"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=the+beginning+after+the+end+manhwa&tag=YOUR_TAG",
-    "seo_description": "The Beginning After the End drops every Saturday on Tapas. Live countdown to the next episode."
+    "seo_description": "The Beginning After the End drops every Saturday on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/tbate-comic/info"
+      }
+    ]
   },
   {
     "id": "reaper-of-the-drifting-moon",
@@ -151,7 +193,14 @@
       "korean"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=reaper+drifting+moon+manhwa&tag=YOUR_TAG",
-    "seo_description": "Reaper of the Drifting Moon drops every Sunday at midnight KST on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Reaper of the Drifting Moon drops every Sunday at midnight KST on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/reaper-of-the-drifting-moon/list?title_no=2306"
+      }
+    ]
   },
   {
     "id": "i-love-yoo",
@@ -172,7 +221,14 @@
       "slice of life"
     ],
     "amazon_vol1": null,
-    "seo_description": "I Love Yoo drops every Monday at midnight KST on WEBTOON. Live countdown to the next chapter."
+    "seo_description": "I Love Yoo drops every Monday at midnight KST on WEBTOON. Live countdown to the next chapter.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/i-love-yoo/list?title_no=986"
+      }
+    ]
   },
   {
     "id": "unordinary",
@@ -194,7 +250,14 @@
       "drama"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=unordinary+webtoon+book&tag=YOUR_TAG",
-    "seo_description": "unOrdinary drops every Wednesday at midnight KST on WEBTOON. Live countdown to the next episode."
+    "seo_description": "unOrdinary drops every Wednesday at midnight KST on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/super-hero/unordinary/list?title_no=679"
+      }
+    ]
   },
   {
     "id": "lore-olympus",
@@ -216,7 +279,14 @@
       "fantasy"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=lore+olympus+book&tag=YOUR_TAG",
-    "seo_description": "Lore Olympus release schedule and next episode countdown on WEBTOON. Check the latest episode release date."
+    "seo_description": "Lore Olympus release schedule and next episode countdown on WEBTOON. Check the latest episode release date.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/lore-olympus/list?title_no=1320"
+      }
+    ]
   },
   {
     "id": "true-beauty",
@@ -238,7 +308,14 @@
       "korean"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=true+beauty+manhwa&tag=YOUR_TAG",
-    "seo_description": "True Beauty drops every Thursday on WEBTOON. Live countdown to the next episode of 여신강림."
+    "seo_description": "True Beauty drops every Thursday on WEBTOON. Live countdown to the next episode of 여신강림.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/truebeauty/list?title_no=1436"
+      }
+    ]
   },
   {
     "id": "subzero",
@@ -260,7 +337,14 @@
       "drama"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=subzero+webtoon+book&tag=YOUR_TAG",
-    "seo_description": "SubZero drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter."
+    "seo_description": "SubZero drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/subzero/list?title_no=1468"
+      }
+    ]
   },
   {
     "id": "lets-play",
@@ -282,7 +366,14 @@
       "slice of life"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=lets+play+webtoon+book&tag=YOUR_TAG",
-    "seo_description": "Let's Play drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Let's Play drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/letsplay/list?title_no=1218"
+      }
+    ]
   },
   {
     "id": "jungle-juice",
@@ -304,7 +395,14 @@
       "korean"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=jungle+juice+manhwa&tag=YOUR_TAG",
-    "seo_description": "Jungle Juice drops every Wednesday at midnight KST on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Jungle Juice drops every Wednesday at midnight KST on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/jungle-juice/list?title_no=2535"
+      }
+    ]
   },
   {
     "id": "doom-breaker",
@@ -326,7 +424,14 @@
       "korean"
     ],
     "amazon_vol1": null,
-    "seo_description": "Doom Breaker drops every Saturday at midnight KST on WEBTOON. Live countdown to the next chapter release."
+    "seo_description": "Doom Breaker drops every Saturday at midnight KST on WEBTOON. Live countdown to the next chapter release.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/doom-breaker/list?title_no=3637"
+      }
+    ]
   },
   {
     "id": "solo-leveling-ragnarok",
@@ -348,7 +453,14 @@
       "korean"
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=solo+leveling+ragnarok+manhwa&tag=YOUR_TAG",
-    "seo_description": "Solo Leveling: Ragnarok drops every Thursday on Tapas. Live countdown to the next chapter release."
+    "seo_description": "Solo Leveling: Ragnarok drops every Thursday on Tapas. Live countdown to the next chapter release.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/solo-leveling-ragnarok/info"
+      }
+    ]
   },
   {
     "id": "second-life-ranker",
@@ -369,7 +481,14 @@
       "regression"
     ],
     "amazon_vol1": null,
-    "seo_description": "Second Life Ranker drops every Saturday on WEBTOON. Live countdown to the next chapter."
+    "seo_description": "Second Life Ranker drops every Saturday on WEBTOON. Live countdown to the next chapter.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/second-life-ranker/list?title_no=1966"
+      }
+    ]
   },
   {
     "id": "overgeared",
@@ -390,7 +509,14 @@
       "game"
     ],
     "amazon_vol1": null,
-    "seo_description": "Overgeared updates every Sunday on WEBTOON. Live countdown."
+    "seo_description": "Overgeared updates every Sunday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/overgeared/list?title_no=2057"
+      }
+    ]
   },
   {
     "id": "kill-the-hero",
@@ -411,7 +537,14 @@
       "regression"
     ],
     "amazon_vol1": null,
-    "seo_description": "Kill the Hero drops every Monday on WEBTOON. Countdown to the next episode."
+    "seo_description": "Kill the Hero drops every Monday on WEBTOON. Countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/kill-the-hero/list?title_no=1948"
+      }
+    ]
   },
   {
     "id": "return-of-the-mount-hua-sect",
@@ -433,7 +566,14 @@
       "historical"
     ],
     "amazon_vol1": null,
-    "seo_description": "Return of the Mount Hua Sect drops every Saturday on WEBTOON."
+    "seo_description": "Return of the Mount Hua Sect drops every Saturday on WEBTOON.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/return-of-the-mount-hua-sect/list?title_no=3892"
+      }
+    ]
   },
   {
     "id": "murim-login",
@@ -454,7 +594,14 @@
       "game"
     ],
     "amazon_vol1": null,
-    "seo_description": "Murim Login drops every Sunday on WEBTOON. Live countdown."
+    "seo_description": "Murim Login drops every Sunday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/murim-login/list?title_no=2676"
+      }
+    ]
   },
   {
     "id": "teenage-mercenary",
@@ -475,7 +622,14 @@
       "thriller"
     ],
     "amazon_vol1": null,
-    "seo_description": "Teenage Mercenary drops every Friday on WEBTOON. Countdown."
+    "seo_description": "Teenage Mercenary drops every Friday on WEBTOON. Countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/teenage-mercenary/list?title_no=2116"
+      }
+    ]
   },
   {
     "id": "lookism",
@@ -496,7 +650,14 @@
       "action"
     ],
     "amazon_vol1": null,
-    "seo_description": "Lookism drops every Saturday on WEBTOON. Countdown."
+    "seo_description": "Lookism drops every Saturday on WEBTOON. Countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/slice-of-life/lookism/list?title_no=1049"
+      }
+    ]
   },
   {
     "id": "the-boxer",
@@ -517,7 +678,14 @@
       "drama"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Boxer drops every Sunday on WEBTOON. Live countdown."
+    "seo_description": "The Boxer drops every Sunday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/sports/the-boxer/list?title_no=2027"
+      }
+    ]
   },
   {
     "id": "windbreaker",
@@ -538,7 +706,14 @@
       "school"
     ],
     "amazon_vol1": null,
-    "seo_description": "Windbreaker releases every Sunday on WEBTOON. Countdown."
+    "seo_description": "Windbreaker releases every Sunday on WEBTOON. Countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/sports/wind-breaker/list?title_no=372"
+      }
+    ]
   },
   {
     "id": "the-god-of-high-school",
@@ -559,7 +734,14 @@
       "tournament"
     ],
     "amazon_vol1": null,
-    "seo_description": "The God of High School releases every Sunday on WEBTOON. Live countdown."
+    "seo_description": "The God of High School releases every Sunday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/the-god-of-high-school/list?title_no=66"
+      }
+    ]
   },
   {
     "id": "worn-and-torn-newbie",
@@ -580,7 +762,14 @@
       "game"
     ],
     "amazon_vol1": null,
-    "seo_description": "Worn and Torn Newbie drops every Tuesday on WEBTOON. Live countdown."
+    "seo_description": "Worn and Torn Newbie drops every Tuesday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/worn-and-torn-newbie/list?title_no=2720"
+      }
+    ]
   },
   {
     "id": "legend-of-the-northern-blade",
@@ -601,7 +790,14 @@
       "historical"
     ],
     "amazon_vol1": null,
-    "seo_description": "Legend of the Northern Blade drops every Saturday on WEBTOON. Live countdown."
+    "seo_description": "Legend of the Northern Blade drops every Saturday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/legend-of-the-northern-blade/list?title_no=1874"
+      }
+    ]
   },
   {
     "id": "the-s-classes-that-i-raised",
@@ -622,7 +818,14 @@
       "regression"
     ],
     "amazon_vol1": null,
-    "seo_description": "The S-Classes That I Raised updates every Thursday on WEBTOON."
+    "seo_description": "The S-Classes That I Raised updates every Thursday on WEBTOON.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-s-classes-that-i-raised/list?title_no=2085"
+      }
+    ]
   },
   {
     "id": "the-tutorial-is-too-hard",
@@ -643,7 +846,14 @@
       "game"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Tutorial Is Too Hard drops every Friday on WEBTOON. Live countdown."
+    "seo_description": "The Tutorial Is Too Hard drops every Friday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-tutorial-is-too-hard/list?title_no=1891"
+      }
+    ]
   },
   {
     "id": "the-live",
@@ -664,7 +874,14 @@
       "action"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Live updates every Tuesday on WEBTOON. Live countdown."
+    "seo_description": "The Live updates every Tuesday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-live/list?title_no=2119"
+      }
+    ]
   },
   {
     "id": "remarried-empress",
@@ -685,7 +902,14 @@
       "historical"
     ],
     "amazon_vol1": null,
-    "seo_description": "Remarried Empress updates every Thursday on WEBTOON. Live countdown."
+    "seo_description": "Remarried Empress updates every Thursday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/remarried-empress/list?title_no=2135"
+      }
+    ]
   },
   {
     "id": "under-the-oak-tree",
@@ -706,7 +930,14 @@
       "historical"
     ],
     "amazon_vol1": null,
-    "seo_description": "Under the Oak Tree releases every Saturday on Tapas. Countdown."
+    "seo_description": "Under the Oak Tree releases every Saturday on Tapas. Countdown.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/under-the-oak-tree-official/info"
+      }
+    ]
   },
   {
     "id": "who-made-me-a-princess",
@@ -727,7 +958,14 @@
       "isekai"
     ],
     "amazon_vol1": null,
-    "seo_description": "Who Made Me a Princess releases every Sunday on Tapas. Countdown."
+    "seo_description": "Who Made Me a Princess releases every Sunday on Tapas. Countdown.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/who-made-me-a-princess/info"
+      }
+    ]
   },
   {
     "id": "the-villainess-turns-the-hourglass",
@@ -748,7 +986,14 @@
       "villainess"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Villainess Turns the Hourglass drops every Wednesday on Tapas. Countdown."
+    "seo_description": "The Villainess Turns the Hourglass drops every Wednesday on Tapas. Countdown.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-villainess-turns-the-hourglass/info"
+      }
+    ]
   },
   {
     "id": "doctor-elise",
@@ -769,7 +1014,14 @@
       "medical"
     ],
     "amazon_vol1": null,
-    "seo_description": "Doctor Elise updates every Friday on Tapas. Live countdown."
+    "seo_description": "Doctor Elise updates every Friday on Tapas. Live countdown.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/doctor-elise/info"
+      }
+    ]
   },
   {
     "id": "my-gently-raised-beast",
@@ -790,7 +1042,14 @@
       "historical"
     ],
     "amazon_vol1": null,
-    "seo_description": "My Gently Raised Beast drops every Tuesday on Tapas. Live countdown."
+    "seo_description": "My Gently Raised Beast drops every Tuesday on Tapas. Live countdown.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/my-gently-raised-beast/info"
+      }
+    ]
   },
   {
     "id": "the-villainess-lives-twice",
@@ -811,7 +1070,14 @@
       "villainess"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Villainess Lives Twice drops every Friday on Tapas. Countdown."
+    "seo_description": "The Villainess Lives Twice drops every Friday on Tapas. Countdown.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-villainess-lives-twice/info"
+      }
+    ]
   },
   {
     "id": "noblesse",
@@ -832,7 +1098,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Noblesse updates every Thursday on WEBTOON. Live countdown."
+    "seo_description": "Noblesse updates every Thursday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/supernatural/noblesse/list?title_no=87"
+      }
+    ]
   },
   {
     "id": "magic-emperor",
@@ -853,7 +1126,14 @@
       "magic"
     ],
     "amazon_vol1": null,
-    "seo_description": "Magic Emperor drops every Sunday on WEBTOON. Countdown to next chapter."
+    "seo_description": "Magic Emperor drops every Sunday on WEBTOON. Countdown to next chapter.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/magic-emperor/list?title_no=2282"
+      }
+    ]
   },
   {
     "id": "the-great-mage-returns-after-4000-years",
@@ -874,7 +1154,14 @@
       "magic"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Great Mage Returns After 4000 Years updates every Thursday on WEBTOON."
+    "seo_description": "The Great Mage Returns After 4000 Years updates every Thursday on WEBTOON.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-great-mage-returns-after-4000-years/list?title_no=1963"
+      }
+    ]
   },
   {
     "id": "talent-swallowing-magician",
@@ -895,7 +1182,14 @@
       "magic"
     ],
     "amazon_vol1": null,
-    "seo_description": "Talent-Swallowing Magician drops every Friday on WEBTOON. Live countdown."
+    "seo_description": "Talent-Swallowing Magician drops every Friday on WEBTOON. Live countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/talent-swallowing-magician/list?title_no=2755"
+      }
+    ]
   },
   {
     "id": "a-returners-magic-should-be-special",
@@ -917,7 +1211,14 @@
       "magic"
     ],
     "amazon_vol1": null,
-    "seo_description": "A Returner's Magic Should Be Special drops every Wednesday on WEBTOON."
+    "seo_description": "A Returner's Magic Should Be Special drops every Wednesday on WEBTOON.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/a-returners-magic-should-be-special/list?title_no=1697"
+      }
+    ]
   },
   {
     "id": "the-swordmasters-youngest-son",
@@ -938,7 +1239,14 @@
       "regression"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Swordmaster's Youngest Son drops every Monday on WEBTOON. Countdown."
+    "seo_description": "The Swordmaster's Youngest Son drops every Monday on WEBTOON. Countdown.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-swordmasters-youngest-son/list?title_no=4751"
+      }
+    ]
   },
   {
     "id": "omniscient-reader",
@@ -959,7 +1267,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Omniscient Reader drops every Tuesday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Omniscient Reader drops every Tuesday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154"
+      }
+    ]
   },
   {
     "id": "i-m-the-max-level-newbie",
@@ -979,7 +1294,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "I’m the Max-Level Newbie drops every Saturday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "I’m the Max-Level Newbie drops every Saturday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/im-the-max-level-newbie/list?title_no=3915"
+      }
+    ]
   },
   {
     "id": "the-world-after-the-fall",
@@ -1000,7 +1322,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The World After the Fall drops every Monday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The World After the Fall drops every Monday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/the-world-after-the-fall/list?title_no=4011"
+      }
+    ]
   },
   {
     "id": "the-return-of-the-disaster-class-hero",
@@ -1020,7 +1349,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Return of the Disaster-Class Hero drops every Sunday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Return of the Disaster-Class Hero drops every Sunday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/the-return-of-the-disaster-class-hero/list?title_no=9013"
+      }
+    ]
   },
   {
     "id": "the-extra-s-academy-survival-guide",
@@ -1040,7 +1376,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Extra’s Academy Survival Guide drops every Monday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Extra’s Academy Survival Guide drops every Monday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-extras-academy-survival-guide/list?title_no=6465"
+      }
+    ]
   },
   {
     "id": "66-666-years-advent-of-the-dark-mage",
@@ -1060,7 +1403,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "66,666 Years: Advent of the Dark Mage drops every Wednesday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "66,666 Years: Advent of the Dark Mage drops every Wednesday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/66666-years-advent-of-the-dark-mage/list?title_no=3441"
+      }
+    ]
   },
   {
     "id": "mythic-item-obtained",
@@ -1081,7 +1431,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Mythic Item Obtained drops every Thursday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Mythic Item Obtained drops every Thursday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/mythic-item-obtained/list?title_no=4582"
+      }
+    ]
   },
   {
     "id": "the-stellar-swordmaster",
@@ -1102,7 +1459,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Stellar Swordmaster drops every Wednesday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Stellar Swordmaster drops every Wednesday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/the-stellar-swordmaster/list?title_no=5988"
+      }
+    ]
   },
   {
     "id": "villain-to-kill",
@@ -1122,7 +1486,14 @@
       "supernatural"
     ],
     "amazon_vol1": null,
-    "seo_description": "Villain to Kill drops every Tuesday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Villain to Kill drops every Tuesday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/villain-to-kill/list?title_no=2857"
+      }
+    ]
   },
   {
     "id": "the-academy-s-undercover-professor",
@@ -1143,7 +1514,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Academy's Undercover Professor drops every Saturday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Academy's Undercover Professor drops every Saturday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-academys-undercover-professor/list?title_no=4636"
+      }
+    ]
   },
   {
     "id": "the-reborn-young-lord-is-an-assassin",
@@ -1163,7 +1541,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Reborn Young Lord is an Assassin drops every Monday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Reborn Young Lord is an Assassin drops every Monday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-reborn-young-lord-is-an-assassin/list?title_no=6107"
+      }
+    ]
   },
   {
     "id": "the-knight-only-lives-today",
@@ -1183,7 +1568,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Knight Only Lives Today drops every Friday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Knight Only Lives Today drops every Friday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-knight-only-lives-today/list?title_no=6672"
+      }
+    ]
   },
   {
     "id": "return-to-player",
@@ -1204,7 +1596,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Return to Player drops every Sunday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Return to Player drops every Sunday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/return-to-player/list?title_no=2574"
+      }
+    ]
   },
   {
     "id": "i-killed-the-main-player",
@@ -1224,7 +1623,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "I Killed the Main Player drops every Sunday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "I Killed the Main Player drops every Sunday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/i-killed-the-main-player/list?title_no=6856"
+      }
+    ]
   },
   {
     "id": "descended-from-divinity",
@@ -1244,7 +1650,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Descended from Divinity drops every Wednesday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Descended from Divinity drops every Wednesday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/descended-from-divinity/list?title_no=3450"
+      }
+    ]
   },
   {
     "id": "study-group",
@@ -1264,7 +1677,14 @@
       "comedy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Study Group drops every Sunday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Study Group drops every Sunday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/study-group/list?title_no=3595"
+      }
+    ]
   },
   {
     "id": "the-regressed-mercenary-has-a-plan",
@@ -1284,7 +1704,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Regressed Mercenary Has a Plan drops every Wednesday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Regressed Mercenary Has a Plan drops every Wednesday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/the-regressed-mercenary-has-a-plan/list?title_no=7261"
+      }
+    ]
   },
   {
     "id": "surviving-the-game-as-a-barbarian",
@@ -1305,7 +1732,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Surviving the Game as a Barbarian drops every Saturday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Surviving the Game as a Barbarian drops every Saturday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/surviving-the-game-as-a-barbarian/list?title_no=5515"
+      }
+    ]
   },
   {
     "id": "operation-true-love",
@@ -1326,7 +1760,14 @@
       "romance"
     ],
     "amazon_vol1": null,
-    "seo_description": "Operation: True Love drops every Friday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Operation: True Love drops every Friday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/operation-true-love/list?title_no=4465"
+      }
+    ]
   },
   {
     "id": "time-limited-genius-dark-knight",
@@ -1346,7 +1787,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Time-Limited Genius Dark Knight drops every Wednesday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Time-Limited Genius Dark Knight drops every Wednesday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/time-limited-genius-dark-knight/list?title_no=5639"
+      }
+    ]
   },
   {
     "id": "the-lone-necromancer",
@@ -1366,7 +1814,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Lone Necromancer drops every Sunday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Lone Necromancer drops every Sunday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-lone-necromancer/list?title_no=3690"
+      }
+    ]
   },
   {
     "id": "reality-quest",
@@ -1386,7 +1841,14 @@
       "supernatural"
     ],
     "amazon_vol1": null,
-    "seo_description": "Reality Quest drops every Monday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Reality Quest drops every Monday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/reality-quest/list?title_no=4697"
+      }
+    ]
   },
   {
     "id": "hero-killer",
@@ -1407,7 +1869,14 @@
       "supernatural"
     ],
     "amazon_vol1": null,
-    "seo_description": "Hero Killer drops every Thursday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Hero Killer drops every Thursday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/hero-killer/list?title_no=2745"
+      }
+    ]
   },
   {
     "id": "absolute-sword-sense",
@@ -1427,7 +1896,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Absolute Sword Sense drops every Sunday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Absolute Sword Sense drops every Sunday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/absolute-sword-sense/list?title_no=5100"
+      }
+    ]
   },
   {
     "id": "the-player-hides-his-past",
@@ -1447,7 +1923,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Player Hides His Past drops every Thursday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Player Hides His Past drops every Thursday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/the-player-hides-his-past/list?title_no=5655"
+      }
+    ]
   },
   {
     "id": "returned-by-the-king",
@@ -1468,7 +1951,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Returned by the King drops every Saturday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Returned by the King drops every Saturday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/returned-by-the-king/list?title_no=6213"
+      }
+    ]
   },
   {
     "id": "absolute-regression",
@@ -1488,7 +1978,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Absolute Regression drops every Saturday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Absolute Regression drops every Saturday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/absolute-regression/list?title_no=7004"
+      }
+    ]
   },
   {
     "id": "my-bias-gets-on-the-last-train",
@@ -1508,7 +2005,14 @@
       "romance"
     ],
     "amazon_vol1": null,
-    "seo_description": "My Bias Gets on the Last Train drops every Tuesday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "My Bias Gets on the Last Train drops every Tuesday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/my-bias-gets-on-the-last-train/list?title_no=7857"
+      }
+    ]
   },
   {
     "id": "chronicles-of-the-demon-faction",
@@ -1528,7 +2032,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Chronicles of the Demon Faction drops every Friday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Chronicles of the Demon Faction drops every Friday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/chronicles-of-the-demon-faction/list?title_no=5832"
+      }
+    ]
   },
   {
     "id": "killer-peter",
@@ -1549,7 +2060,14 @@
       "drama"
     ],
     "amazon_vol1": null,
-    "seo_description": "Killer Peter drops every Saturday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Killer Peter drops every Saturday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/killer-peter/list?title_no=5816"
+      }
+    ]
   },
   {
     "id": "murim-rpg-simulation",
@@ -1570,7 +2088,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Murim RPG Simulation drops every Friday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Murim RPG Simulation drops every Friday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/murim-rpg-simulation/list?title_no=3779"
+      }
+    ]
   },
   {
     "id": "the-top-dungeon-farmer",
@@ -1589,7 +2114,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Top Dungeon Farmer drops every Thursday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Top Dungeon Farmer drops every Thursday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-top-dungeon-farmer/list?title_no=5656"
+      }
+    ]
   },
   {
     "id": "99-reinforced-wooden-stick",
@@ -1611,7 +2143,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "+99 Reinforced Wooden Stick drops every Saturday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "+99 Reinforced Wooden Stick drops every Saturday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/comedy/99-reinforced-wooden-stick/list?title_no=4286"
+      }
+    ]
   },
   {
     "id": "the-constellations-are-my-disciples",
@@ -1631,7 +2170,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Constellations Are My Disciples drops every Sunday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "The Constellations Are My Disciples drops every Sunday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/the-constellations-are-my-disciples/list?title_no=5638"
+      }
+    ]
   },
   {
     "id": "enrolling-in-the-transcendent-academy",
@@ -1652,7 +2198,14 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Enrolling in the Transcendent Academy drops every Saturday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Enrolling in the Transcendent Academy drops every Saturday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/fantasy/enrolling-in-the-transcendent-academy/list?title_no=5420"
+      }
+    ]
   },
   {
     "id": "infinite-leveling-murim",
@@ -1674,6 +2227,533 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Infinite Leveling: Murim drops every Wednesday on WEBTOON. Live countdown to the next episode."
+    "seo_description": "Infinite Leveling: Murim drops every Wednesday on WEBTOON. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/action/infinite-leveling-murim/list?title_no=2676"
+      }
+    ]
+  },
+  {
+    "id": "villains-are-destined-to-die",
+    "title": "Villains Are Destined to Die",
+    "title_kr": null,
+    "anilist_id": 118408,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/villains-are-destined-to-die/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Villains Are Destined to Die releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/villains-are-destined-to-die/info"
+      }
+    ]
+  },
+  {
+    "id": "latna-saga-survival-of-a-sword-king",
+    "title": "Latna Saga: Survival of a Sword King",
+    "title_kr": null,
+    "anilist_id": 114605,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/latna-saga-survival-of-a-sword-king/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Latna Saga: Survival of a Sword King releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/latna-saga-survival-of-a-sword-king/info"
+      }
+    ]
+  },
+  {
+    "id": "the-sss-ranker-returns",
+    "title": "The SSS-Ranker Returns",
+    "title_kr": null,
+    "anilist_id": 153883,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-sss-ranker-returns/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Action",
+    "tags": [
+      "action"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The SSS-Ranker Returns releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-sss-ranker-returns/info"
+      }
+    ]
+  },
+  {
+    "id": "the-archmage-returns-after-4000-years",
+    "title": "The Archmage Returns After 4000 Years",
+    "title_kr": null,
+    "anilist_id": 118424,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-archmage-returns-after-4000-years/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Archmage Returns After 4000 Years releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-archmage-returns-after-4000-years/info"
+      }
+    ]
+  },
+  {
+    "id": "the-max-level-hero-strikes-back",
+    "title": "The Max Level Hero Strikes Back",
+    "title_kr": null,
+    "anilist_id": 125636,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-max-level-hero-strikes-back/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Max Level Hero Strikes Back releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-max-level-hero-strikes-back/info"
+      }
+    ]
+  },
+  {
+    "id": "the-legendary-spearman-returns",
+    "title": "The Legendary Spearman Returns",
+    "title_kr": null,
+    "anilist_id": 141479,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-legendary-spearman-returns/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Action",
+    "tags": [
+      "action"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Legendary Spearman Returns releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-legendary-spearman-returns/info"
+      }
+    ]
+  },
+  {
+    "id": "ranker-s-return",
+    "title": "Ranker's Return",
+    "title_kr": null,
+    "anilist_id": 137969,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/rankers-return/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Action",
+    "tags": [
+      "action"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Ranker's Return releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/rankers-return/info"
+      }
+    ]
+  },
+  {
+    "id": "i-am-the-real-one",
+    "title": "I Am the Real One",
+    "title_kr": null,
+    "anilist_id": 124783,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/i-am-the-real-one/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "I Am the Real One releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/i-am-the-real-one/info"
+      }
+    ]
+  },
+  {
+    "id": "semantic-error",
+    "title": "Semantic Error",
+    "title_kr": null,
+    "anilist_id": 125167,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/semantic-error/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Semantic Error releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/semantic-error/info"
+      }
+    ]
+  },
+  {
+    "id": "the-male-lead-s-little-lion-daughter",
+    "title": "The Male Lead's Little Lion Daughter",
+    "title_kr": null,
+    "anilist_id": 138363,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-male-leads-little-lion-daughter/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Male Lead's Little Lion Daughter releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-male-leads-little-lion-daughter/info"
+      }
+    ]
+  },
+  {
+    "id": "not-sew-wicked-stepmom",
+    "title": "Not-Sew-Wicked Stepmom",
+    "title_kr": null,
+    "anilist_id": 132359,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/not-sew-wicked-stepmom/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Not-Sew-Wicked Stepmom releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/not-sew-wicked-stepmom/info"
+      }
+    ]
+  },
+  {
+    "id": "beware-the-villainess",
+    "title": "Beware the Villainess!",
+    "title_kr": null,
+    "anilist_id": 117540,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/beware-the-villainess/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Beware the Villainess! releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/beware-the-villainess/info"
+      }
+    ]
+  },
+  {
+    "id": "my-life-as-an-internet-novel",
+    "title": "My Life as an Internet Novel",
+    "title_kr": null,
+    "anilist_id": 110059,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/my-life-as-an-internet-novel/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "My Life as an Internet Novel releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/my-life-as-an-internet-novel/info"
+      }
+    ]
+  },
+  {
+    "id": "doctor-live-again",
+    "title": "Doctor, Live Again",
+    "title_kr": null,
+    "anilist_id": 129579,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/doctor-live-again/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Drama",
+    "tags": [
+      "drama"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Doctor, Live Again releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/doctor-live-again/info"
+      }
+    ]
+  },
+  {
+    "id": "author-of-my-own-destiny",
+    "title": "Author of My Own Destiny",
+    "title_kr": null,
+    "anilist_id": 138655,
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/author-of-my-own-destiny/info",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Romance",
+    "tags": [
+      "romance"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Author of My Own Destiny releases on Tapas. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/author-of-my-own-destiny/info"
+      }
+    ]
+  },
+  {
+    "id": "pick-me-up",
+    "title": "Pick Me Up",
+    "title_kr": null,
+    "anilist_id": 159441,
+    "platform": "mangaplus",
+    "platform_label": "MANGA PLUS",
+    "read_url": "https://anilist.co/manga/159441",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Action",
+    "tags": [
+      "action"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Pick Me Up releases on MANGA PLUS. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "mangaplus",
+        "label": "MANGA PLUS",
+        "read_url": "https://anilist.co/manga/159441"
+      }
+    ]
+  },
+  {
+    "id": "the-infinite-mage",
+    "title": "The Infinite Mage",
+    "title_kr": null,
+    "anilist_id": 159930,
+    "platform": "mangaplus",
+    "platform_label": "MANGA PLUS",
+    "read_url": "https://anilist.co/manga/159930",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Infinite Mage releases on MANGA PLUS. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "mangaplus",
+        "label": "MANGA PLUS",
+        "read_url": "https://anilist.co/manga/159930"
+      }
+    ]
+  },
+  {
+    "id": "god-of-blackfield",
+    "title": "God of Blackfield",
+    "title_kr": null,
+    "anilist_id": 118267,
+    "platform": "mangaplus",
+    "platform_label": "MANGA PLUS",
+    "read_url": "https://anilist.co/manga/118267",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Action",
+    "tags": [
+      "action"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "God of Blackfield releases on MANGA PLUS. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "mangaplus",
+        "label": "MANGA PLUS",
+        "read_url": "https://anilist.co/manga/118267"
+      }
+    ]
+  },
+  {
+    "id": "player",
+    "title": "Player",
+    "title_kr": null,
+    "anilist_id": 119363,
+    "platform": "mangaplus",
+    "platform_label": "MANGA PLUS",
+    "read_url": "https://anilist.co/manga/119363",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Action",
+    "tags": [
+      "action"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Player releases on MANGA PLUS. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "mangaplus",
+        "label": "MANGA PLUS",
+        "read_url": "https://anilist.co/manga/119363"
+      }
+    ]
+  },
+  {
+    "id": "tyrant-of-the-tower-defense-game",
+    "title": "Tyrant of the Tower Defense Game",
+    "title_kr": null,
+    "anilist_id": 153513,
+    "platform": "mangaplus",
+    "platform_label": "MANGA PLUS",
+    "read_url": "https://anilist.co/manga/153513",
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "Tyrant of the Tower Defense Game releases on MANGA PLUS. Live countdown to the next episode.",
+    "platforms": [
+      {
+        "platform": "mangaplus",
+        "label": "MANGA PLUS",
+        "read_url": "https://anilist.co/manga/153513"
+      }
+    ]
   }
 ]

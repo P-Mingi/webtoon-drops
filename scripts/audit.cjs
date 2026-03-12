@@ -104,8 +104,8 @@ async function runAudit() {
           results.fail++; schemaOk = false;
         }
       });
-      if (s.update_day < 0 || s.update_day > 6) {
-        fail(`Series "${s.title}" has invalid update_day: ${s.update_day} (must be 0-6)`);
+      if (s.update_day !== null && (s.update_day < 0 || s.update_day > 6)) {
+        fail(`Series "${s.title}" has invalid update_day: ${s.update_day} (must be 0-6 or null)`);
         results.fail++; schemaOk = false;
       }
     });
@@ -115,8 +115,9 @@ async function runAudit() {
     }
 
     const hiatusCount = SERIES_DATA.filter(s => s.on_hiatus).length;
-    const activeCount = SERIES_DATA.length - hiatusCount;
-    info(`${activeCount} active series, ${hiatusCount} on hiatus`);
+    const tbdCount    = SERIES_DATA.filter(s => s.update_day === null && !s.on_hiatus).length;
+    const activeCount = SERIES_DATA.length - hiatusCount - tbdCount;
+    info(`${activeCount} active series, ${hiatusCount} on hiatus, ${tbdCount} schedule TBD`);
   }
   console.log();
 
@@ -133,7 +134,7 @@ async function runAudit() {
   console.log();
 
   let scheduleOk = true;
-  SERIES_DATA.filter(s => !s.on_hiatus).slice(0, 10).forEach(s => {
+  SERIES_DATA.filter(s => !s.on_hiatus && s.update_day !== null).slice(0, 10).forEach(s => {
     const nextDrop = getNextDrop(s.update_day);
     const ms = nextDrop - now;
     if (ms <= 0) {
