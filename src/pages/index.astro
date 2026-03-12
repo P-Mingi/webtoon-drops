@@ -11,10 +11,21 @@ const ids = seriesData.filter(s => s.anilist_id).map(s => s.anilist_id);
 const anilistData = await fetchManhwaCovers(ids);
 const anilistMap = Object.fromEntries(anilistData.map(m => [m.id, m]));
 
-const series = seriesData.map(s => ({
-  ...s,
-  cover: s.anilist_id ? (anilistMap[s.anilist_id]?.coverImage?.large ?? null) : null,
-}));
+function getNextDropDays(s) {
+  if (s.on_hiatus || s.update_day == null) return Infinity;
+  const nowKST = new Date(Date.now() + 9 * 60 * 60 * 1000);
+  const currentDayKST = nowKST.getUTCDay();
+  let daysAhead = (s.update_day - currentDayKST + 7) % 7;
+  if (daysAhead === 0) daysAhead = 7;
+  return daysAhead;
+}
+
+const series = seriesData
+  .map(s => ({
+    ...s,
+    cover: s.anilist_id ? (anilistMap[s.anilist_id]?.coverImage?.large ?? null) : null,
+  }))
+  .sort((a, b) => getNextDropDays(a) - getNextDropDays(b));
 
 const genres = [...new Set(seriesData.map(s => s.genre))].sort();
 const platforms = [
@@ -57,7 +68,31 @@ const platforms = [
 
   <script>
     import { startCountdowns } from '../scripts/countdown.js';
-    document.addEventListener('DOMContentLoaded', startCountdowns);
+
+    const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
+
+    function getNextDropMs(updateDay) {
+      if (updateDay === null) return Infinity;
+      const nowKST = new Date(Date.now() + KST_OFFSET_MS);
+      const currentDayKST = nowKST.getUTCDay();
+      let daysAhead = (updateDay - currentDayKST + 7) % 7;
+      if (daysAhead === 0) daysAhead = 7;
+      return daysAhead * 24 * 60 * 60 * 1000;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.querySelector('.card-grid');
+      const cards = [...grid.querySelectorAll(':scope > .card')];
+      cards.sort((a, b) => {
+        const dayA = a.dataset.onHiatus === 'true' || a.dataset.updateDay === ''
+          ? null : parseInt(a.dataset.updateDay);
+        const dayB = b.dataset.onHiatus === 'true' || b.dataset.updateDay === ''
+          ? null : parseInt(b.dataset.updateDay);
+        return getNextDropMs(dayA) - getNextDropMs(dayB);
+      });
+      cards.forEach(card => grid.appendChild(card));
+      startCountdowns();
+    });
   </script>
 </Base>
 

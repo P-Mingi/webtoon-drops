@@ -12,6 +12,8 @@ const PLATFORM_COLORS = {
   class="card"
   data-genre={series.genre}
   data-platform={series.platform}
+  data-update-day={series.update_day ?? ''}
+  data-on-hiatus={series.on_hiatus ? 'true' : 'false'}
 >
   <a href={`/${series.id}`} class="card-inner">
     <div class="card-cover">
