@@ -2630,6 +2630,11 @@
         "platform": "tappytoon",
         "label": "TAPPYTOON",
         "read_url": "https://www.tappytoon.com/en/book/returners-magic-should-be-special"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/a-returners-magic-should-be-special/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105393-oiHumQoBGKG5.jpg",
@@ -2835,6 +2840,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-return-of-the-disaster-class-hero/list?title_no=9013"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-return-of-the-disaster-class-hero/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143056-MEpVxW7346jz.jpg",
@@ -4361,7 +4371,7 @@
     "anilist_id": 119363,
     "platform": "mangaplus",
     "platform_label": "MANGA PLUS",
-    "read_url": "https://anilist.co/manga/119363",
+    "read_url": null,
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
@@ -4376,7 +4386,7 @@
       {
         "platform": "mangaplus",
         "label": "MANGA PLUS",
-        "read_url": "https://anilist.co/manga/119363"
+        "read_url": null
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119363-ogH6cjF0JW2x.jpg",
@@ -5297,6 +5307,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/the-glass/list?title_no=9225"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-glass/info"
       }
     ],
     "total_episodes": null,
@@ -5324,6 +5339,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/drama/cat-girl/list?title_no=8737"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/cat-girl/info"
       }
     ],
     "total_episodes": null,
@@ -5540,6 +5560,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/the-villainess-lives-again/list?title_no=9429"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-villainess-lives-again/info"
       }
     ],
     "total_episodes": null,
@@ -5621,6 +5646,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/all-class-awakening-god-slayer/list?title_no=9467"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/all-class-awakening-god-slayer/info"
       }
     ],
     "total_episodes": null,
@@ -5729,6 +5759,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/the-murdered-princess-and-the-innocent-traitor/list?title_no=9426"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-murdered-princess-and-the-innocent-traitor/info"
       }
     ],
     "total_episodes": null,
@@ -6890,6 +6925,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-max-level-returner/list?title_no=8857"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-max-level-returner/info"
       }
     ],
     "total_episodes": null,
@@ -7538,6 +7578,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/drama/angel-wings/list?title_no=6920"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/angel-wings/info"
       }
     ],
     "total_episodes": null,
@@ -8024,6 +8069,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/thriller/homesick/list?title_no=2759"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/homesick/info"
       }
     ],
     "total_episodes": null,
@@ -8186,6 +8236,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-fistfighting-genius-mage/list?title_no=8018"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-genius-medicinal-mage/info"
       }
     ],
     "total_episodes": null,
@@ -8537,6 +8592,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/another-typical-fantasy-romance/list?title_no=9363"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/another-typical-fantasy-romance/info"
       }
     ],
     "total_episodes": null,
@@ -8834,6 +8894,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/my-angelic-husband-is-actually-a-devil-in-disguise/list?title_no=9368"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/my-angelic-husband-is-actually-a-devil-in-disguise/info"
       }
     ],
     "total_episodes": null,
@@ -10184,6 +10249,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/sports/deadpoint/list?title_no=7405"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/deadpoint/info"
       }
     ],
     "total_episodes": null,
@@ -10535,6 +10605,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/drama/sounds-like/list?title_no=8134"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/sounds-like/info"
       }
     ],
     "total_episodes": null,
@@ -10616,6 +10691,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/mystery/betwixt/list?title_no=2962"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/betwixt/info"
       }
     ],
     "total_episodes": null,
@@ -10778,6 +10858,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/down-to-earth/list?title_no=1817"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/down-to-earth/info"
       }
     ],
     "total_episodes": null,
@@ -11156,6 +11241,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/nothing-special/list?title_no=1188"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/nothing-special/info"
       }
     ],
     "total_episodes": null,
@@ -12128,6 +12218,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/slice-of-life/daybreak/list?title_no=4089"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/daybreak/info"
       }
     ],
     "total_episodes": null,
@@ -12857,6 +12952,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/illusion-hunter-from-another-world/list?title_no=8696"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/illusion-hunter-from-another-world/info"
       }
     ],
     "total_episodes": null,
@@ -12938,6 +13038,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/rental-hero/list?title_no=5814"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/rental-hero/info"
       }
     ],
     "total_episodes": null,
@@ -13181,6 +13286,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/will-my-doting-husband-love-me-again/list?title_no=9365"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/will-my-doting-husband-love-me-again/info"
       }
     ],
     "total_episodes": null,
@@ -13478,6 +13588,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/the-possessive-tyrant-and-his-sleepy-cat/list?title_no=9424"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-possessive-tyrant-and-his-sleepy-cat/info"
       }
     ],
     "total_episodes": null,
@@ -14423,6 +14538,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/lady-knight/list?title_no=2727"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/lady-knight/info"
       }
     ],
     "total_episodes": null,
@@ -14477,6 +14597,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/love-me-knot/list?title_no=2224"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/love-knot/info"
       }
     ],
     "total_episodes": null,
@@ -14828,6 +14953,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/of-dark-lords-and-cabbages/list?title_no=2750"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/of-dark-lords-and-cabbages/info"
       }
     ],
     "total_episodes": null,
@@ -15908,6 +16038,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/here-u-are/list?title_no=5834"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/here-we-are/info"
       }
     ],
     "total_episodes": null,
@@ -15962,6 +16097,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/reborn-as-the-character-that-never-existed/list?title_no=9427"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/reborn-as-the-character-that-never-existed/info"
       }
     ],
     "total_episodes": null,
@@ -17447,6 +17587,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/i-will-become-the-villains-poison-taster/list?title_no=8570"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/i-will-become-the-villains-poison-taster/info"
       }
     ],
     "total_episodes": null,
@@ -17474,6 +17619,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/mystery/one-of-three/list?title_no=8457"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/one-to-three/info"
       }
     ],
     "total_episodes": null,
@@ -18014,6 +18164,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-witch-and-the-bull/list?title_no=1892"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-blacksmith-and-the-witch/info"
       }
     ],
     "total_episodes": null,
@@ -18554,6 +18709,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/supernatural/nevermore/list?title_no=2740"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/nevermore/info"
       }
     ],
     "total_episodes": null,
@@ -19364,6 +19524,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/dont-mess-with-my-duke-dubless/list?title_no=9465"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/dont-mess-with-my-duke-dubless/info"
       }
     ],
     "total_episodes": null,
@@ -19418,6 +19583,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/leviathan/list?title_no=7391"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/leviathan/info"
       }
     ],
     "total_episodes": null,
@@ -19499,6 +19669,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-divine-ring-descends-the-strongest-otherworld/list?title_no=9642"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-divine-ring-descends-the-strongest-otherworld/info"
       }
     ],
     "total_episodes": null,
@@ -19796,6 +19971,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/return-of-the-king-of-hell/list?title_no=6300"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/return-of-the-yellow-king/info"
       }
     ],
     "total_episodes": null,
@@ -20741,6 +20921,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/ordeal/list?title_no=2729"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/ordeal/info"
       }
     ],
     "total_episodes": null,
@@ -20795,6 +20980,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/bad-influence/list?title_no=8020"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/bad-influence/info"
       }
     ],
     "total_episodes": null,
@@ -21362,6 +21552,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/defects/list?title_no=2731"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/defects/info"
       }
     ],
     "total_episodes": null,
@@ -21686,6 +21881,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-academys-genius-swordsman/list?title_no=5752"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-academys-genius-tamer/info"
       }
     ],
     "total_episodes": null,
@@ -22010,6 +22210,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/comedy/introverted-us/list?title_no=6851"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/introverted/info"
       }
     ],
     "total_episodes": null,
@@ -23117,6 +23322,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/the-pure-heart-of-a-monster/list?title_no=8203"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-pure-heart/info"
       }
     ],
     "total_episodes": null,
@@ -23144,6 +23354,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/not-the-first-time/list?title_no=8385"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/not-the-time/info"
       }
     ],
     "total_episodes": null,
@@ -23225,6 +23440,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-hunter-next-door/list?title_no=8571"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-monsters-next-door/info"
       }
     ],
     "total_episodes": null,
@@ -23657,6 +23877,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/drama/our-paradise/list?title_no=4740"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/our-paradise/info"
       }
     ],
     "total_episodes": null,
@@ -23765,6 +23990,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/drama/tomorrow/list?title_no=3913"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/tomorrow/info"
       }
     ],
     "total_episodes": null,
@@ -24467,6 +24697,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/comedy/raising-hell/list?title_no=4472"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/raising-hell/info"
       }
     ],
     "total_episodes": null,
@@ -24575,6 +24810,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/thriller/shiloh/list?title_no=1649"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/shiloh/info"
       }
     ],
     "total_episodes": null,
@@ -24818,6 +25058,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-flower-that-swallowed-the-beast/list?title_no=6993"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-flower-that-swallowed-the-sun/info"
       }
     ],
     "total_episodes": null,
@@ -25358,6 +25603,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/the-grand-duke-is-mine/list?title_no=9367"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-grand-duke-is-mine/info"
       }
     ],
     "total_episodes": null,
@@ -25385,6 +25635,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-genius-prismatic-mage/list?title_no=7863"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-genius-medicinal-mage/info"
       }
     ],
     "total_episodes": null,
@@ -26141,6 +26396,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/horror/moonchild/list?title_no=5122"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/moonchild/info"
       }
     ],
     "total_episodes": null,
@@ -26168,6 +26428,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/blood-ink/list?title_no=1490"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/blood-ink/info"
       }
     ],
     "total_episodes": null,
@@ -26330,6 +26595,11 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/the-kings-forbidden-flower/list?title_no=9369"
+      },
+      {
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-kings-forbidden-flower/info"
       }
     ],
     "total_episodes": null,

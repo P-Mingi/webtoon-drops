@@ -39,6 +39,7 @@ const {
   </head>
   <body>
     <slot />
+    <script src="/scripts/bookmarks.js" is:inline></script>
     <script is:inline>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js');

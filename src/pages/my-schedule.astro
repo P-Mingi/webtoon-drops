@@ -1,0 +1,506 @@
+---
+import Base from '../layouts/Base.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+import seriesData from '../data/series-data.json';
+
+const title = 'My Schedule — WebtoonDrops';
+const description = 'Your personal webtoon schedule. Bookmark series to track their countdown in one place. Saved locally — no account needed.';
+---
+
+<Base title={title} description={description} canonical="https://webtoondrops.com/my-schedule">
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="/" class="logo">
+        <span class="logo-drop">W</span>ebtoon<span class="logo-accent">Drops</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/just-dropped" class="nav-link">Today</a>
+        <a href="/this-week" class="nav-link">This Week</a>
+        <a href="/genre" class="nav-link">Genres</a>
+        <a href="/my-schedule" class="nav-link active">My Schedule</a>
+      </nav>
+      <ThemeToggle />
+    </div>
+  </header>
+
+  <main class="container my-schedule-page">
+    <header class="page-header">
+      <h1>
+        <svg width="28" height="28" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="vertical-align:middle;margin-right:6px">
+          <path d="M10 2l2.4 5H18l-4.2 3.1 1.6 5.1L10 12.3l-5.4 2.9 1.6-5.1L2 7h5.6L10 2z"
+            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        My Schedule
+      </h1>
+      <p class="page-subtitle">Your bookmarked series with live countdowns. Saved on this device — no account needed.</p>
+    </header>
+
+    <!-- Controls (hidden until bookmarks exist) -->
+    <div class="controls-row" id="controls-row" style="display:none">
+      <div class="day-tabs" id="day-tabs" role="tablist" aria-label="Filter by day">
+        <button class="day-tab active" data-day="all" role="tab" aria-selected="true">All</button>
+        <button class="day-tab" data-day="0" role="tab" aria-selected="false">Sun</button>
+        <button class="day-tab" data-day="1" role="tab" aria-selected="false">Mon</button>
+        <button class="day-tab" data-day="2" role="tab" aria-selected="false">Tue</button>
+        <button class="day-tab" data-day="3" role="tab" aria-selected="false">Wed</button>
+        <button class="day-tab" data-day="4" role="tab" aria-selected="false">Thu</button>
+        <button class="day-tab" data-day="5" role="tab" aria-selected="false">Fri</button>
+        <button class="day-tab" data-day="6" role="tab" aria-selected="false">Sat</button>
+        <button class="day-tab" data-day="hiatus" role="tab" aria-selected="false">On Break</button>
+      </div>
+      <div class="sort-btns">
+        <button class="sort-btn active" data-sort="next">Soonest</button>
+        <button class="sort-btn" data-sort="alpha">A–Z</button>
+      </div>
+    </div>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="empty-state">
+      <div class="empty-star">
+        <svg width="64" height="64" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M10 2l2.4 5H18l-4.2 3.1 1.6 5.1L10 12.3l-5.4 2.9 1.6-5.1L2 7h5.6L10 2z"
+            stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h2>No series bookmarked yet</h2>
+      <p>Click the ★ on any series card or series page to add it here.</p>
+      <a href="/" class="browse-btn">Browse all series</a>
+    </div>
+
+    <!-- Card grid — filled by client JS -->
+    <div class="sched-grid" id="schedule-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="/" class="back-link">← Back to all series</a>
+      <span>WebtoonDrops — countdowns in KST (UTC+9)</span>
+    </div>
+  </footer>
+
+  <!-- All series data for client-side rendering -->
+  <script type="application/json" id="all-series-data" set:html={JSON.stringify(seriesData)} />
+
+  <script>
+    import { startCountdowns } from '../scripts/countdown.js';
+
+    const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
+    const DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+    const PLATFORM_COLORS = {
+      webtoon: '#6C63FF',
+      tapas: '#F5821F',
+      tappytoon: '#00C4B4',
+      mangaplus: '#E40026',
+      lezhin: '#d93f3f',
+    };
+
+    function getNextDropMs(updateDay) {
+      if (updateDay == null) return Infinity;
+      const nowKST = new Date(Date.now() + KST_OFFSET_MS);
+      const currentDayKST = nowKST.getUTCDay();
+      let daysAhead = (updateDay - currentDayKST + 7) % 7;
+      if (daysAhead === 0) daysAhead = 7;
+      return daysAhead * 24 * 60 * 60 * 1000;
+    }
+
+    function loadBookmarks() {
+      try {
+        return JSON.parse(localStorage.getItem('webtoondrops_bookmarks') || '[]');
+      } catch { return []; }
+    }
+
+    function esc(str) {
+      return String(str).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    function buildCard(s) {
+      const isHiatus = s.on_hiatus;
+      const hasDrop = !isHiatus && s.update_day !== null;
+      const dayName = s.update_day !== null ? DAYS[s.update_day] : null;
+      const platforms = s.platforms || [{ platform: s.platform, label: s.platform_label, read_url: s.read_url }];
+
+      const badgesHtml = platforms.slice(0, 1).map(p =>
+        `<span class="sched-platform-badge sched-platform-${esc(p.platform)}">${esc(p.label)}</span>`
+      ).join('');
+
+      let countdownHtml = '';
+      if (isHiatus) {
+        countdownHtml = '<span class="sched-badge-hiatus">On Break</span>';
+      } else if (!hasDrop) {
+        countdownHtml = '<span class="sched-badge-tbd">Schedule TBD</span>';
+      } else {
+        countdownHtml = `
+          <div class="sched-countdown" data-countdown-day="${s.update_day}">--:--:--</div>
+          <div class="sched-countdown-units" data-countdown-units>D   H   M</div>
+          <div class="sched-card-day">${esc(dayName)}</div>
+        `;
+      }
+
+      const coverHtml = s.cover_url
+        ? `<img src="${esc(s.cover_url)}" alt="${esc(s.title)} cover" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">`
+        : '';
+
+      return `
+        <div class="sched-card">
+          <a href="/${esc(s.id)}" class="sched-card-inner">
+            <div class="sched-card-cover">
+              ${coverHtml}
+              <div class="sched-cover-placeholder" style="${s.cover_url ? 'display:none' : 'display:flex'}">
+                <span class="sched-placeholder-title">${esc(s.title.slice(0, 2).toUpperCase())}</span>
+              </div>
+              <div class="sched-cover-overlay"></div>
+              <div class="sched-platform-badges">${badgesHtml}</div>
+            </div>
+            <div class="sched-card-body">
+              <div class="sched-card-title">${esc(s.title)}</div>
+              ${countdownHtml}
+            </div>
+          </a>
+          <button class="star-btn star-btn--sm bookmarked" data-id="${esc(s.id)}" data-title="${esc(s.title)}"
+            aria-label="Remove ${esc(s.title)} from My Schedule" aria-pressed="true"
+            title="Remove from My Schedule" type="button">
+            <svg class="star-icon" viewBox="0 0 20 20" fill="#FFD700" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M10 2l2.4 5H18l-4.2 3.1 1.6 5.1L10 12.3l-5.4 2.9 1.6-5.1L2 7h5.6L10 2z"
+                stroke="#FFD700" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      `;
+    }
+
+    let currentDay = 'all';
+    let currentSort = 'next';
+    let allSeries = [];
+
+    function render() {
+      const bookmarked = new Set(loadBookmarks());
+      const grid = document.getElementById('schedule-grid');
+      const emptyState = document.getElementById('empty-state');
+      const controlsRow = document.getElementById('controls-row');
+
+      if (bookmarked.size === 0) {
+        grid.innerHTML = '';
+        emptyState.style.display = '';
+        controlsRow.style.display = 'none';
+        return;
+      }
+
+      let series = allSeries.filter(s => bookmarked.has(s.id));
+
+      if (currentDay === 'hiatus') {
+        series = series.filter(s => s.on_hiatus);
+      } else if (currentDay !== 'all') {
+        const dayNum = parseInt(currentDay, 10);
+        series = series.filter(s => !s.on_hiatus && s.update_day === dayNum);
+      }
+
+      if (currentSort === 'next') {
+        series.sort((a, b) => {
+          if (a.on_hiatus && !b.on_hiatus) return 1;
+          if (!a.on_hiatus && b.on_hiatus) return -1;
+          return getNextDropMs(a.update_day) - getNextDropMs(b.update_day);
+        });
+      } else {
+        series.sort((a, b) => a.title.localeCompare(b.title));
+      }
+
+      emptyState.style.display = 'none';
+      controlsRow.style.display = '';
+
+      if (series.length === 0) {
+        grid.innerHTML = '<p class="sched-no-results">No series match this filter.</p>';
+        return;
+      }
+
+      grid.innerHTML = series.map(buildCard).join('');
+      startCountdowns();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const dataEl = document.getElementById('all-series-data');
+      allSeries = JSON.parse(dataEl.textContent);
+      render();
+
+      document.getElementById('day-tabs').addEventListener('click', e => {
+        const btn = e.target.closest('.day-tab');
+        if (!btn) return;
+        currentDay = btn.dataset.day;
+        document.querySelectorAll('.day-tab').forEach(t => {
+          t.classList.toggle('active', t === btn);
+          t.setAttribute('aria-selected', String(t === btn));
+        });
+        render();
+      });
+
+      document.querySelector('.sort-btns').addEventListener('click', e => {
+        const btn = e.target.closest('.sort-btn');
+        if (!btn) return;
+        currentSort = btn.dataset.sort;
+        document.querySelectorAll('.sort-btn').forEach(t => t.classList.toggle('active', t === btn));
+        render();
+      });
+
+      document.getElementById('schedule-grid').addEventListener('click', e => {
+        const btn = e.target.closest('.star-btn[data-id]');
+        if (!btn) return;
+        setTimeout(render, 50);
+      });
+
+      window.addEventListener('storage', e => {
+        if (e.key === 'webtoondrops_bookmarks') render();
+      });
+    });
+  </script>
+</Base>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    position: sticky; top: 0;
+    background: var(--bg); z-index: 10;
+  }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px; font-weight: 700; color: var(--text); letter-spacing: -0.3px;
+    text-decoration: none;
+  }
+  .logo-drop { font-family: 'Orbitron', sans-serif; color: var(--accent); }
+  .logo-accent { color: var(--accent); }
+  .header-nav { display: flex; gap: 16px; flex: 1; justify-content: center; }
+  .nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600;
+    color: var(--muted); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-link:hover, .nav-link.active { color: var(--accent); }
+
+  .my-schedule-page { padding: 2rem 0; }
+
+  .page-header { text-align: center; margin-bottom: 2rem; }
+  .page-header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800; margin-bottom: 0.4rem;
+    color: var(--text);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .page-subtitle { color: var(--muted); font-size: 0.95rem; font-family: 'Inter', sans-serif; }
+
+  .controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+  }
+  .day-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+  .day-tab {
+    padding: 6px 12px;
+    border-radius: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 12px; font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .day-tab:hover { border-color: var(--accent); color: var(--accent); }
+  .day-tab.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+  .sort-btns { display: flex; gap: 6px; }
+  .sort-btn {
+    padding: 6px 12px;
+    border-radius: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px; font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .sort-btn:hover { color: var(--text); }
+  .sort-btn.active { border-color: var(--accent); color: var(--accent); }
+
+  .empty-state {
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  .empty-star {
+    color: var(--muted);
+    opacity: 0.3;
+    margin-bottom: 1rem;
+    display: flex; justify-content: center;
+  }
+  .empty-state h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.3rem; font-weight: 700;
+    color: var(--text); margin-bottom: 0.75rem;
+  }
+  .empty-state p {
+    font-family: 'Inter', sans-serif;
+    color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem;
+  }
+  .browse-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background: var(--accent);
+    color: white;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px; font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+  .browse-btn:hover { opacity: 0.85; }
+
+  .sched-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  .site-footer { border-top: 1px solid var(--border); padding: 24px 0; }
+  .footer-inner {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    justify-content: space-between;
+    font-size: 12px; color: var(--muted);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .back-link { color: var(--accent); text-decoration: none; }
+  .back-link:active { opacity: 0.75; }
+
+  @media (max-width: 600px) {
+    .sched-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+    .controls-row { flex-direction: column; align-items: flex-start; }
+    .header-nav { gap: 10px; }
+    .nav-link { font-size: 12px; }
+  }
+</style>
+
+<!-- Global styles for dynamically generated card HTML -->
+<style is:global>
+  .sched-no-results {
+    color: var(--muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 2rem;
+    grid-column: 1 / -1;
+  }
+
+  .sched-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    transition: border-color 0.2s;
+    position: relative;
+  }
+  .sched-card:hover { border-color: var(--accent); }
+
+  .sched-card-inner {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .sched-card-cover {
+    aspect-ratio: 3/4;
+    position: relative;
+    overflow: hidden;
+    background: var(--surface2);
+  }
+  .sched-card-cover img {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+  }
+  .sched-cover-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, var(--bg) 100%);
+    opacity: 0.6;
+  }
+  .sched-cover-placeholder {
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, var(--accent) 0%, #a855f7 100%);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+  }
+  .sched-placeholder-title {
+    font-size: 2rem; font-weight: 900;
+    color: white; opacity: 0.8;
+    letter-spacing: 2px;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .sched-platform-badges {
+    position: absolute; bottom: 10px; left: 10px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .sched-platform-badge {
+    display: inline-block; color: white;
+    font-size: 9px; font-weight: 700;
+    padding: 3px 7px; border-radius: 100px;
+    letter-spacing: 0.5px;
+    font-family: 'Space Grotesk', sans-serif;
+    opacity: 0.9; width: fit-content;
+  }
+  .sched-platform-webtoon   { background: #6C63FF; }
+  .sched-platform-tapas     { background: #F5821F; }
+  .sched-platform-mangaplus { background: #E40026; }
+  .sched-platform-tappytoon { background: #00C4B4; }
+  .sched-platform-lezhin    { background: #d93f3f; }
+
+  .sched-card-body { padding: 14px; }
+  .sched-card-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600;
+    line-height: 1.3; margin-bottom: 12px;
+    color: var(--text);
+  }
+  .sched-countdown {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px; font-weight: 600;
+    letter-spacing: 2px; color: var(--text);
+    margin-bottom: 4px;
+  }
+  .sched-countdown-units {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 9px; color: var(--muted);
+    letter-spacing: 4px; text-transform: uppercase;
+    margin-bottom: 8px; padding-left: 2px;
+  }
+  .sched-card-day {
+    font-size: 11px; color: var(--accent);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600; letter-spacing: 0.5px;
+  }
+  .sched-badge-hiatus, .sched-badge-tbd {
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px;
+    border: 1px solid var(--border);
+    font-family: 'Space Grotesk', sans-serif;
+    display: inline-block;
+  }
+  .sched-badge-hiatus { color: var(--hiatus); background: var(--tag-bg); }
+  .sched-badge-tbd    { color: var(--muted);  background: var(--surface2); }
+
+  /* Star button on sched cards */
+  .sched-card .star-btn {
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+    z-index: 1;
+  }
+</style>

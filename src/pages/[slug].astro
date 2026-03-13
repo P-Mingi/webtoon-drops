@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import SeriesCard from '../components/SeriesCard.astro';
+import StarButton from '../components/StarButton.astro';
 import seriesData from '../data/series-data.json';
 import { fetchManhwaCovers } from '../lib/anilist.js';
 import { getEpisodeHistory, formatHistoryDate } from '../lib/episode-history.js';
@@ -124,6 +125,7 @@ const breadcrumbLd = {
         <a href="/just-dropped" class="nav-link">Today</a>
         <a href="/this-week" class="nav-link">This Week</a>
         <a href="/genre" class="nav-link">Genres</a>
+        <a href="/my-schedule" class="nav-link">My Schedule</a>
       </nav>
       <ThemeToggle />
     </div>
@@ -151,7 +153,10 @@ const breadcrumbLd = {
           {series.update_day === null && !series.on_hiatus && <span class="badge-tbd">Schedule TBD</span>}
         </div>
 
-        <h1>{series.title}</h1>
+        <div class="title-row">
+          <h1>{series.title}</h1>
+          <StarButton id={series.id} title={series.title} size="md" />
+        </div>
 
         {series.on_hiatus
           ? (
@@ -469,11 +474,20 @@ const breadcrumbLd = {
   .badge-hiatus { background: var(--tag-bg); color: var(--hiatus); border: 1px solid var(--border); }
   .badge-tbd    { background: var(--surface2); color: var(--muted); border: 1px solid var(--border); }
 
+  .title-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .title-row h1 {
+    flex: 1;
+  }
   .series-info h1 {
     font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(24px, 3vw, 42px);
     font-weight: 700; letter-spacing: -0.5px;
-    line-height: 1.15; margin-bottom: 24px;
+    line-height: 1.15; margin-bottom: 0;
   }
 
   .drop-label {

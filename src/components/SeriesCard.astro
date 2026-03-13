@@ -1,4 +1,5 @@
 ---
+import StarButton from './StarButton.astro';
 const { series } = Astro.props;
 const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const platforms = series.platforms || [{
@@ -33,6 +34,9 @@ const platformKeys = platforms.map(p => p.platform);
         <span class="placeholder-title">{series.title.slice(0, 2).toUpperCase()}</span>
       </div>
       <div class="cover-overlay"></div>
+      <div class="card-star">
+        <StarButton id={series.id} title={series.title} size="sm" />
+      </div>
       <span class="genre-pill">{series.genre}</span>
       {series.anilist_score && (
         <div class="score-badge" title="AniList score">★ {(series.anilist_score / 10).toFixed(1)}</div>
@@ -134,6 +138,17 @@ const platformKeys = platforms.map(p => p.platform);
     letter-spacing: 2px;
     font-family: 'Space Grotesk', sans-serif;
   }
+  .card-star {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 2;
+  }
+  .card-star .star-btn {
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+  }
+
   .genre-pill {
     position: absolute; top: 10px; right: 10px;
     background: rgba(108,99,255,0.85);

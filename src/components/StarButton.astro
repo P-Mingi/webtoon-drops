@@ -1,0 +1,53 @@
+---
+const { id, title, size = 'sm' } = Astro.props;
+---
+
+<button
+  class={`star-btn star-btn--${size}`}
+  data-id={id}
+  data-title={title}
+  aria-label={`Add ${title} to My Schedule`}
+  aria-pressed="false"
+  title="Add to My Schedule"
+  type="button"
+>
+  <svg class="star-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M10 2l2.4 5H18l-4.2 3.1 1.6 5.1L10 12.3l-5.4 2.9 1.6-5.1L2 7h5.6L10 2z"
+      stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<style>
+  .star-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    opacity: 0.6;
+    transition: color 0.15s, opacity 0.15s, transform 0.1s;
+    flex-shrink: 0;
+  }
+  .star-btn:hover {
+    color: #FFD700;
+    opacity: 1;
+  }
+  .star-btn.bookmarked {
+    color: #FFD700;
+    opacity: 1;
+  }
+  .star-btn.bookmarked .star-icon {
+    fill: #FFD700;
+    stroke: #FFD700;
+  }
+  .star-btn:active {
+    transform: scale(0.88);
+  }
+  .star-btn--sm { width: 28px; height: 28px; }
+  .star-btn--sm .star-icon { width: 16px; height: 16px; }
+  .star-btn--md { width: 36px; height: 36px; }
+  .star-btn--md .star-icon { width: 22px; height: 22px; }
+</style>
