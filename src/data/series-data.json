@@ -1074,10 +1074,10 @@
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/romance/letsplay/list?title_no=1218",
-    "update_day": 5,
-    "update_day_name": "Friday",
+    "update_day": null,
+    "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance",
@@ -1150,6 +1150,13 @@
         "countries": [
           "IT"
         ]
+      }
+    ],
+    "hiatus_history": [
+      {
+        "start": "2024-08-01",
+        "end": null,
+        "reason": "Creator left WEBTOON platform — series on hold until contractual exclusivity expires (late 2025)"
       }
     ]
   },
@@ -1871,10 +1878,10 @@
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/sports/wind-breaker/list?title_no=372",
-    "update_day": 0,
-    "update_day_name": "Sunday",
+    "update_day": null,
+    "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Sports",
     "tags": [
       "sports",
@@ -1892,7 +1899,14 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86099-lgjjEP3wqzB8.jpg",
-    "anilist_score": 85
+    "anilist_score": 85,
+    "hiatus_history": [
+      {
+        "start": "2025-07-10",
+        "end": null,
+        "reason": "Series cancelled July 2025 — removed from WEBTOON after plagiarism/tracing controversy confirmed"
+      }
+    ]
   },
   {
     "id": "the-god-of-high-school",
@@ -2041,9 +2055,9 @@
     "seo_description": "Legend of the Northern Blade drops every Saturday on WEBTOON. Live countdown.",
     "platforms": [
       {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/action/legend-of-the-northern-blade/list?title_no=1874"
+        "platform": "tappytoon",
+        "label": "TAPPYTOON",
+        "read_url": "https://www.tappytoon.com/en/book/legend-of-northern-blade"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119521-qYqxFvn0NnXo.png",
@@ -2084,9 +2098,9 @@
     "title": "The Tutorial Is Too Hard",
     "title_kr": "튜토리얼이 너무 어렵다",
     "anilist_id": 129632,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/fantasy/the-tutorial-is-too-hard/list?title_no=1891",
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-tutorial-is-too-tough/info",
     "update_day": 5,
     "update_day_name": "Friday",
     "release_hour_kst": 0,
@@ -2101,9 +2115,9 @@
     "seo_description": "The Tutorial Is Too Hard drops every Friday on WEBTOON. Live countdown.",
     "platforms": [
       {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/fantasy/the-tutorial-is-too-hard/list?title_no=1891"
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-tutorial-is-too-tough/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129632-ArHo6qvYQoHs.jpg",
@@ -2114,9 +2128,9 @@
     "title": "The Live",
     "title_kr": "더 라이브",
     "anilist_id": 118608,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/fantasy/the-live/list?title_no=2119",
+    "platform": "manta",
+    "platform_label": "MANTA",
+    "read_url": "https://manta.net/series/1250",
     "update_day": 2,
     "update_day_name": "Tuesday",
     "release_hour_kst": 0,
@@ -2131,9 +2145,9 @@
     "seo_description": "The Live updates every Tuesday on WEBTOON. Live countdown.",
     "platforms": [
       {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/fantasy/the-live/list?title_no=2119"
+        "platform": "manta",
+        "label": "MANTA",
+        "read_url": "https://manta.net/series/1250"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b118608-9xFaGYcfPZk0.png",
@@ -2535,9 +2549,9 @@
     "title": "The Great Mage Returns After 4000 Years",
     "title_kr": "4000년 만에 귀환한 대마법사",
     "anilist_id": 118424,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/fantasy/the-great-mage-returns-after-4000-years/list?title_no=1963",
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-archmage-returns-after-4000-years/info",
     "update_day": 4,
     "update_day_name": "Thursday",
     "release_hour_kst": 0,
@@ -2552,9 +2566,9 @@
     "seo_description": "The Great Mage Returns After 4000 Years updates every Thursday on WEBTOON.",
     "platforms": [
       {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/fantasy/the-great-mage-returns-after-4000-years/list?title_no=1963"
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-archmage-returns-after-4000-years/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118424-JbTApgnIP1ON.jpg",
@@ -2565,9 +2579,9 @@
     "title": "Talent-Swallowing Magician",
     "title_kr": "재능을 삼키는 마법사",
     "anilist_id": 144079,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/fantasy/talent-swallowing-magician/list?title_no=2755",
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/demon-devourer/info",
     "update_day": 5,
     "update_day_name": "Friday",
     "release_hour_kst": 0,
@@ -2582,9 +2596,9 @@
     "seo_description": "Talent-Swallowing Magician drops every Friday on WEBTOON. Live countdown.",
     "platforms": [
       {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/fantasy/talent-swallowing-magician/list?title_no=2755"
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/demon-devourer/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx144079-ByjomNQKSo5s.jpg",
@@ -2595,9 +2609,9 @@
     "title": "A Returner's Magic Should Be Special",
     "title_kr": "귀환자의 마법은 특별해야 합니다",
     "anilist_id": 105393,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/fantasy/a-returners-magic-should-be-special/list?title_no=1697",
+    "platform": "tappytoon",
+    "platform_label": "TAPPYTOON",
+    "read_url": "https://www.tappytoon.com/en/book/returners-magic-should-be-special",
     "update_day": 3,
     "update_day_name": "Wednesday",
     "release_hour_kst": 0,
@@ -2613,9 +2627,9 @@
     "seo_description": "A Returner's Magic Should Be Special drops every Wednesday on WEBTOON.",
     "platforms": [
       {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/fantasy/a-returners-magic-should-be-special/list?title_no=1697"
+        "platform": "tappytoon",
+        "label": "TAPPYTOON",
+        "read_url": "https://www.tappytoon.com/en/book/returners-magic-should-be-special"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105393-oiHumQoBGKG5.jpg",
@@ -2626,9 +2640,9 @@
     "title": "The Swordmaster's Youngest Son",
     "title_kr": "검술명가 막내아들",
     "anilist_id": 149332,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/fantasy/the-swordmasters-youngest-son/list?title_no=4751",
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-swordmasters-son/info",
     "update_day": 1,
     "update_day_name": "Monday",
     "release_hour_kst": 0,
@@ -2643,9 +2657,9 @@
     "seo_description": "The Swordmaster's Youngest Son drops every Monday on WEBTOON. Countdown.",
     "platforms": [
       {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/fantasy/the-swordmasters-youngest-son/list?title_no=4751"
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-swordmasters-son/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx149332-adkSyOFY3c5U.jpg",
@@ -4261,9 +4275,9 @@
     "title": "Pick Me Up",
     "title_kr": null,
     "anilist_id": 159441,
-    "platform": "mangaplus",
-    "platform_label": "MANGA PLUS",
-    "read_url": "https://anilist.co/manga/159441",
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/pick-me-up/info",
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
@@ -4276,9 +4290,9 @@
     "seo_description": "Pick Me Up releases on MANGA PLUS. Live countdown to the next episode.",
     "platforms": [
       {
-        "platform": "mangaplus",
-        "label": "MANGA PLUS",
-        "read_url": "https://anilist.co/manga/159441"
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/pick-me-up/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159441-9W8201jAT9Yv.jpg",
@@ -4289,9 +4303,9 @@
     "title": "The Infinite Mage",
     "title_kr": null,
     "anilist_id": 159930,
-    "platform": "mangaplus",
-    "platform_label": "MANGA PLUS",
-    "read_url": "https://anilist.co/manga/159930",
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/the-infinite-mage/info",
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
@@ -4304,9 +4318,9 @@
     "seo_description": "The Infinite Mage releases on MANGA PLUS. Live countdown to the next episode.",
     "platforms": [
       {
-        "platform": "mangaplus",
-        "label": "MANGA PLUS",
-        "read_url": "https://anilist.co/manga/159930"
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/the-infinite-mage/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159930-qK1P4BNQL0zG.jpg",
@@ -4317,9 +4331,9 @@
     "title": "God of Blackfield",
     "title_kr": null,
     "anilist_id": 118267,
-    "platform": "mangaplus",
-    "platform_label": "MANGA PLUS",
-    "read_url": "https://anilist.co/manga/118267",
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/god-of-blackfield/info",
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
@@ -4332,9 +4346,9 @@
     "seo_description": "God of Blackfield releases on MANGA PLUS. Live countdown to the next episode.",
     "platforms": [
       {
-        "platform": "mangaplus",
-        "label": "MANGA PLUS",
-        "read_url": "https://anilist.co/manga/118267"
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/god-of-blackfield/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118267-hfGEZNguWhiq.jpg",
@@ -4373,9 +4387,9 @@
     "title": "Tyrant of the Tower Defense Game",
     "title_kr": null,
     "anilist_id": 153513,
-    "platform": "mangaplus",
-    "platform_label": "MANGA PLUS",
-    "read_url": "https://anilist.co/manga/153513",
+    "platform": "tappytoon",
+    "platform_label": "TAPPYTOON",
+    "read_url": "https://www.tappytoon.com/en/book/tyrant-of-the-tower-defense-game",
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
@@ -4388,9 +4402,9 @@
     "seo_description": "Tyrant of the Tower Defense Game releases on MANGA PLUS. Live countdown to the next episode.",
     "platforms": [
       {
-        "platform": "mangaplus",
-        "label": "MANGA PLUS",
-        "read_url": "https://anilist.co/manga/153513"
+        "platform": "tappytoon",
+        "label": "TAPPYTOON",
+        "read_url": "https://www.tappytoon.com/en/book/tyrant-of-the-tower-defense-game"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153513-dzG6p5H2wrN2.jpg",
@@ -4403,12 +4417,12 @@
     "anilist_id": 103156,
     "platform": "tappytoon",
     "platform_label": "TAPPYTOON",
-    "read_url": "https://www.tappytoon.com/en/comics/skeleton-soldier",
+    "read_url": "https://www.tappytoon.com/en/book/skeleton-soldier",
     "platforms": [
       {
         "platform": "tappytoon",
         "label": "TAPPYTOON",
-        "read_url": "https://www.tappytoon.com/en/comics/skeleton-soldier"
+        "read_url": "https://www.tappytoon.com/en/book/skeleton-soldier"
       }
     ],
     "update_day": null,
