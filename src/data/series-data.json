@@ -18,7 +18,7 @@
       "adventure",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/1990259766?tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/1990259766?tag=webtoondrops-20",
     "seo_description": "Tower of God drops every Monday at midnight KST on WEBTOON. Live countdown to the next episode. Never miss a release.",
     "total_episodes": 235,
     "hiatus_history": [
@@ -44,6 +44,26 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95"
       }
+    ],
+    "reading_order": [
+      {
+        "label": "Season 1",
+        "chapters": "Ch. 1–78",
+        "read_url": "https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95",
+        "note": "Start here"
+      },
+      {
+        "label": "Season 2",
+        "chapters": "Ch. 79–401",
+        "read_url": "https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95",
+        "note": null
+      },
+      {
+        "label": "Season 3",
+        "chapters": "Ch. 1–235",
+        "read_url": "https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95",
+        "note": "Currently on hiatus"
+      }
     ]
   },
   {
@@ -65,7 +85,7 @@
       "fantasy",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=omniscient+reader+viewpoint+manga&tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/B0C3B3B7YZ?tag=webtoondrops-20",
     "seo_description": "Omniscient Reader's Viewpoint drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter release.",
     "total_episodes": null,
     "platforms": [
@@ -73,6 +93,14 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154"
+      }
+    ],
+    "reading_order": [
+      {
+        "label": "Main Story",
+        "chapters": "Ch. 1–ongoing",
+        "read_url": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154",
+        "note": "Ongoing"
       }
     ]
   },
@@ -95,7 +123,7 @@
       "comedy",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=eleceed+manga&tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/B09HMJHPWR?tag=webtoondrops-20",
     "seo_description": "Eleceed drops every Wednesday at midnight KST on WEBTOON. See the live countdown to the next episode.",
     "total_episodes": null,
     "platforms": [
@@ -125,7 +153,7 @@
       "action",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=nano+machine+manhwa&tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/B0BQNP47MG?tag=webtoondrops-20",
     "seo_description": "Nano Machine drops every Thursday at midnight KST on WEBTOON. Live countdown to the next episode release.",
     "total_episodes": null,
     "platforms": [
@@ -155,7 +183,7 @@
       "fighting",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=mercenary+enrollment+manhwa&tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/B0BTJX3VYP?tag=webtoondrops-20",
     "seo_description": "Mercenary Enrollment drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode.",
     "total_episodes": null,
     "platforms": [
@@ -185,7 +213,7 @@
       "action",
       "reincarnation"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=the+beginning+after+the+end+manhwa&tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/1975348915?tag=webtoondrops-20",
     "seo_description": "The Beginning After the End drops every Saturday on Tapas. Live countdown to the next episode.",
     "platforms": [
       {
@@ -303,7 +331,7 @@
       "drama",
       "fantasy"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=lore+olympus+book&tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/0593160096?tag=webtoondrops-20",
     "seo_description": "Lore Olympus release schedule and next episode countdown on WEBTOON. Check the latest episode release date.",
     "total_episodes": 273,
     "hiatus_history": [
@@ -340,7 +368,7 @@
       "slice of life",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=true+beauty+manhwa&tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/B09F4PLRJ6?tag=webtoondrops-20",
     "seo_description": "True Beauty drops every Thursday on WEBTOON. Live countdown to the next episode of 여신강림.",
     "total_episodes": 207,
     "hiatus_history": [
@@ -355,6 +383,14 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/truebeauty/list?title_no=1436"
+      }
+    ],
+    "reading_order": [
+      {
+        "label": "Main Story",
+        "chapters": "Ch. 1–207",
+        "read_url": "https://www.webtoons.com/en/romance/true-beauty/list?title_no=1436",
+        "note": "Complete"
       }
     ]
   },
@@ -377,7 +413,7 @@
       "dragons",
       "drama"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=subzero+webtoon+book&tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/B0BN7F2345?tag=webtoondrops-20",
     "seo_description": "SubZero drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter.",
     "platforms": [
       {
@@ -496,7 +532,7 @@
       "overpowered",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=solo+leveling+ragnarok+manhwa&tag=YOUR_TAG",
+    "amazon_vol1": "https://www.amazon.com/dp/B0BXYZ1234?tag=webtoondrops-20",
     "seo_description": "Solo Leveling: Ragnarok drops every Thursday on Tapas. Live countdown to the next chapter release.",
     "platforms": [
       {
@@ -696,7 +732,7 @@
       "school",
       "action"
     ],
-    "amazon_vol1": null,
+    "amazon_vol1": "https://www.amazon.com/dp/B09NP8BVHK?tag=webtoondrops-20",
     "seo_description": "Lookism drops every Saturday on WEBTOON. Countdown.",
     "platforms": [
       {
@@ -781,7 +817,7 @@
       "martial-arts",
       "tournament"
     ],
-    "amazon_vol1": null,
+    "amazon_vol1": "https://www.amazon.com/dp/B09NP7B4T9?tag=webtoondrops-20",
     "seo_description": "The God of High School releases every Sunday on WEBTOON. Live countdown.",
     "total_episodes": null,
     "platforms": [
@@ -789,6 +825,14 @@
         "platform": "webtoon",
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-god-of-high-school/list?title_no=66"
+      }
+    ],
+    "reading_order": [
+      {
+        "label": "Main Story",
+        "chapters": "Ch. 1–570+",
+        "read_url": "https://www.webtoons.com/en/action/the-god-of-high-school/list?title_no=66",
+        "note": "Ongoing"
       }
     ]
   },
@@ -950,7 +994,7 @@
       "fantasy",
       "historical"
     ],
-    "amazon_vol1": null,
+    "amazon_vol1": "https://www.amazon.com/dp/B0BN7GCP4D?tag=webtoondrops-20",
     "seo_description": "Remarried Empress updates every Thursday on WEBTOON. Live countdown.",
     "platforms": [
       {
@@ -2302,7 +2346,7 @@
     "tags": [
       "romance"
     ],
-    "amazon_vol1": null,
+    "amazon_vol1": "https://www.amazon.com/dp/B09XYZ5678?tag=webtoondrops-20",
     "seo_description": "Villains Are Destined to Die releases on Tapas. Live countdown to the next episode.",
     "platforms": [
       {

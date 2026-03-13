@@ -36,24 +36,47 @@ const history = getEpisodeHistory(series, 20);
 const hasHistory = history.length > 0;
 const primaryPlatform = platforms[0];
 
-const schemaJson = JSON.stringify({
+const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ComicSeries",
   "name": series.title,
   "alternateName": series.title_kr || undefined,
   "url": `https://webtoondrops.com/${series.id}`,
   "image": cover || undefined,
+  "description": series.seo_description,
   "genre": series.genre,
-  "publisher": {
-    "@type": "Organization",
-    "name": primaryPlatform.label
-  },
-  "numberOfEpisodes": series.total_episodes || undefined,
+  "inLanguage": "en",
   "countryOfOrigin": {
     "@type": "Country",
     "name": "South Korea"
-  }
-});
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": primaryPlatform.label,
+    "url": primaryPlatform.read_url
+  },
+  "numberOfEpisodes": series.total_episodes || undefined,
+  "isAccessibleForFree": true,
+  "publishingPrinciples": primaryPlatform.read_url,
+  ...(series.reading_order && {
+    "hasPart": series.reading_order.map((item, i) => ({
+      "@type": "ComicStory",
+      "name": item.label,
+      "position": i + 1,
+      "url": item.read_url
+    }))
+  })
+};
+
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "WebtoonDrops", "item": "https://webtoondrops.com" },
+    { "@type": "ListItem", "position": 2, "name": series.genre, "item": `https://webtoondrops.com/genre/${series.genre?.toLowerCase().replace(/\s+/g, '-')}` },
+    { "@type": "ListItem", "position": 3, "name": series.title, "item": `https://webtoondrops.com/${series.id}` }
+  ]
+};
 ---
 
 <Base
@@ -62,7 +85,8 @@ const schemaJson = JSON.stringify({
   canonical={`https://webtoondrops.com/${series.id}`}
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={schemaJson} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
   </Fragment>
 
   <header class="site-header">
@@ -127,8 +151,8 @@ const schemaJson = JSON.stringify({
             </a>
           ))}
           {series.amazon_vol1 && (
-            <a href={series.amazon_vol1} class="btn-secondary" target="_blank" rel="noopener noreferrer">
-              Buy Vol. 1 on Amazon
+            <a href={series.amazon_vol1} class="amazon-btn" target="_blank" rel="noopener sponsored">
+              📚 Own the series — Vol. 1 on Amazon
             </a>
           )}
         </div>
@@ -179,6 +203,26 @@ const schemaJson = JSON.stringify({
             from actual release dates due to holidays or unannounced breaks.
           </p>
         </details>
+      </section>
+    )}
+
+    {series.reading_order && series.reading_order.length > 1 && (
+      <section class="reading-order">
+        <h2>📖 Reading Order</h2>
+        <div class="reading-order-list">
+          {series.reading_order.map((item, i) => (
+            <div class="reading-order-item">
+              <div class="reading-order-number">{i + 1}</div>
+              <div class="reading-order-info">
+                <a href={item.read_url} target="_blank" rel="noopener" class="reading-order-label">
+                  {item.label}
+                </a>
+                <span class="reading-order-chapters">{item.chapters}</span>
+                {item.note && <span class="reading-order-note">{item.note}</span>}
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     )}
 
@@ -450,6 +494,62 @@ const schemaJson = JSON.stringify({
     border-top: 1px solid var(--border);
     margin: 0;
     font-family: 'Inter', sans-serif;
+  }
+
+  /* Amazon button */
+  .amazon-btn {
+    display: block; text-align: center;
+    padding: 12px 16px; border-radius: 8px;
+    background: #FF9900; color: #111;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px; font-weight: 700;
+    text-decoration: none; margin-top: 4px;
+    transition: opacity 0.15s;
+  }
+  .amazon-btn:hover { opacity: 0.9; }
+
+  /* Reading Order */
+  .reading-order {
+    margin-top: 2rem; margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  .reading-order h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;
+    color: var(--text);
+  }
+  .reading-order-list { display: flex; flex-direction: column; gap: 0; }
+  .reading-order-item {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .reading-order-item:last-child { border-bottom: none; }
+  .reading-order-number {
+    min-width: 28px; height: 28px;
+    background: var(--accent); color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px; font-weight: 700; flex-shrink: 0;
+  }
+  .reading-order-info { display: flex; flex-direction: column; gap: 2px; }
+  .reading-order-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600; color: var(--text);
+    text-decoration: none; font-size: 14px;
+  }
+  .reading-order-label:hover { color: var(--accent); }
+  .reading-order-chapters {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px; color: var(--muted);
+  }
+  .reading-order-note {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px; color: #F5821F; font-style: italic;
   }
 
   /* SEO Content */
