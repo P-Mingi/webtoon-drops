@@ -1729,9 +1729,9 @@
     "title": "Murim Login",
     "title_kr": "무림 로그인",
     "anilist_id": 120385,
-    "platform": "tappytoon",
-    "platform_label": "TAPPYTOON",
-    "read_url": "https://www.tappytoon.com/en/book/murim-login",
+    "platform": "tapas",
+    "platform_label": "TAPAS",
+    "read_url": "https://tapas.io/series/log-in-murim/info",
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 0,
@@ -1743,12 +1743,12 @@
       "game"
     ],
     "amazon_vol1": null,
-    "seo_description": "Murim Login drops every Sunday on WEBTOON. Live countdown.",
+    "seo_description": "Murim Login drops every Sunday on Tapas. Live countdown.",
     "platforms": [
       {
-        "platform": "tappytoon",
-        "label": "TAPPYTOON",
-        "read_url": "https://www.tappytoon.com/en/book/murim-login"
+        "platform": "tapas",
+        "label": "TAPAS",
+        "read_url": "https://tapas.io/series/log-in-murim/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120385-4JYGuOR6cn72.jpg",
@@ -2422,9 +2422,9 @@
     "title": "The Villainess Lives Twice",
     "title_kr": "악녀는 두 번 산다",
     "anilist_id": 119523,
-    "platform": "tapas",
-    "platform_label": "TAPAS",
-    "read_url": "https://tapas.io/series/the-villainess-lives-twice/info",
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/romance/the-villainess-lives-again/list?title_no=9429",
     "update_day": 5,
     "update_day_name": "Friday",
     "release_hour_kst": 0,
@@ -2436,12 +2436,12 @@
       "villainess"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Villainess Lives Twice drops every Friday on Tapas. Countdown.",
+    "seo_description": "The Villainess Lives Twice drops every Friday on WEBTOON. Live countdown.",
     "platforms": [
       {
-        "platform": "tapas",
-        "label": "TAPAS",
-        "read_url": "https://tapas.io/series/the-villainess-lives-twice/info"
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/the-villainess-lives-again/list?title_no=9429"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119523-5OBKEF4D4Zfj.jpg",
