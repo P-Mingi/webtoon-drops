@@ -43,7 +43,8 @@ const RETAILER_FLAGS = {
   amazon_it: '🇮🇹',
 };
 
-const hasBuyLinks = !!(series.buy_links && series.buy_links.length > 0);
+// Only show buy section if at least one link is a direct /dp/ ASIN link (not a search URL)
+const hasRealBuyLink = !!(series.buy_links?.some(l => l.url.includes('/dp/')));
 
 const PLATFORM_LABELS: Record<string, string> = {
   webtoon: 'WEBTOON',
@@ -179,7 +180,7 @@ const breadcrumbLd = {
               Read on {PLATFORM_LABELS[p.platform] ?? p.label} →
             </a>
           ))}
-          {hasBuyLinks && (
+          {hasRealBuyLink && (
             <section class="buy-section">
               <h3 class="buy-heading">📚 Own the Series</h3>
               <div
@@ -509,7 +510,7 @@ const breadcrumbLd = {
     border: 1px solid var(--border);
   }
 
-  .series-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+  .series-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; align-items: flex-start; }
   .read-btn {
     display: inline-flex;
     align-items: center;

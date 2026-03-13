@@ -84,8 +84,7 @@
         "url": "https://www.amazon.fr/dp/1990259766?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -103,7 +102,8 @@
         "url": "https://www.amazon.de/dp/1990259766?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -180,8 +180,7 @@
         "url": "https://www.amazon.fr/dp/B0CCNFHFZD?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -199,7 +198,8 @@
         "url": "https://www.amazon.de/dp/B0CCNFHFZD?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -268,8 +268,7 @@
         "url": "https://www.amazon.fr/dp/B09HMJHPWR?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -287,7 +286,8 @@
         "url": "https://www.amazon.de/dp/B09HMJHPWR?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -356,8 +356,7 @@
         "url": "https://www.amazon.fr/dp/B0BQNP47MG?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -375,7 +374,8 @@
         "url": "https://www.amazon.de/dp/B0BQNP47MG?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -444,8 +444,7 @@
         "url": "https://www.amazon.fr/dp/B0BTJX3VYP?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -463,7 +462,8 @@
         "url": "https://www.amazon.de/dp/B0BTJX3VYP?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -531,8 +531,7 @@
         "url": "https://www.amazon.fr/dp/1975348915?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -550,7 +549,8 @@
         "url": "https://www.amazon.de/dp/1975348915?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -667,10 +667,10 @@
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/romance/i-love-yoo/list?title_no=986",
-    "update_day": 1,
-    "update_day_name": "Monday",
+    "update_day": null,
+    "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance",
@@ -678,7 +678,7 @@
       "slice of life"
     ],
     "amazon_vol1": null,
-    "seo_description": "I Love Yoo drops every Monday at midnight KST on WEBTOON. Live countdown to the next chapter.",
+    "seo_description": "I Love Yoo is currently on hiatus on WEBTOON. No return date announced as of March 2026.",
     "platforms": [
       {
         "platform": "webtoon",
@@ -687,7 +687,14 @@
       }
     ],
     "total_episodes": 261,
-    "cover_url": "https://swebtoon-phinf.pstatic.net/20170331_262/1490952144415HSV9x_JPEG/M_details.jpg?type=crop540_540"
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20170331_262/1490952144415HSV9x_JPEG/M_details.jpg?type=crop540_540",
+    "hiatus_history": [
+      {
+        "start": "2024-04-11",
+        "end": null,
+        "reason": "Creator hiatus, no return date announced as of March 2026"
+      }
+    ]
   },
   {
     "id": "unordinary",
@@ -721,7 +728,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=unordinary+manhwa&tag=pecchia-20",
+        "url": "https://www.amazon.com/dp/B09NP8G3NW?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -732,17 +739,16 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=unordinary+manhwa&tag=pecchia-21",
+        "url": "https://www.amazon.fr/dp/B09NP8G3NW?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
         "retailer": "amazon_uk",
         "label": "Amazon UK",
-        "url": "https://www.amazon.co.uk/s?k=unordinary+manhwa&tag=pecchia0e-21",
+        "url": "https://www.amazon.co.uk/dp/B09NP8G3NW?tag=pecchia0e-21",
         "countries": [
           "GB",
           "IE"
@@ -751,16 +757,17 @@
       {
         "retailer": "amazon_de",
         "label": "Amazon.de",
-        "url": "https://www.amazon.de/s?k=unordinary+manhwa&tag=pecchia07-21",
+        "url": "https://www.amazon.de/dp/B09NP8G3NW?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
         "retailer": "amazon_es",
         "label": "Amazon.es",
-        "url": "https://www.amazon.es/s?k=unordinary+manhwa&tag=pecchia06-21",
+        "url": "https://www.amazon.es/dp/B09NP8G3NW?tag=pecchia06-21",
         "countries": [
           "ES"
         ]
@@ -768,7 +775,7 @@
       {
         "retailer": "amazon_it",
         "label": "Amazon.it",
-        "url": "https://www.amazon.it/s?k=unordinary+manhwa&tag=pecchia0b-21",
+        "url": "https://www.amazon.it/dp/B09NP8G3NW?tag=pecchia0b-21",
         "countries": [
           "IT"
         ]
@@ -829,8 +836,7 @@
         "url": "https://www.amazon.fr/dp/0593160096?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -848,7 +854,8 @@
         "url": "https://www.amazon.de/dp/0593160096?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -932,8 +939,7 @@
         "url": "https://www.amazon.fr/dp/B09F4PLRJ6?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -951,7 +957,8 @@
         "url": "https://www.amazon.de/dp/B09F4PLRJ6?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -1019,8 +1026,7 @@
         "url": "https://www.amazon.fr/dp/1637154437?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -1038,7 +1044,8 @@
         "url": "https://www.amazon.de/dp/1637154437?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -1180,7 +1187,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=jungle+juice+manhwa&tag=pecchia-20",
+        "url": "https://www.amazon.com/dp/B0C2P7PT1Y?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -1191,17 +1198,16 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=jungle+juice+manhwa&tag=pecchia-21",
+        "url": "https://www.amazon.fr/dp/B0C2P7PT1Y?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
         "retailer": "amazon_uk",
         "label": "Amazon UK",
-        "url": "https://www.amazon.co.uk/s?k=jungle+juice+manhwa&tag=pecchia0e-21",
+        "url": "https://www.amazon.co.uk/dp/B0C2P7PT1Y?tag=pecchia0e-21",
         "countries": [
           "GB",
           "IE"
@@ -1210,16 +1216,17 @@
       {
         "retailer": "amazon_de",
         "label": "Amazon.de",
-        "url": "https://www.amazon.de/s?k=jungle+juice+manhwa&tag=pecchia07-21",
+        "url": "https://www.amazon.de/dp/B0C2P7PT1Y?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
         "retailer": "amazon_es",
         "label": "Amazon.es",
-        "url": "https://www.amazon.es/s?k=jungle+juice+manhwa&tag=pecchia06-21",
+        "url": "https://www.amazon.es/dp/B0C2P7PT1Y?tag=pecchia06-21",
         "countries": [
           "ES"
         ]
@@ -1227,7 +1234,7 @@
       {
         "retailer": "amazon_it",
         "label": "Amazon.it",
-        "url": "https://www.amazon.it/s?k=jungle+juice+manhwa&tag=pecchia0b-21",
+        "url": "https://www.amazon.it/dp/B0C2P7PT1Y?tag=pecchia0b-21",
         "countries": [
           "IT"
         ]
@@ -1268,7 +1275,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=doom+breaker+manhwa&tag=pecchia-20",
+        "url": "https://www.amazon.com/dp/B0CTBFBTM9?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -1279,17 +1286,16 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=doom+breaker+manhwa&tag=pecchia-21",
+        "url": "https://www.amazon.fr/dp/B0CTBFBTM9?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
         "retailer": "amazon_uk",
         "label": "Amazon UK",
-        "url": "https://www.amazon.co.uk/s?k=doom+breaker+manhwa&tag=pecchia0e-21",
+        "url": "https://www.amazon.co.uk/dp/B0CTBFBTM9?tag=pecchia0e-21",
         "countries": [
           "GB",
           "IE"
@@ -1298,16 +1304,17 @@
       {
         "retailer": "amazon_de",
         "label": "Amazon.de",
-        "url": "https://www.amazon.de/s?k=doom+breaker+manhwa&tag=pecchia07-21",
+        "url": "https://www.amazon.de/dp/B0CTBFBTM9?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
         "retailer": "amazon_es",
         "label": "Amazon.es",
-        "url": "https://www.amazon.es/s?k=doom+breaker+manhwa&tag=pecchia06-21",
+        "url": "https://www.amazon.es/dp/B0CTBFBTM9?tag=pecchia06-21",
         "countries": [
           "ES"
         ]
@@ -1315,7 +1322,7 @@
       {
         "retailer": "amazon_it",
         "label": "Amazon.it",
-        "url": "https://www.amazon.it/s?k=doom+breaker+manhwa&tag=pecchia0b-21",
+        "url": "https://www.amazon.it/dp/B0CTBFBTM9?tag=pecchia0b-21",
         "countries": [
           "IT"
         ]
@@ -1450,7 +1457,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=second+life+ranker+manhwa&tag=pecchia-20",
+        "url": "https://www.amazon.com/dp/2811681957?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -1461,17 +1468,16 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=second+life+ranker+manhwa&tag=pecchia-21",
+        "url": "https://www.amazon.fr/dp/2811681957?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
         "retailer": "amazon_uk",
         "label": "Amazon UK",
-        "url": "https://www.amazon.co.uk/s?k=second+life+ranker+manhwa&tag=pecchia0e-21",
+        "url": "https://www.amazon.co.uk/dp/2811681957?tag=pecchia0e-21",
         "countries": [
           "GB",
           "IE"
@@ -1480,16 +1486,17 @@
       {
         "retailer": "amazon_de",
         "label": "Amazon.de",
-        "url": "https://www.amazon.de/s?k=second+life+ranker+manhwa&tag=pecchia07-21",
+        "url": "https://www.amazon.de/dp/2811681957?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
         "retailer": "amazon_es",
         "label": "Amazon.es",
-        "url": "https://www.amazon.es/s?k=second+life+ranker+manhwa&tag=pecchia06-21",
+        "url": "https://www.amazon.es/dp/2811681957?tag=pecchia06-21",
         "countries": [
           "ES"
         ]
@@ -1497,7 +1504,7 @@
       {
         "retailer": "amazon_it",
         "label": "Amazon.it",
-        "url": "https://www.amazon.it/s?k=second+life+ranker+manhwa&tag=pecchia0b-21",
+        "url": "https://www.amazon.it/dp/2811681957?tag=pecchia0b-21",
         "countries": [
           "IT"
         ]
@@ -1786,8 +1793,7 @@
         "url": "https://www.amazon.fr/dp/B09NP8BVHK?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -1805,7 +1811,8 @@
         "url": "https://www.amazon.de/dp/B09NP8BVHK?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -1942,8 +1949,7 @@
         "url": "https://www.amazon.fr/dp/B09NP7B4T9?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -1961,7 +1967,8 @@
         "url": "https://www.amazon.de/dp/B09NP7B4T9?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -2179,8 +2186,7 @@
         "url": "https://www.amazon.fr/dp/B0BN7GCP4D?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
@@ -2198,7 +2204,8 @@
         "url": "https://www.amazon.de/dp/B0BN7GCP4D?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
@@ -2464,10 +2471,10 @@
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/supernatural/noblesse/list?title_no=87",
-    "update_day": 4,
-    "update_day_name": "Thursday",
+    "update_day": null,
+    "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Action",
     "tags": [
       "action",
@@ -2475,7 +2482,7 @@
       "fantasy"
     ],
     "amazon_vol1": null,
-    "seo_description": "Noblesse updates every Thursday on WEBTOON. Live countdown.",
+    "seo_description": "Noblesse is a completed WEBTOON series — 543 episodes published January 2014 to January 2019.",
     "platforms": [
       {
         "platform": "webtoon",
@@ -2484,7 +2491,14 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx59983-cfSjrRxuAlAD.png",
-    "anilist_score": 76
+    "anilist_score": 76,
+    "hiatus_history": [
+      {
+        "start": "2019-01-07",
+        "end": "2019-01-07",
+        "reason": "Series completed — 543 episodes, January 2019"
+      }
+    ]
   },
   {
     "id": "magic-emperor",
@@ -3789,7 +3803,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=villains+are+destined+to+die+manhwa&tag=pecchia-20",
+        "url": "https://www.amazon.com/dp/B0B5JTTG2N?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -3800,17 +3814,16 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=villains+are+destined+to+die+manhwa&tag=pecchia-21",
+        "url": "https://www.amazon.fr/dp/B0B5JTTG2N?tag=pecchia-21",
         "countries": [
           "FR",
-          "BE",
-          "CH"
+          "BE"
         ]
       },
       {
         "retailer": "amazon_uk",
         "label": "Amazon UK",
-        "url": "https://www.amazon.co.uk/s?k=villains+are+destined+to+die+manhwa&tag=pecchia0e-21",
+        "url": "https://www.amazon.co.uk/dp/B0B5JTTG2N?tag=pecchia0e-21",
         "countries": [
           "GB",
           "IE"
@@ -3819,16 +3832,17 @@
       {
         "retailer": "amazon_de",
         "label": "Amazon.de",
-        "url": "https://www.amazon.de/s?k=villains+are+destined+to+die+manhwa&tag=pecchia07-21",
+        "url": "https://www.amazon.de/dp/B0B5JTTG2N?tag=pecchia07-21",
         "countries": [
           "DE",
-          "AT"
+          "AT",
+          "CH"
         ]
       },
       {
         "retailer": "amazon_es",
         "label": "Amazon.es",
-        "url": "https://www.amazon.es/s?k=villains+are+destined+to+die+manhwa&tag=pecchia06-21",
+        "url": "https://www.amazon.es/dp/B0B5JTTG2N?tag=pecchia06-21",
         "countries": [
           "ES"
         ]
@@ -3836,7 +3850,7 @@
       {
         "retailer": "amazon_it",
         "label": "Amazon.it",
-        "url": "https://www.amazon.it/s?k=villains+are+destined+to+die+manhwa&tag=pecchia0b-21",
+        "url": "https://www.amazon.it/dp/B0B5JTTG2N?tag=pecchia0b-21",
         "countries": [
           "IT"
         ]
@@ -4134,13 +4148,13 @@
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance"
     ],
     "amazon_vol1": null,
-    "seo_description": "Beware the Villainess! releases on Tapas. Live countdown to the next episode.",
+    "seo_description": "Beware the Villainess! is a completed series on Tapas — 133 episodes.",
     "platforms": [
       {
         "platform": "tapas",
@@ -4149,7 +4163,14 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117540-RRDXqQJbhWTv.jpg",
-    "anilist_score": 77
+    "anilist_score": 77,
+    "hiatus_history": [
+      {
+        "start": null,
+        "end": null,
+        "reason": "Completed — 133 episodes on Tapas"
+      }
+    ]
   },
   {
     "id": "my-life-as-an-internet-novel",
