@@ -576,9 +576,9 @@
     "title": "Reaper of the Drifting Moon",
     "title_kr": "방랑의 달 리퍼",
     "anilist_id": 153432,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/action/reaper-of-the-drifting-moon/list?title_no=2306",
+    "platform": "tappytoon",
+    "platform_label": "TAPPYTOON",
+    "read_url": "https://www.tappytoon.com/en/book/the-reaper",
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 0,
@@ -590,12 +590,12 @@
       "action",
       "korean"
     ],
-    "seo_description": "Reaper of the Drifting Moon drops every Sunday at midnight KST on WEBTOON. Live countdown to the next episode.",
+    "seo_description": "Reaper of the Drifting Moon drops every Sunday on Tappytoon. Live countdown to the next episode.",
     "platforms": [
       {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/action/reaper-of-the-drifting-moon/list?title_no=2306"
+        "platform": "tappytoon",
+        "label": "TAPPYTOON",
+        "read_url": "https://www.tappytoon.com/en/book/the-reaper"
       }
     ],
     "total_episodes": null,
@@ -1516,9 +1516,9 @@
     "title": "Overgeared",
     "title_kr": "오버기어드",
     "anilist_id": 117460,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/fantasy/overgeared/list?title_no=2057",
+    "platform": "tapas",
+    "platform_label": "Tapas",
+    "read_url": "https://tapas.io/series/overgeared/info",
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 0,
@@ -1530,12 +1530,12 @@
       "game"
     ],
     "amazon_vol1": null,
-    "seo_description": "Overgeared updates every Sunday on WEBTOON. Live countdown.",
+    "seo_description": "Overgeared updates every Sunday on Tapas. Live countdown.",
     "platforms": [
       {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/fantasy/overgeared/list?title_no=2057"
+        "platform": "tapas",
+        "label": "Tapas",
+        "read_url": "https://tapas.io/series/overgeared/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117460-46JbftfHSXoc.jpg",
@@ -1635,7 +1635,7 @@
     "anilist_id": 132144,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/action/return-of-the-mount-hua-sect/list?title_no=3892",
+    "read_url": "https://www.webtoons.com/en/action/return-of-the-blossoming-blade/list?title_no=2849",
     "update_day": 6,
     "update_day_name": "Saturday",
     "release_hour_kst": 0,
@@ -1653,7 +1653,7 @@
       {
         "platform": "webtoon",
         "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/action/return-of-the-mount-hua-sect/list?title_no=3892"
+        "read_url": "https://www.webtoons.com/en/action/return-of-the-blossoming-blade/list?title_no=2849"
       }
     ],
     "total_episodes": null,
@@ -2351,11 +2351,11 @@
     "title": "My Gently Raised Beast",
     "title_kr": "부드럽게 키운 짐승",
     "anilist_id": 127868,
-    "platform": "tapas",
-    "platform_label": "TAPAS",
-    "read_url": "https://tapas.io/series/my-gently-raised-beast/info",
-    "update_day": 2,
-    "update_day_name": "Tuesday",
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": "https://www.webtoons.com/en/romance/my-gently-raised-beast/list?title_no=2606",
+    "update_day": 0,
+    "update_day_name": "Sunday",
     "release_hour_kst": 0,
     "on_hiatus": false,
     "genre": "Romance",
@@ -2365,12 +2365,12 @@
       "historical"
     ],
     "amazon_vol1": null,
-    "seo_description": "My Gently Raised Beast drops every Tuesday on Tapas. Live countdown.",
+    "seo_description": "My Gently Raised Beast drops every Sunday on WEBTOON. Live countdown.",
     "platforms": [
       {
-        "platform": "tapas",
-        "label": "TAPAS",
-        "read_url": "https://tapas.io/series/my-gently-raised-beast/info"
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": "https://www.webtoons.com/en/romance/my-gently-raised-beast/list?title_no=2606"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127868-oVxq2qkYVS4L.jpg",
@@ -2379,7 +2379,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=my+gently+raised+beast+manhwa&tag=pecchia-20",
+        "url": "https://www.amazon.com/dp/B0B67TXSVG?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
