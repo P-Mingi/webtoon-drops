@@ -19,8 +19,8 @@ const platformKeys = platforms.map(p => p.platform);
 >
   <a href={`/${series.id}`} class="card-inner">
     <div class="card-cover">
-      {series.cover
-        ? <img src={series.cover} alt={series.title} loading="lazy" decoding="async" />
+      {series.cover_url
+        ? <img src={series.cover_url} alt={series.title} loading="lazy" decoding="async" />
         : <div class="cover-fallback">{series.title}</div>
       }
       <div class="cover-overlay"></div>

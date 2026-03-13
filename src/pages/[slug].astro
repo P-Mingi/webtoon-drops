@@ -12,11 +12,10 @@ export async function getStaticPaths() {
 
 const { series } = Astro.props;
 
-// Fetch cover + description for this series
+// Fetch description from AniList (cover is now stored in series.cover_url)
 const ids = series.anilist_id ? [series.anilist_id] : [];
 const anilistData = ids.length ? await fetchManhwaCovers(ids) : [];
 const anilist = anilistData[0] ?? null;
-const cover = anilist?.coverImage?.large ?? null;
 const description = anilist?.description ?? series.seo_description;
 
 const platforms = series.platforms || [{
@@ -29,8 +28,7 @@ const platforms = series.platforms || [{
 const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const related = seriesData
   .filter(s => s.id !== series.id && !s.on_hiatus)
-  .slice(0, 4)
-  .map(s => ({ ...s, cover: null })); // covers omitted for related cards (build perf)
+  .slice(0, 4);
 
 const history = getEpisodeHistory(series, 20);
 const hasHistory = history.length > 0;
@@ -42,7 +40,7 @@ const jsonLd = {
   "name": series.title,
   "alternateName": series.title_kr || undefined,
   "url": `https://webtoondrops.com/${series.id}`,
-  "image": cover || undefined,
+  "image": series.cover_url || undefined,
   "description": series.seo_description,
   "genre": series.genre,
   "inLanguage": "en",
@@ -106,8 +104,8 @@ const breadcrumbLd = {
   <main class="container">
     <div class="series-hero">
       <div class="series-cover">
-        {cover
-          ? <img src={cover} alt={series.title} />
+        {series.cover_url
+          ? <img src={series.cover_url} alt={series.title} />
           : <div class="cover-fallback">{series.title}</div>
         }
         <div class="cover-glow"></div>

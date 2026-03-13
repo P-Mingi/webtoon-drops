@@ -64,7 +64,8 @@
         "read_url": "https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95",
         "note": "Currently on hiatus"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png"
   },
   {
     "id": "omniscient-readers-viewpoint",
@@ -102,7 +103,8 @@
         "read_url": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154",
         "note": "Ongoing"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx130136-Hde5zA3TOVfG.jpg"
   },
   {
     "id": "eleceed",
@@ -162,7 +164,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/nano-machine/list?title_no=2202"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114148-QCxodB0UgOuP.jpg"
   },
   {
     "id": "mercenary-enrollment",
@@ -222,7 +225,8 @@
         "read_url": "https://tapas.io/series/tbate-comic/info"
       }
     ],
-    "total_episodes": null
+    "total_episodes": null,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx104652-lS0yplxsvEmj.jpg"
   },
   {
     "id": "reaper-of-the-drifting-moon",
@@ -252,7 +256,8 @@
         "read_url": "https://www.webtoons.com/en/action/reaper-of-the-drifting-moon/list?title_no=2306"
       }
     ],
-    "total_episodes": null
+    "total_episodes": null,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx158396-zGcerlHl2VFF.jpg"
   },
   {
     "id": "i-love-yoo",
@@ -392,7 +397,8 @@
         "read_url": "https://www.webtoons.com/en/romance/true-beauty/list?title_no=1436",
         "note": "Complete"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101562-dQqdXhLOW5qn.jpg"
   },
   {
     "id": "subzero",
@@ -422,7 +428,8 @@
         "read_url": "https://www.webtoons.com/en/romance/subzero/list?title_no=1468"
       }
     ],
-    "total_episodes": null
+    "total_episodes": null,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx103039-SDa62a4AP625.jpg"
   },
   {
     "id": "lets-play",
@@ -452,7 +459,8 @@
         "read_url": "https://www.webtoons.com/en/romance/letsplay/list?title_no=1218"
       }
     ],
-    "total_episodes": null
+    "total_episodes": null,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98835-J7MppqI9oU0E.jpg"
   },
   {
     "id": "jungle-juice",
@@ -482,7 +490,8 @@
         "read_url": "https://www.webtoons.com/en/action/jungle-juice/list?title_no=2535"
       }
     ],
-    "total_episodes": null
+    "total_episodes": null,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132429-62ALXia6YGNo.png"
   },
   {
     "id": "doom-breaker",
@@ -541,7 +550,8 @@
         "read_url": "https://tapas.io/series/solo-leveling-ragnarok/info"
       }
     ],
-    "total_episodes": null
+    "total_episodes": null,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx166840-VXMKqr9mGwRD.png"
   },
   {
     "id": "second-life-ranker",
@@ -655,7 +665,8 @@
         "read_url": "https://www.webtoons.com/en/action/return-of-the-mount-hua-sect/list?title_no=3892"
       }
     ],
-    "total_episodes": null
+    "total_episodes": null,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx145514-emPeu8YVK8LF.jpg"
   },
   {
     "id": "murim-login",
@@ -712,7 +723,8 @@
         "read_url": "https://www.webtoons.com/en/action/teenage-mercenary/list?title_no=2116"
       }
     ],
-    "total_episodes": null
+    "total_episodes": null,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx130189-cyiooAAjTCSj.png"
   },
   {
     "id": "lookism",
@@ -740,7 +752,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/slice-of-life/lookism/list?title_no=1049"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx87136-h8BdfSItMASj.jpg"
   },
   {
     "id": "the-boxer",
@@ -768,7 +781,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/sports/the-boxer/list?title_no=2027"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx121496-oroRMihRAA89.jpg"
   },
   {
     "id": "windbreaker",
@@ -797,7 +811,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/sports/wind-breaker/list?title_no=372"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105430-tZbQN67Z3TEf.jpg"
   },
   {
     "id": "the-god-of-high-school",
@@ -834,7 +849,8 @@
         "read_url": "https://www.webtoons.com/en/action/the-god-of-high-school/list?title_no=66",
         "note": "Ongoing"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b83275-S0pxOzDHW0Vj.jpg"
   },
   {
     "id": "worn-and-torn-newbie",
@@ -890,7 +906,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/legend-of-the-northern-blade/list?title_no=1874"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114980-mLtI2HgnJVnp.jpg"
   },
   {
     "id": "the-s-classes-that-i-raised",
@@ -1003,7 +1020,8 @@
         "read_url": "https://www.webtoons.com/en/romance/remarried-empress/list?title_no=2135"
       }
     ],
-    "total_episodes": null
+    "total_episodes": null,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109513-T96ulSQsdHvL.jpg"
   },
   {
     "id": "under-the-oak-tree",
@@ -1368,7 +1386,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119257-Pi21aq3ey9GG.jpg"
   },
   {
     "id": "i-m-the-max-level-newbie",
@@ -1395,7 +1414,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/im-the-max-level-newbie/list?title_no=3915"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx137280-juUL79K7f9s7.png"
   },
   {
     "id": "the-world-after-the-fall",
@@ -1423,7 +1443,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-world-after-the-fall/list?title_no=4011"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx144957-h0qIwRwxOEdg.jpg"
   },
   {
     "id": "the-return-of-the-disaster-class-hero",
@@ -1450,7 +1471,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-return-of-the-disaster-class-hero/list?title_no=9013"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143056-MEpVxW7346jz.jpg"
   },
   {
     "id": "the-extra-s-academy-survival-guide",
@@ -1477,7 +1499,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-extras-academy-survival-guide/list?title_no=6465"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx172619-LSoXY45QAas4.jpg"
   },
   {
     "id": "66-666-years-advent-of-the-dark-mage",
@@ -1504,7 +1527,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/66666-years-advent-of-the-dark-mage/list?title_no=3441"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx137595-1m3i7vxyOqXc.png"
   },
   {
     "id": "mythic-item-obtained",
@@ -1532,7 +1556,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/mythic-item-obtained/list?title_no=4582"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx151025-j7nZBNb46cv9.jpg"
   },
   {
     "id": "the-stellar-swordmaster",
@@ -1560,7 +1585,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-stellar-swordmaster/list?title_no=5988"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx170400-yMIuOIboWuoO.jpg"
   },
   {
     "id": "villain-to-kill",
@@ -1587,7 +1613,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/villain-to-kill/list?title_no=2857"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b130149-y63hveWF28Sb.jpg"
   },
   {
     "id": "the-academy-s-undercover-professor",
@@ -1615,7 +1642,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-academys-undercover-professor/list?title_no=4636"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx150836-vWf0Hgyey7Mj.jpg"
   },
   {
     "id": "the-reborn-young-lord-is-an-assassin",
@@ -1642,7 +1670,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-reborn-young-lord-is-an-assassin/list?title_no=6107"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx175262-shGEYbbfLHDD.jpg"
   },
   {
     "id": "the-knight-only-lives-today",
@@ -1669,7 +1698,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-knight-only-lives-today/list?title_no=6672"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx177706-3r8dnAr8Prjq.jpg"
   },
   {
     "id": "return-to-player",
@@ -1697,7 +1727,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/return-to-player/list?title_no=2574"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124577-UkF19gsGyBoG.jpg"
   },
   {
     "id": "i-killed-the-main-player",
@@ -1724,7 +1755,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/i-killed-the-main-player/list?title_no=6856"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx173020-vqe5J7U1cizO.png"
   },
   {
     "id": "descended-from-divinity",
@@ -1751,7 +1783,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/descended-from-divinity/list?title_no=3450"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx136204-D4ON9gggIHeX.jpg"
   },
   {
     "id": "study-group",
@@ -1778,7 +1811,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/study-group/list?title_no=3595"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx110472-jxJG7CZ3lf4d.jpg"
   },
   {
     "id": "the-regressed-mercenary-has-a-plan",
@@ -1805,7 +1839,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-regressed-mercenary-has-a-plan/list?title_no=7261"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx182066-kqOV7WW1DAH4.jpg"
   },
   {
     "id": "surviving-the-game-as-a-barbarian",
@@ -1833,7 +1868,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/surviving-the-game-as-a-barbarian/list?title_no=5515"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx164857-MVeV0leMZb0m.jpg"
   },
   {
     "id": "operation-true-love",
@@ -1861,7 +1897,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/operation-true-love/list?title_no=4465"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx149483-dmXE1sBUcGsX.jpg"
   },
   {
     "id": "time-limited-genius-dark-knight",
@@ -1888,7 +1925,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/time-limited-genius-dark-knight/list?title_no=5639"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx165182-k4Jfk2XMkylP.jpg"
   },
   {
     "id": "the-lone-necromancer",
@@ -1915,7 +1953,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-lone-necromancer/list?title_no=3690"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139572-e3vwLcOVQISn.jpg"
   },
   {
     "id": "reality-quest",
@@ -1942,7 +1981,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/reality-quest/list?title_no=4697"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141705-2OMBDYY5Tguc.jpg"
   },
   {
     "id": "hero-killer",
@@ -1970,7 +2010,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/hero-killer/list?title_no=2745"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132093-GLS3FWShrQPV.jpg"
   },
   {
     "id": "absolute-sword-sense",
@@ -1997,7 +2038,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/absolute-sword-sense/list?title_no=5100"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx151460-Cb2CXwN2ZElE.jpg"
   },
   {
     "id": "the-player-hides-his-past",
@@ -2024,7 +2066,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/the-player-hides-his-past/list?title_no=5655"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx166154-m65LKgDdfe8p.jpg"
   },
   {
     "id": "returned-by-the-king",
@@ -2052,7 +2095,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/returned-by-the-king/list?title_no=6213"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b170724-ZRBQGuYBi3nU.png"
   },
   {
     "id": "absolute-regression",
@@ -2079,7 +2123,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/absolute-regression/list?title_no=7004"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx180891-ZBbyOWSYI41R.jpg"
   },
   {
     "id": "my-bias-gets-on-the-last-train",
@@ -2106,7 +2151,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/my-bias-gets-on-the-last-train/list?title_no=7857"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx187944-bb9vk8N7NcDC.jpg"
   },
   {
     "id": "chronicles-of-the-demon-faction",
@@ -2133,7 +2179,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/chronicles-of-the-demon-faction/list?title_no=5832"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx164222-9wzDZENmjYtc.jpg"
   },
   {
     "id": "killer-peter",
@@ -2161,7 +2208,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/killer-peter/list?title_no=5816"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx170688-tie6n1X1sZ4h.jpg"
   },
   {
     "id": "murim-rpg-simulation",
@@ -2189,7 +2237,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/murim-rpg-simulation/list?title_no=3779"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141076-QqiuAFLz3S6T.jpg"
   },
   {
     "id": "the-top-dungeon-farmer",
@@ -2215,7 +2264,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-top-dungeon-farmer/list?title_no=5656"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx166658-jbtqReVgxdqH.jpg"
   },
   {
     "id": "99-reinforced-wooden-stick",
@@ -2244,7 +2294,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/comedy/99-reinforced-wooden-stick/list?title_no=4286"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx147102-A44gWtfOzLvm.jpg"
   },
   {
     "id": "the-constellations-are-my-disciples",
@@ -2271,7 +2322,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-constellations-are-my-disciples/list?title_no=5638"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx163448-X8vjJHWrSTx8.jpg"
   },
   {
     "id": "enrolling-in-the-transcendent-academy",
@@ -2299,7 +2351,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/enrolling-in-the-transcendent-academy/list?title_no=5420"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx152608-hA5NKaYNqfyy.png"
   },
   {
     "id": "infinite-leveling-murim",
@@ -2328,7 +2381,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/infinite-leveling-murim/list?title_no=2676"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b134635-iybRMnRnktOQ.jpg"
   },
   {
     "id": "villains-are-destined-to-die",
@@ -2359,7 +2413,8 @@
         "label": "TAPPYTOON",
         "read_url": "https://www.tappytoon.com/en/comics/villains-are-destined-to-die"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118408-zZuOINqjBZYn.jpg"
   },
   {
     "id": "latna-saga-survival-of-a-sword-king",
@@ -2385,7 +2440,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/latna-saga-survival-of-a-sword-king/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114605-MYUWMsdjry6m.jpg"
   },
   {
     "id": "the-sss-ranker-returns",
@@ -2411,7 +2467,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/the-sss-ranker-returns/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153883-thHiGEnqxFoB.jpg"
   },
   {
     "id": "the-archmage-returns-after-4000-years",
@@ -2437,7 +2494,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/the-archmage-returns-after-4000-years/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118424-JbTApgnIP1ON.jpg"
   },
   {
     "id": "the-max-level-hero-strikes-back",
@@ -2463,7 +2521,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/the-max-level-hero-strikes-back/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125636-g0gkyLZbo3Tz.png"
   },
   {
     "id": "the-legendary-spearman-returns",
@@ -2489,7 +2548,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/the-legendary-spearman-returns/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141479-9h8eyaxyRZP8.jpg"
   },
   {
     "id": "ranker-s-return",
@@ -2515,7 +2575,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/rankers-return/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx137969-3lgIaXzGgz65.png"
   },
   {
     "id": "i-am-the-real-one",
@@ -2541,7 +2602,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/i-am-the-real-one/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124783-Q3DuRbP7Rqmo.jpg"
   },
   {
     "id": "semantic-error",
@@ -2567,7 +2629,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/semantic-error/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125167-9IPJ3KINKJIq.jpg"
   },
   {
     "id": "the-male-lead-s-little-lion-daughter",
@@ -2593,7 +2656,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/the-male-leads-little-lion-daughter/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx138363-WCVXZgFuKtsH.jpg"
   },
   {
     "id": "not-sew-wicked-stepmom",
@@ -2619,7 +2683,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/not-sew-wicked-stepmom/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132359-UGmIwX97cCeU.jpg"
   },
   {
     "id": "beware-the-villainess",
@@ -2645,7 +2710,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/beware-the-villainess/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117540-RRDXqQJbhWTv.jpg"
   },
   {
     "id": "my-life-as-an-internet-novel",
@@ -2671,7 +2737,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/my-life-as-an-internet-novel/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx110059-pgrSNzyHGBNi.jpg"
   },
   {
     "id": "doctor-live-again",
@@ -2697,7 +2764,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/doctor-live-again/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b129579-4CjDJYnWI8el.jpg"
   },
   {
     "id": "author-of-my-own-destiny",
@@ -2723,7 +2791,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/author-of-my-own-destiny/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx138655-To2KsL5SUilz.jpg"
   },
   {
     "id": "pick-me-up",
@@ -2749,7 +2818,8 @@
         "label": "MANGA PLUS",
         "read_url": "https://anilist.co/manga/159441"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159441-9W8201jAT9Yv.jpg"
   },
   {
     "id": "the-infinite-mage",
@@ -2775,7 +2845,8 @@
         "label": "MANGA PLUS",
         "read_url": "https://anilist.co/manga/159930"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159930-qK1P4BNQL0zG.jpg"
   },
   {
     "id": "god-of-blackfield",
@@ -2801,7 +2872,8 @@
         "label": "MANGA PLUS",
         "read_url": "https://anilist.co/manga/118267"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118267-hfGEZNguWhiq.jpg"
   },
   {
     "id": "player",
@@ -2827,7 +2899,8 @@
         "label": "MANGA PLUS",
         "read_url": "https://anilist.co/manga/119363"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119363-ogH6cjF0JW2x.jpg"
   },
   {
     "id": "tyrant-of-the-tower-defense-game",
@@ -2853,7 +2926,8 @@
         "label": "MANGA PLUS",
         "read_url": "https://anilist.co/manga/153513"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153513-dzG6p5H2wrN2.jpg"
   },
   {
     "id": "the-skeleton-soldier-failed-to-defend-the-dungeon",
@@ -2881,6 +2955,7 @@
       "regression"
     ],
     "amazon_vol1": null,
-    "seo_description": "The Skeleton Soldier Failed to Defend the Dungeon releases on Tappytoon. Live countdown."
+    "seo_description": "The Skeleton Soldier Failed to Defend the Dungeon releases on Tappytoon. Live countdown.",
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx103156-yTVWAW2N8uGi.jpg"
   }
 ]

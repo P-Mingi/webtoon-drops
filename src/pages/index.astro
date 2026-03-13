@@ -5,11 +5,6 @@ import ThemeToggle from '../components/ThemeToggle.astro';
 import GenreFilter from '../components/GenreFilter.astro';
 import LiveBanner from '../components/LiveBanner.astro';
 import seriesData from '../data/series-data.json';
-import { fetchManhwaCovers } from '../lib/anilist.js';
-
-const ids = seriesData.filter(s => s.anilist_id).map(s => s.anilist_id);
-const anilistData = await fetchManhwaCovers(ids);
-const anilistMap = Object.fromEntries(anilistData.map(m => [m.id, m]));
 
 function getNextDropDays(s) {
   if (s.on_hiatus || s.update_day == null) return Infinity;
@@ -20,12 +15,7 @@ function getNextDropDays(s) {
   return daysAhead;
 }
 
-const series = seriesData
-  .map(s => ({
-    ...s,
-    cover: s.anilist_id ? (anilistMap[s.anilist_id]?.coverImage?.large ?? null) : null,
-  }))
-  .sort((a, b) => getNextDropDays(a) - getNextDropDays(b));
+const series = [...seriesData].sort((a, b) => getNextDropDays(a) - getNextDropDays(b));
 
 const genres = [...new Set(seriesData.map(s => s.genre))].sort();
 const platforms = [
