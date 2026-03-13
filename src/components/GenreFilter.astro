@@ -17,44 +17,21 @@ const { genres, platforms } = Astro.props;
 </div>
 
 <script>
-  const btns = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.card');
-
-  let activePlatform = 'all';
-  let activeGenre = 'all';
-
-  function applyFilters() {
-    cards.forEach(card => {
-      const cardPlatforms = JSON.parse(card.dataset.platforms || '[]');
-      const genre = card.dataset.genre;
-      const platformMatch = activePlatform === 'all' || cardPlatforms.includes(activePlatform);
-      const genreMatch = activeGenre === 'all' || genre === activeGenre;
-      card.style.display = (platformMatch && genreMatch) ? '' : 'none';
-    });
-  }
-
-  btns.forEach(btn => {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const type = btn.dataset.filterType;
       const value = btn.dataset.filterValue;
 
       if (type === 'platform') {
-        activePlatform = value;
-        // deactivate all platform buttons, activate clicked
         document.querySelectorAll('[data-filter-type="platform"]').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
       } else {
-        // genre toggle
-        if (activeGenre === value) {
-          activeGenre = 'all';
-          btn.classList.remove('active');
-        } else {
-          activeGenre = value;
-          document.querySelectorAll('[data-filter-type="genre"]').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-        }
+        const wasActive = btn.classList.contains('active');
+        document.querySelectorAll('[data-filter-type="genre"]').forEach(b => b.classList.remove('active'));
+        if (!wasActive) btn.classList.add('active');
       }
-      applyFilters();
+
+      document.dispatchEvent(new CustomEvent('filterchange'));
     });
   });
 </script>

@@ -16,6 +16,7 @@ const platformKeys = platforms.map(p => p.platform);
   data-platforms={JSON.stringify(platformKeys)}
   data-update-day={series.update_day ?? ''}
   data-on-hiatus={series.on_hiatus ? 'true' : 'false'}
+  data-title={series.title.toLowerCase()}
 >
   <a href={`/${series.id}`} class="card-inner">
     <div class="card-cover">

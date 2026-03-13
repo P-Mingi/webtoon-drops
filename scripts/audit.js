@@ -5,7 +5,9 @@
  * ALL checks must pass before building the site.
  */
 
-const https = require('https');
+import https from 'https';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
 const BOLD  = '\x1b[1m';
 const GREEN = '\x1b[32m';
@@ -73,6 +75,28 @@ function fmtDuration(ms) {
 
 const DAYS_EN = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
+// ── PLATFORM URL VALIDATION ──────────────────────────────────────────────────
+function validatePlatformUrls(series) {
+  const DOMAINS = {
+    webtoon:   'webtoons.com',
+    tapas:     'tapas.io',
+    tappytoon: 'tappytoon.com',
+    mangaplus: 'mangaplus.shueisha.co.jp',
+    lezhin:    'lezhin.com',
+  };
+  const issues = [];
+  for (const s of series) {
+    const url = s.read_url || s.platforms?.[0]?.read_url;
+    if (!url || !s.platform) continue;
+    const expected = DOMAINS[s.platform];
+    if (expected && !url.includes(expected))
+      issues.push(`URL/platform mismatch: ${s.title} — platform=${s.platform} url=${url}`);
+    if (s.platform === 'webtoon' && url && !url.includes('title_no='))
+      issues.push(`WEBTOON URL missing title_no: ${s.title} — ${url}`);
+  }
+  return issues;
+}
+
 // ── MAIN AUDIT ───────────────────────────────────────────────────────────────
 async function runAudit() {
   const results = { pass: 0, fail: 0, warn: 0 };
@@ -117,6 +141,14 @@ async function runAudit() {
     const hiatusCount = SERIES_DATA.filter(s => s.on_hiatus).length;
     const activeCount = SERIES_DATA.length - hiatusCount;
     info(`${activeCount} active series, ${hiatusCount} on hiatus`);
+
+    const urlIssues = validatePlatformUrls(SERIES_DATA);
+    if (urlIssues.length === 0) {
+      pass('All platform URLs match their declared platform domain');
+      results.pass++;
+    } else {
+      urlIssues.forEach(msg => { fail(msg); results.fail++; });
+    }
   }
   console.log();
 
