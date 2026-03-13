@@ -70,12 +70,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/1990259766?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/1990259766?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/1990259766?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/1990259766?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/1990259766?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/1990259766?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/1990259766?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -122,7 +166,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B0C3B3B7YZ?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B0C3B3B7YZ?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -133,7 +177,7 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=omniscient+reader+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/dp/B0C3B3B7YZ?tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -141,12 +185,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=omniscient+reader+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B0C3B3B7YZ?tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B0C3B3B7YZ?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B0C3B3B7YZ?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B0C3B3B7YZ?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -185,12 +254,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B09HMJHPWR?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B09HMJHPWR?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/B09HMJHPWR?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B09HMJHPWR?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B09HMJHPWR?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B09HMJHPWR?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B09HMJHPWR?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -229,7 +342,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B0BQNP47MG?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B0BQNP47MG?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -240,7 +353,7 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=nano+machine+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/dp/B0BQNP47MG?tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -248,12 +361,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=nano+machine+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B0BQNP47MG?tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B0BQNP47MG?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B0BQNP47MG?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B0BQNP47MG?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -292,7 +430,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B0BTJX3VYP?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B0BTJX3VYP?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -303,7 +441,7 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=teenage+mercenary+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/dp/B0BTJX3VYP?tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -311,12 +449,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=teenage+mercenary+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B0BTJX3VYP?tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B0BTJX3VYP?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B0BTJX3VYP?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B0BTJX3VYP?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -354,12 +517,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/1975348915?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/1975348915?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/1975348915?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/1975348915?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/1975348915?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/1975348915?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/1975348915?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -398,12 +605,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=reaper+drifting+moon+manhwa&tag=YOUR_TAG",
+        "url": "https://www.amazon.com/s?k=reaper+drifting+moon+manhwa&tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=reaper+drifting+moon+manhwa&tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=reaper+drifting+moon+manhwa&tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=reaper+drifting+moon+manhwa&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=reaper+drifting+moon+manhwa&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=reaper+drifting+moon+manhwa&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -470,12 +721,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=unordinary+webtoon+book&tag=YOUR_TAG",
+        "url": "https://www.amazon.com/s?k=unordinary+webtoon+book&tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=unordinary+webtoon+book&tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=unordinary+webtoon+book&tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=unordinary+webtoon+book&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=unordinary+webtoon+book&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=unordinary+webtoon+book&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -520,12 +815,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/0593160096?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/0593160096?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/0593160096?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/0593160096?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/0593160096?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/0593160096?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/0593160096?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -579,12 +918,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B09F4PLRJ6?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B09F4PLRJ6?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/B09F4PLRJ6?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B09F4PLRJ6?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B09F4PLRJ6?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B09F4PLRJ6?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B09F4PLRJ6?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -622,12 +1005,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B0BN7F2345?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B0BN7F2345?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/B0BN7F2345?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B0BN7F2345?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B0BN7F2345?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B0BN7F2345?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B0BN7F2345?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -660,17 +1087,61 @@
       }
     ],
     "total_episodes": null,
-    "cover_url": null,
+    "cover_url": "https://animotaku.fr/wp-content/uploads/2022/04/webtoon-lets-play-visuel-3.jpeg",
     "buy_links": [
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=lets+play+webtoon+book&tag=YOUR_TAG",
+        "url": "https://www.amazon.com/s?k=lets+play+webtoon+book&tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=lets+play+webtoon+book&tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=lets+play+webtoon+book&tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=lets+play+webtoon+book&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=lets+play+webtoon+book&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=lets+play+webtoon+book&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -709,12 +1180,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/s?k=jungle+juice+manhwa&tag=YOUR_TAG",
+        "url": "https://www.amazon.com/s?k=jungle+juice+manhwa&tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=jungle+juice+manhwa&tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=jungle+juice+manhwa&tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=jungle+juice+manhwa&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=jungle+juice+manhwa&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=jungle+juice+manhwa&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -751,9 +1266,20 @@
     "anilist_score": 79,
     "buy_links": [
       {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=doom+breaker+manhwa&tag=pecchia-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=doom+breaker+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/s?k=doom+breaker+manhwa&tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -761,12 +1287,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=doom+breaker+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=doom+breaker+manhwa&tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=doom+breaker+manhwa&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=doom+breaker+manhwa&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=doom+breaker+manhwa&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -805,12 +1356,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B0BXYZ1234?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B0BXYZ1234?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/B0BXYZ1234?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B0BXYZ1234?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B0BXYZ1234?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B0BXYZ1234?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B0BXYZ1234?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -846,9 +1441,20 @@
     "anilist_score": 77,
     "buy_links": [
       {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=second+life+ranker+manhwa&tag=pecchia-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=second+life+ranker+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/s?k=second+life+ranker+manhwa&tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -856,12 +1462,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=second+life+ranker+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=second+life+ranker+manhwa&tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=second+life+ranker+manhwa&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=second+life+ranker+manhwa&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=second+life+ranker+manhwa&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -897,9 +1528,20 @@
     "anilist_score": 77,
     "buy_links": [
       {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=overgeared+manhwa&tag=pecchia-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=overgeared+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/s?k=overgeared+manhwa&tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -907,12 +1549,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=overgeared+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=overgeared+manhwa&tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=overgeared+manhwa&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=overgeared+manhwa&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=overgeared+manhwa&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -980,9 +1647,20 @@
     "anilist_score": 84,
     "buy_links": [
       {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=mont+hua+manhwa&tag=pecchia-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=mont+hua+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/s?k=mont+hua+manhwa&tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -990,12 +1668,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=mont+hua+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=mont+hua+manhwa&tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=mont+hua+manhwa&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=mont+hua+manhwa&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=mont+hua+manhwa&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -1031,37 +1734,6 @@
     "anilist_score": 80
   },
   {
-    "id": "teenage-mercenary",
-    "title": "Teenage Mercenary",
-    "title_kr": "용병으로 살아남기",
-    "anilist_id": 126297,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/action/teenage-mercenary/list?title_no=2116",
-    "update_day": 5,
-    "update_day_name": "Friday",
-    "release_hour_kst": 0,
-    "on_hiatus": false,
-    "genre": "Action",
-    "tags": [
-      "action",
-      "school",
-      "thriller"
-    ],
-    "amazon_vol1": null,
-    "seo_description": "Teenage Mercenary drops every Friday on WEBTOON. Countdown.",
-    "platforms": [
-      {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/action/teenage-mercenary/list?title_no=2116"
-      }
-    ],
-    "total_episodes": null,
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx126297-SPiM7QtUnJ4P.jpg",
-    "anilist_score": 79
-  },
-  {
     "id": "lookism",
     "title": "Lookism",
     "title_kr": "외모지상주의",
@@ -1093,12 +1765,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B09NP8BVHK?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B09NP8BVHK?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/B09NP8BVHK?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B09NP8BVHK?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B09NP8BVHK?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B09NP8BVHK?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B09NP8BVHK?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -1205,12 +1921,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B09NP7B4T9?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B09NP7B4T9?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/B09NP7B4T9?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B09NP7B4T9?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B09NP7B4T9?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B09NP7B4T9?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B09NP7B4T9?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -1398,7 +2158,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B0BN7GCP4D?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B0BN7GCP4D?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -1409,7 +2169,7 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=remarried+empress+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/dp/B0BN7GCP4D?tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -1417,12 +2177,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=remarried+empress+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B0BN7GCP4D?tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B0BN7GCP4D?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B0BN7GCP4D?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B0BN7GCP4D?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -1578,9 +2363,20 @@
     "anilist_score": 74,
     "buy_links": [
       {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=my+gently+raised+beast+manhwa&tag=pecchia-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=my+gently+raised+beast+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/s?k=my+gently+raised+beast+manhwa&tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -1588,12 +2384,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=my+gently+raised+beast+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=my+gently+raised+beast+manhwa&tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=my+gently+raised+beast+manhwa&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=my+gently+raised+beast+manhwa&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=my+gently+raised+beast+manhwa&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -1899,9 +2720,20 @@
     "anilist_score": 77,
     "buy_links": [
       {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=world+after+the+fall+manhwa&tag=pecchia-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/s?k=world+after+the+fall+manhwa&tag=YOUR-FR-TAG",
+        "url": "https://www.amazon.fr/s?k=world+after+the+fall+manhwa&tag=pecchia-21",
         "countries": [
           "FR",
           "BE",
@@ -1909,12 +2741,37 @@
         ]
       },
       {
-        "retailer": "fnac",
-        "label": "Fnac",
-        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=world+after+the+fall+manhwa",
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/s?k=world+after+the+fall+manhwa&tag=pecchia0e-21",
         "countries": [
-          "FR",
-          "BE"
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/s?k=world+after+the+fall+manhwa&tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/s?k=world+after+the+fall+manhwa&tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/s?k=world+after+the+fall+manhwa&tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]
@@ -2925,12 +3782,56 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B09XYZ5678?tag=webtoondrops-20",
+        "url": "https://www.amazon.com/dp/B09XYZ5678?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
           "AU",
           "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/dp/B09XYZ5678?tag=pecchia-21",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "amazon_uk",
+        "label": "Amazon UK",
+        "url": "https://www.amazon.co.uk/dp/B09XYZ5678?tag=pecchia0e-21",
+        "countries": [
+          "GB",
+          "IE"
+        ]
+      },
+      {
+        "retailer": "amazon_de",
+        "label": "Amazon.de",
+        "url": "https://www.amazon.de/dp/B09XYZ5678?tag=pecchia07-21",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      {
+        "retailer": "amazon_es",
+        "label": "Amazon.es",
+        "url": "https://www.amazon.es/dp/B09XYZ5678?tag=pecchia06-21",
+        "countries": [
+          "ES"
+        ]
+      },
+      {
+        "retailer": "amazon_it",
+        "label": "Amazon.it",
+        "url": "https://www.amazon.it/dp/B09XYZ5678?tag=pecchia0b-21",
+        "countries": [
+          "IT"
         ]
       }
     ]

@@ -41,25 +41,46 @@ Deployed on Vercel. Source: `webtoon-drops/` directory.
     {
       "retailer": "amazon_us",
       "label": "Amazon US",
-      "url": "https://www.amazon.com/dp/ASIN?tag=webtoondrops-20",
+      "url": "https://www.amazon.com/dp/ASIN?tag=pecchia-20",
       "countries": ["US", "CA", "AU", "default"]
     }
   ]
 }
 ```
 
-## AFFILIATE LINKS
-- Schema field is `buy_links` array (NOT `amazon_vol1` — that field is deprecated and removed)
+## AFFILIATE LINKS — AMAZON MULTI-COUNTRY
+- Schema field is `buy_links` array (NOT `amazon_vol1` — deprecated and removed)
 - Each link: `{ retailer, label, url, countries[] }`
-- Supported retailers: `amazon_us`, `amazon_fr`, `amazon_uk`, `amazon_de`, `fnac`, `cultura`, `decitre`, `bdfugue`
-- `countries` array determines geo-priority: `['FR','BE']` means shown first for French users
+- `countries` array determines geo-priority; user's country-matched link shows first
 - Always include `rel="noopener sponsored"` on affiliate links
-- Amazon.com tag: `webtoondrops-20` (replace with real tag when live)
-- Amazon.fr tag: `YOUR-FR-TAG` (replace after signing up at associates.amazon.fr)
-- Amazon.co.uk tag: `YOUR-UK-TAG` (replace after signing up at affiliate-program.amazon.co.uk)
-- Fnac requires Awin account: awin.com → apply to "Fnac FR" program
-- Decitre requires Affilae or TimeOne account
 - `buy_links` is optional — series without it show no buy section
+
+**Amazon tags (use exactly as written):**
+| retailer    | tag           | store              | countries              |
+|-------------|---------------|--------------------|------------------------|
+| amazon_us   | pecchia-20    | amazon.com         | US, CA, AU, default    |
+| amazon_fr   | pecchia-21    | amazon.fr          | FR, BE, CH             |
+| amazon_uk   | pecchia0e-21  | amazon.co.uk       | GB, IE                 |
+| amazon_de   | pecchia07-21  | amazon.de          | DE, AT                 |
+| amazon_es   | pecchia06-21  | amazon.es          | ES                     |
+| amazon_it   | pecchia0b-21  | amazon.it          | IT                     |
+
+**When adding buy_links for a new series with known ASIN:**
+```json
+[
+  { "retailer": "amazon_us", "label": "Amazon US",  "url": "https://www.amazon.com/dp/ASIN?tag=pecchia-20",   "countries": ["US","CA","AU","default"] },
+  { "retailer": "amazon_fr", "label": "Amazon.fr",  "url": "https://www.amazon.fr/dp/ASIN?tag=pecchia-21",   "countries": ["FR","BE","CH"] },
+  { "retailer": "amazon_uk", "label": "Amazon UK",  "url": "https://www.amazon.co.uk/dp/ASIN?tag=pecchia0e-21", "countries": ["GB","IE"] },
+  { "retailer": "amazon_de", "label": "Amazon.de",  "url": "https://www.amazon.de/dp/ASIN?tag=pecchia07-21", "countries": ["DE","AT"] },
+  { "retailer": "amazon_es", "label": "Amazon.es",  "url": "https://www.amazon.es/dp/ASIN?tag=pecchia06-21", "countries": ["ES"] },
+  { "retailer": "amazon_it", "label": "Amazon.it",  "url": "https://www.amazon.it/dp/ASIN?tag=pecchia0b-21", "countries": ["IT"] }
+]
+```
+
+**When ASIN is unknown, use search URL:**
+`https://www.amazon.{tld}/s?k={title}+manhwa&tag={tag}`
+
+**Run after any buy_links changes:** `node scripts/migrate-buy-links.js`
 
 ## DATE/TIME RULES
 - All schedules are KST (UTC+9)

@@ -34,16 +34,16 @@ const history = getEpisodeHistory(series, 20);
 const hasHistory = history.length > 0;
 const primaryPlatform = platforms[0];
 
-const RETAILER_ICONS = {
+const RETAILER_FLAGS = {
   amazon_us: '🇺🇸',
   amazon_fr: '🇫🇷',
   amazon_uk: '🇬🇧',
   amazon_de: '🇩🇪',
-  fnac: '🟡',
-  cultura: '🎭',
-  decitre: '📖',
-  bdfugue: '📚',
+  amazon_es: '🇪🇸',
+  amazon_it: '🇮🇹',
 };
+
+const hasBuyLinks = !!(series.buy_links && series.buy_links.length > 0);
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -159,20 +159,24 @@ const breadcrumbLd = {
               Read on {p.label} →
             </a>
           ))}
-          {series.buy_links && series.buy_links.length > 0 && (
-            <section class="buy-section" id="buy-section">
+          {hasBuyLinks && (
+            <section class="buy-section">
               <h3 class="buy-heading">📚 Own the Series</h3>
-              <div class="buy-links" id="buy-links-container" data-buy-links={JSON.stringify(series.buy_links)}>
-                {series.buy_links.map(link => (
+              <div
+                class="buy-links"
+                id={`buy-links-${series.id}`}
+                data-buy-links={JSON.stringify(series.buy_links)}
+              >
+                {series.buy_links.map((link, i) => (
                   <a
                     href={link.url}
                     target="_blank"
                     rel="noopener sponsored"
-                    class={`buy-btn retailer-${link.retailer}`}
-                    data-retailer={link.retailer}
+                    class={`buy-btn retailer-${link.retailer}${i > 0 ? ' buy-btn-secondary' : ''}`}
                     data-countries={JSON.stringify(link.countries)}
                   >
-                    {RETAILER_ICONS[link.retailer] || '🛒'} {link.label}
+                    <span class="buy-flag">{RETAILER_FLAGS[link.retailer] || '🛒'}</span>
+                    {link.label}
                   </a>
                 ))}
               </div>
@@ -301,25 +305,67 @@ const breadcrumbLd = {
     import { startCountdowns } from '../scripts/countdown.js';
     import { detectCountry, sortBuyLinks } from '../scripts/geo.js';
 
-    document.addEventListener('DOMContentLoaded', () => {
-      startCountdowns();
+    function initBuyButtons() {
+      const containers = document.querySelectorAll('[id^="buy-links-"]');
 
-      // Reorder buy buttons based on user's country
-      const container = document.getElementById('buy-links-container');
-      if (!container) return;
-      try {
-        const buyLinks = JSON.parse(container.dataset.buyLinks || '[]');
+      containers.forEach(container => {
+        const raw = container.dataset.buyLinks;
+        if (!raw) return;
+
+        let buyLinks;
+        try { buyLinks = JSON.parse(raw); } catch { return; }
+
         const country = detectCountry();
         const sorted = sortBuyLinks(buyLinks, country);
+        if (sorted.length === 0) return;
 
-        const buttons = container.querySelectorAll('.buy-btn');
-        const buttonMap = {};
-        buttons.forEach(btn => { buttonMap[btn.dataset.retailer] = btn; });
-        buttons.forEach(btn => btn.remove());
-        sorted.forEach(link => {
-          if (buttonMap[link.retailer]) container.appendChild(buttonMap[link.retailer]);
+        const buttons = Array.from(container.querySelectorAll('.buy-btn'));
+
+        // Match button to sorted link by countries array identity
+        const getBtn = (link) => buttons.find(btn => {
+          try {
+            const c = JSON.parse(btn.dataset.countries || '[]');
+            return c.join(',') === (link.countries || []).join(',');
+          } catch { return false; }
         });
-      } catch { /* fail silently — default order is fine */ }
+
+        // Reorder: remove all, re-append sorted
+        buttons.forEach(btn => btn.remove());
+        sorted.forEach((link, i) => {
+          const btn = getBtn(link);
+          if (!btn) return;
+          if (i === 0) {
+            btn.classList.remove('buy-btn-secondary');
+          } else {
+            btn.classList.add('buy-btn-secondary');
+          }
+          container.appendChild(btn);
+        });
+
+        // Add "Show other stores" toggle
+        const secondaryCount = sorted.length - 1;
+        if (secondaryCount > 0) {
+          const toggle = document.createElement('button');
+          toggle.className = 'buy-toggle';
+          toggle.textContent = `Show ${secondaryCount} other store${secondaryCount > 1 ? 's' : ''} →`;
+          toggle.addEventListener('click', () => {
+            const expanded = toggle.dataset.expanded === 'true';
+            container.querySelectorAll('.buy-btn-secondary').forEach(
+              btn => btn.classList.toggle('visible', !expanded)
+            );
+            toggle.textContent = expanded
+              ? `Show ${secondaryCount} other store${secondaryCount > 1 ? 's' : ''} →`
+              : 'Show fewer stores ↑';
+            toggle.dataset.expanded = String(!expanded);
+          });
+          container.after(toggle);
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      startCountdowns();
+      initBuyButtons();
     });
   </script>
 </Base>
@@ -550,46 +596,54 @@ const breadcrumbLd = {
     border-radius: 12px;
   }
   .buy-heading {
-    font-size: 0.9rem;
+    font-size: 12px;
     font-weight: 700;
     color: var(--muted);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: 0.75rem;
+    margin-bottom: 10px;
     font-family: 'Space Grotesk', sans-serif;
   }
   .buy-links {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 8px;
-    margin-bottom: 8px;
   }
   .buy-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 9px 16px;
+    gap: 8px;
+    padding: 11px 16px;
     border-radius: 8px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     text-decoration: none;
+    background: #FF9900;
+    color: #111;
     transition: opacity 0.15s, transform 0.1s;
-    color: white;
     font-family: 'Space Grotesk', sans-serif;
   }
   .buy-btn:hover { opacity: 0.88; transform: translateY(-1px); }
   .buy-btn:active { transform: translateY(0); }
-  .buy-btn:first-child { flex: 1 1 100%; justify-content: center; }
-  .retailer-amazon_us, .retailer-amazon_fr,
-  .retailer-amazon_uk, .retailer-amazon_de { background: #FF9900; color: #111; }
-  .retailer-fnac { background: #E5A823; color: #111; }
-  .retailer-cultura { background: #004B8D; }
-  .retailer-decitre { background: #C41230; }
-  .retailer-bdfugue { background: #2E7D32; }
+  /* Secondary buttons hidden until JS shows them or toggled */
+  .buy-btn-secondary { display: none; font-size: 13px; padding: 9px 14px; opacity: 0.85; }
+  .buy-btn-secondary.visible { display: flex; }
+  .buy-flag { font-size: 18px; }
+  .buy-toggle {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 12px;
+    cursor: pointer;
+    padding: 6px 0 0;
+    text-decoration: underline;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+  }
   .buy-note {
     font-size: 11px;
     color: var(--muted);
-    margin: 0;
+    margin: 8px 0 0;
     opacity: 0.6;
     font-family: 'Inter', sans-serif;
   }
