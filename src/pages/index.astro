@@ -45,6 +45,14 @@ const platforms = [
     <section class="hero">
       <h1>countdown to your<br /><span class="hero-accent">next episode drop</span></h1>
       <p class="hero-sub">Live release timers for every major WEBTOON, Tapas, and MANGA Plus series. No spoilers. Pure utility.</p>
+      <a href="/my-schedule" class="schedule-cta">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M10 2l2.4 5H18l-4.2 3.1 1.6 5.1L10 12.3l-5.4 2.9 1.6-5.1L2 7h5.6L10 2z"
+            stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        Star any series to build your personal schedule
+        <span class="cta-arrow">→</span>
+      </a>
     </section>
 
     <div class="search-wrapper">
@@ -259,8 +267,36 @@ const platforms = [
     font-size: 16px;
     color: var(--muted);
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     line-height: 1.6;
+  }
+  .schedule-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #FFD700 0%, #ff9d00 100%);
+    color: #1a1a1a;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: opacity 0.15s, transform 0.15s;
+    box-shadow: 0 2px 12px rgba(255, 215, 0, 0.3);
+  }
+  .schedule-cta:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 18px rgba(255, 215, 0, 0.4);
+  }
+  .cta-arrow {
+    font-size: 16px;
+    transition: transform 0.15s;
+  }
+  .schedule-cta:hover .cta-arrow {
+    transform: translateX(3px);
   }
 
   /* Search */
