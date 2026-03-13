@@ -1,0 +1,24 @@
+Auditing 970 series...
+
+[   1/970] tower-of-god                                OK  "Tower of God"
+[   2/970] omniscient-readers-viewpoint                OK  "Omniscient Reader's Viewpoint"
+[   3/970] eleceed                                     OK  "Eleceed"
+[   4/970] nano-machine                                OK  "Nano Machine"
+[   5/970] mercenary-enrollment                        OK  "Mercenary Enrollment"
+[   6/970] the-beginning-after-the-end                 OK  "The Beginning After the End"
+[   7/970] reaper-of-the-drifting-moon                 OK  "Reaper of the Drifting Moon"
+[   8/970] i-love-yoo                                  OK  "I Love Yoo"
+[   9/970] unordinary                                  OK  "unOrdinary"
+[  10/970] lore-olympus                                OK  "Lore Olympus"
+[  11/970] true-beauty                                 OK  "True Beauty"
+[  12/970] subzero                                     OK  "SubZero"
+[  13/970] lets-play                                   WRONG_PAGE  sim=0%  expected="Let's Play"  got="Connect Error :: LINE WEBTOON"  url=https://www.webtoons.com/en/romance/letsplay/list?title_no=1218
+[  14/970] jungle-juice                                OK  "Jungle Juice"
+[  15/970] doom-breaker                                OK  "Doom Breaker"
+[  16/970] solo-leveling-ragnarok                      OK  "Solo Leveling: Ragnarok"
+[  17/970] second-life-ranker                          OK  "Second Life Ranker"
+[  18/970] overgeared                                  OK  "Overgeared"
+[  19/970] kill-the-hero                               OK  "Kill the Hero"
+[  20/970] return-of-the-mount-hua-sect                WRONG_PAGE  sim=40%  expected="Return of the Mount Hua Sect"  got="Return of the Blossoming Blade"  url=https://www.webtoons.com/en/action/return-of-the-blossoming-blade/list?title_no=2849
+[  21/970] murim-login                                 WRONG_PAGE  sim=0%  expected="Murim Login"  got="Tappytoon Comics & Novels"  url=https://www.tappytoon.com/en/book/murim-login
+[  22/970] lookism                                     OK  "Lookism"
