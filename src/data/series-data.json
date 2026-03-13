@@ -18,7 +18,6 @@
       "adventure",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/1990259766?tag=webtoondrops-20",
     "seo_description": "Tower of God drops every Monday at midnight KST on WEBTOON. Live countdown to the next episode. Never miss a release.",
     "total_episodes": 235,
     "hiatus_history": [
@@ -66,7 +65,20 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85143-23oup3ETbFJk.jpg",
-    "anilist_score": 81
+    "anilist_score": 81,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/1990259766?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "omniscient-readers-viewpoint",
@@ -87,7 +99,6 @@
       "fantasy",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B0C3B3B7YZ?tag=webtoondrops-20",
     "seo_description": "Omniscient Reader's Viewpoint drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter release.",
     "total_episodes": null,
     "platforms": [
@@ -106,7 +117,39 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119257-Pi21aq3ey9GG.jpg",
-    "anilist_score": 86
+    "anilist_score": 86,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0C3B3B7YZ?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=omniscient+reader+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=omniscient+reader+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "eleceed",
@@ -127,7 +170,6 @@
       "comedy",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B09HMJHPWR?tag=webtoondrops-20",
     "seo_description": "Eleceed drops every Wednesday at midnight KST on WEBTOON. See the live countdown to the next episode.",
     "total_episodes": null,
     "platforms": [
@@ -138,7 +180,20 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106929-flAUvHZDUz5v.jpg",
-    "anilist_score": 85
+    "anilist_score": 85,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B09HMJHPWR?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "nano-machine",
@@ -159,7 +214,6 @@
       "action",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B0BQNP47MG?tag=webtoondrops-20",
     "seo_description": "Nano Machine drops every Thursday at midnight KST on WEBTOON. Live countdown to the next episode release.",
     "total_episodes": null,
     "platforms": [
@@ -170,7 +224,39 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120980-RZ9WLd0o9hyo.jpg",
-    "anilist_score": 81
+    "anilist_score": 81,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0BQNP47MG?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=nano+machine+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=nano+machine+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "mercenary-enrollment",
@@ -191,7 +277,6 @@
       "fighting",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B0BTJX3VYP?tag=webtoondrops-20",
     "seo_description": "Mercenary Enrollment drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode.",
     "total_episodes": null,
     "platforms": [
@@ -202,7 +287,39 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx126297-SPiM7QtUnJ4P.jpg",
-    "anilist_score": 79
+    "anilist_score": 79,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0BTJX3VYP?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=teenage+mercenary+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=teenage+mercenary+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "the-beginning-after-the-end",
@@ -223,7 +340,6 @@
       "action",
       "reincarnation"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/1975348915?tag=webtoondrops-20",
     "seo_description": "The Beginning After the End drops every Saturday on Tapas. Live countdown to the next episode.",
     "platforms": [
       {
@@ -233,7 +349,20 @@
       }
     ],
     "total_episodes": null,
-    "cover_url": "https://swebtoon-phinf.pstatic.net/20191218_81/1576635925277kNnsL_JPEG/5.jpg?type=crop540_540"
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20191218_81/1576635925277kNnsL_JPEG/5.jpg?type=crop540_540",
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/1975348915?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "reaper-of-the-drifting-moon",
@@ -254,7 +383,6 @@
       "action",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=reaper+drifting+moon+manhwa&tag=YOUR_TAG",
     "seo_description": "Reaper of the Drifting Moon drops every Sunday at midnight KST on WEBTOON. Live countdown to the next episode.",
     "platforms": [
       {
@@ -265,7 +393,20 @@
     ],
     "total_episodes": null,
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153432-flZLVek7Ei1Z.png",
-    "anilist_score": 78
+    "anilist_score": 78,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=reaper+drifting+moon+manhwa&tag=YOUR_TAG",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "i-love-yoo",
@@ -316,7 +457,6 @@
       "school",
       "drama"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=unordinary+webtoon+book&tag=YOUR_TAG",
     "seo_description": "unOrdinary drops every Wednesday at midnight KST on WEBTOON. Live countdown to the next episode.",
     "platforms": [
       {
@@ -325,7 +465,20 @@
         "read_url": "https://www.webtoons.com/en/super-hero/unordinary/list?title_no=679"
       }
     ],
-    "cover_url": "https://swebtoon-phinf.pstatic.net/20211209_142/1639004918412lnBE6_JPEG/9unOrdinary_mobile_landingpage.jpg?type=crop540_540"
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20211209_142/1639004918412lnBE6_JPEG/9unOrdinary_mobile_landingpage.jpg?type=crop540_540",
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=unordinary+webtoon+book&tag=YOUR_TAG",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "lore-olympus",
@@ -346,7 +499,6 @@
       "drama",
       "fantasy"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/0593160096?tag=webtoondrops-20",
     "seo_description": "Lore Olympus release schedule and next episode countdown on WEBTOON. Check the latest episode release date.",
     "total_episodes": 273,
     "hiatus_history": [
@@ -363,7 +515,20 @@
         "read_url": "https://www.webtoons.com/en/romance/lore-olympus/list?title_no=1320"
       }
     ],
-    "cover_url": "https://swebtoon-phinf.pstatic.net/20200802_207/1596323527203ga6Fa_JPEG/04_EC9E91ED9288EC8381EC84B8_mobile.jpg?type=crop540_540"
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20200802_207/1596323527203ga6Fa_JPEG/04_EC9E91ED9288EC8381EC84B8_mobile.jpg?type=crop540_540",
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/0593160096?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "true-beauty",
@@ -384,7 +549,6 @@
       "slice of life",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B09F4PLRJ6?tag=webtoondrops-20",
     "seo_description": "True Beauty drops every Thursday on WEBTOON. Live countdown to the next episode of 여신강림.",
     "total_episodes": 207,
     "hiatus_history": [
@@ -410,7 +574,20 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx103995-eE7WHxOy77TB.jpg",
-    "anilist_score": 62
+    "anilist_score": 62,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B09F4PLRJ6?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "subzero",
@@ -431,7 +608,6 @@
       "dragons",
       "drama"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B0BN7F2345?tag=webtoondrops-20",
     "seo_description": "SubZero drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter.",
     "platforms": [
       {
@@ -441,7 +617,20 @@
       }
     ],
     "total_episodes": null,
-    "cover_url": "https://swebtoon-phinf.pstatic.net/20181022_143/1540172646889wKMqQ_JPEG/04_EC9E91ED9288EC8381EC84B8_mobile.jpg?type=crop540_540"
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20181022_143/1540172646889wKMqQ_JPEG/04_EC9E91ED9288EC8381EC84B8_mobile.jpg?type=crop540_540",
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0BN7F2345?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "lets-play",
@@ -462,7 +651,6 @@
       "gaming",
       "slice of life"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=lets+play+webtoon+book&tag=YOUR_TAG",
     "seo_description": "Let's Play drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode.",
     "platforms": [
       {
@@ -472,7 +660,20 @@
       }
     ],
     "total_episodes": null,
-    "cover_url": null
+    "cover_url": null,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=lets+play+webtoon+book&tag=YOUR_TAG",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "jungle-juice",
@@ -493,7 +694,6 @@
       "insect",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/s?k=jungle+juice+manhwa&tag=YOUR_TAG",
     "seo_description": "Jungle Juice drops every Wednesday at midnight KST on WEBTOON. Live countdown to the next episode.",
     "platforms": [
       {
@@ -504,7 +704,20 @@
     ],
     "total_episodes": null,
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx128882-UxgmKbYEjuEz.jpg",
-    "anilist_score": 76
+    "anilist_score": 76,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/s?k=jungle+juice+manhwa&tag=YOUR_TAG",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "doom-breaker",
@@ -535,7 +748,28 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx136220-u9sewv3u02mN.jpg",
-    "anilist_score": 79
+    "anilist_score": 79,
+    "buy_links": [
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=doom+breaker+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=doom+breaker+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "solo-leveling-ragnarok",
@@ -556,7 +790,6 @@
       "overpowered",
       "korean"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B0BXYZ1234?tag=webtoondrops-20",
     "seo_description": "Solo Leveling: Ragnarok drops every Thursday on Tapas. Live countdown to the next chapter release.",
     "platforms": [
       {
@@ -567,7 +800,20 @@
     ],
     "total_episodes": null,
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx179445-ho0nb7baJ1a5.jpg",
-    "anilist_score": 76
+    "anilist_score": 76,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0BXYZ1234?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "second-life-ranker",
@@ -597,7 +843,28 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109957-EgJWdR7l9TBG.jpg",
-    "anilist_score": 77
+    "anilist_score": 77,
+    "buy_links": [
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=second+life+ranker+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=second+life+ranker+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "overgeared",
@@ -627,7 +894,28 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117460-46JbftfHSXoc.jpg",
-    "anilist_score": 77
+    "anilist_score": 77,
+    "buy_links": [
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=overgeared+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=overgeared+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "kill-the-hero",
@@ -689,7 +977,28 @@
     ],
     "total_episodes": null,
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132144-i5B4VnG9sRgh.png",
-    "anilist_score": 84
+    "anilist_score": 84,
+    "buy_links": [
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=mont+hua+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=mont+hua+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "murim-login",
@@ -770,7 +1079,6 @@
       "school",
       "action"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B09NP8BVHK?tag=webtoondrops-20",
     "seo_description": "Lookism drops every Saturday on WEBTOON. Countdown.",
     "platforms": [
       {
@@ -780,7 +1088,20 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86848-4CSItSclJUvi.jpg",
-    "anilist_score": 78
+    "anilist_score": 78,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B09NP8BVHK?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "the-boxer",
@@ -861,7 +1182,6 @@
       "martial-arts",
       "tournament"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B09NP7B4T9?tag=webtoondrops-20",
     "seo_description": "The God of High School releases every Sunday on WEBTOON. Live countdown.",
     "total_episodes": null,
     "platforms": [
@@ -880,7 +1200,20 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85141-qHR957V3FVco.png",
-    "anilist_score": 76
+    "anilist_score": 76,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B09NP7B4T9?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "worn-and-torn-newbie",
@@ -1050,7 +1383,6 @@
       "fantasy",
       "historical"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B0BN7GCP4D?tag=webtoondrops-20",
     "seo_description": "Remarried Empress updates every Thursday on WEBTOON. Live countdown.",
     "platforms": [
       {
@@ -1061,7 +1393,39 @@
     ],
     "total_episodes": null,
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx113055-pGB4A5nzhFdF.jpg",
-    "anilist_score": 78
+    "anilist_score": 78,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B0BN7GCP4D?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      },
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=remarried+empress+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=remarried+empress+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "under-the-oak-tree",
@@ -1211,7 +1575,28 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127868-oVxq2qkYVS4L.jpg",
-    "anilist_score": 74
+    "anilist_score": 74,
+    "buy_links": [
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=my+gently+raised+beast+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=my+gently+raised+beast+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "the-villainess-lives-twice",
@@ -1511,7 +1896,28 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx144957-h0qIwRwxOEdg.jpg",
-    "anilist_score": 77
+    "anilist_score": 77,
+    "buy_links": [
+      {
+        "retailer": "amazon_fr",
+        "label": "Amazon.fr",
+        "url": "https://www.amazon.fr/s?k=world+after+the+fall+manhwa&tag=YOUR-FR-TAG",
+        "countries": [
+          "FR",
+          "BE",
+          "CH"
+        ]
+      },
+      {
+        "retailer": "fnac",
+        "label": "Fnac",
+        "url": "https://recherche.fnac.com/SearchResult/ResultList.aspx?Search=world+after+the+fall+manhwa",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      }
+    ]
   },
   {
     "id": "the-return-of-the-disaster-class-hero",
@@ -2500,7 +2906,6 @@
     "tags": [
       "romance"
     ],
-    "amazon_vol1": "https://www.amazon.com/dp/B09XYZ5678?tag=webtoondrops-20",
     "seo_description": "Villains Are Destined to Die releases on Tapas. Live countdown to the next episode.",
     "platforms": [
       {
@@ -2515,7 +2920,20 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118408-zZuOINqjBZYn.jpg",
-    "anilist_score": 84
+    "anilist_score": 84,
+    "buy_links": [
+      {
+        "retailer": "amazon_us",
+        "label": "Amazon US",
+        "url": "https://www.amazon.com/dp/B09XYZ5678?tag=webtoondrops-20",
+        "countries": [
+          "US",
+          "CA",
+          "AU",
+          "default"
+        ]
+      }
+    ]
   },
   {
     "id": "latna-saga-survival-of-a-sword-king",

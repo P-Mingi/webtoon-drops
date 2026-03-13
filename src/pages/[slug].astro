@@ -34,6 +34,17 @@ const history = getEpisodeHistory(series, 20);
 const hasHistory = history.length > 0;
 const primaryPlatform = platforms[0];
 
+const RETAILER_ICONS = {
+  amazon_us: '🇺🇸',
+  amazon_fr: '🇫🇷',
+  amazon_uk: '🇬🇧',
+  amazon_de: '🇩🇪',
+  fnac: '🟡',
+  cultura: '🎭',
+  decitre: '📖',
+  bdfugue: '📚',
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ComicSeries",
@@ -148,10 +159,25 @@ const breadcrumbLd = {
               Read on {p.label} →
             </a>
           ))}
-          {series.amazon_vol1 && (
-            <a href={series.amazon_vol1} class="amazon-btn" target="_blank" rel="noopener sponsored">
-              📚 Own the series — Vol. 1 on Amazon
-            </a>
+          {series.buy_links && series.buy_links.length > 0 && (
+            <section class="buy-section" id="buy-section">
+              <h3 class="buy-heading">📚 Own the Series</h3>
+              <div class="buy-links" id="buy-links-container" data-buy-links={JSON.stringify(series.buy_links)}>
+                {series.buy_links.map(link => (
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener sponsored"
+                    class={`buy-btn retailer-${link.retailer}`}
+                    data-retailer={link.retailer}
+                    data-countries={JSON.stringify(link.countries)}
+                  >
+                    {RETAILER_ICONS[link.retailer] || '🛒'} {link.label}
+                  </a>
+                ))}
+              </div>
+              <p class="buy-note">Vol. 1 · Affiliate links help support WebtoonDrops</p>
+            </section>
           )}
         </div>
 
@@ -273,7 +299,28 @@ const breadcrumbLd = {
 
   <script>
     import { startCountdowns } from '../scripts/countdown.js';
-    document.addEventListener('DOMContentLoaded', startCountdowns);
+    import { detectCountry, sortBuyLinks } from '../scripts/geo.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      startCountdowns();
+
+      // Reorder buy buttons based on user's country
+      const container = document.getElementById('buy-links-container');
+      if (!container) return;
+      try {
+        const buyLinks = JSON.parse(container.dataset.buyLinks || '[]');
+        const country = detectCountry();
+        const sorted = sortBuyLinks(buyLinks, country);
+
+        const buttons = container.querySelectorAll('.buy-btn');
+        const buttonMap = {};
+        buttons.forEach(btn => { buttonMap[btn.dataset.retailer] = btn; });
+        buttons.forEach(btn => btn.remove());
+        sorted.forEach(link => {
+          if (buttonMap[link.retailer]) container.appendChild(buttonMap[link.retailer]);
+        });
+      } catch { /* fail silently — default order is fine */ }
+    });
   </script>
 </Base>
 
@@ -494,17 +541,58 @@ const breadcrumbLd = {
     font-family: 'Inter', sans-serif;
   }
 
-  /* Amazon button */
-  .amazon-btn {
-    display: block; text-align: center;
-    padding: 12px 16px; border-radius: 8px;
-    background: #FF9900; color: #111;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 14px; font-weight: 700;
-    text-decoration: none; margin-top: 4px;
-    transition: opacity 0.15s;
+  /* Buy section */
+  .buy-section {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
   }
-  .amazon-btn:hover { opacity: 0.9; }
+  .buy-heading {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .buy-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .buy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.15s, transform 0.1s;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .buy-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+  .buy-btn:active { transform: translateY(0); }
+  .buy-btn:first-child { flex: 1 1 100%; justify-content: center; }
+  .retailer-amazon_us, .retailer-amazon_fr,
+  .retailer-amazon_uk, .retailer-amazon_de { background: #FF9900; color: #111; }
+  .retailer-fnac { background: #E5A823; color: #111; }
+  .retailer-cultura { background: #004B8D; }
+  .retailer-decitre { background: #C41230; }
+  .retailer-bdfugue { background: #2E7D32; }
+  .buy-note {
+    font-size: 11px;
+    color: var(--muted);
+    margin: 0;
+    opacity: 0.6;
+    font-family: 'Inter', sans-serif;
+  }
 
   /* Reading Order */
   .reading-order {
