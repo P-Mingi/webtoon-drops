@@ -7,6 +7,12 @@ export async function GET() {
     <priority>1.0</priority>
   </url>`;
 
+  const justDropped = `  <url>
+    <loc>https://webtoondrops.com/just-dropped</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>`;
+
   const thisWeek = `  <url>
     <loc>https://webtoondrops.com/this-week</loc>
     <changefreq>weekly</changefreq>
@@ -35,6 +41,7 @@ export async function GET() {
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${homepage}
+${justDropped}
 ${thisWeek}
 ${genreIndex}
 ${genreUrls.join('\n')}
