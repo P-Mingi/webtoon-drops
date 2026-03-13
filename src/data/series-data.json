@@ -925,7 +925,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B09F4PLRJ6?tag=pecchia-20",
+        "url": "https://www.amazon.com/dp/1975373016?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -936,7 +936,7 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/dp/B09F4PLRJ6?tag=pecchia-21",
+        "url": "https://www.amazon.fr/dp/1975373016?tag=pecchia-21",
         "countries": [
           "FR",
           "BE"
@@ -945,7 +945,7 @@
       {
         "retailer": "amazon_uk",
         "label": "Amazon UK",
-        "url": "https://www.amazon.co.uk/dp/B09F4PLRJ6?tag=pecchia0e-21",
+        "url": "https://www.amazon.co.uk/dp/1975373016?tag=pecchia0e-21",
         "countries": [
           "GB",
           "IE"
@@ -954,7 +954,7 @@
       {
         "retailer": "amazon_de",
         "label": "Amazon.de",
-        "url": "https://www.amazon.de/dp/B09F4PLRJ6?tag=pecchia07-21",
+        "url": "https://www.amazon.de/dp/1975373016?tag=pecchia07-21",
         "countries": [
           "DE",
           "AT",
@@ -964,7 +964,7 @@
       {
         "retailer": "amazon_es",
         "label": "Amazon.es",
-        "url": "https://www.amazon.es/dp/B09F4PLRJ6?tag=pecchia06-21",
+        "url": "https://www.amazon.es/dp/1975373016?tag=pecchia06-21",
         "countries": [
           "ES"
         ]
@@ -972,7 +972,7 @@
       {
         "retailer": "amazon_it",
         "label": "Amazon.it",
-        "url": "https://www.amazon.it/dp/B09F4PLRJ6?tag=pecchia0b-21",
+        "url": "https://www.amazon.it/dp/1975373016?tag=pecchia0b-21",
         "countries": [
           "IT"
         ]
@@ -1637,7 +1637,7 @@
   },
   {
     "id": "return-of-the-mount-hua-sect",
-    "title": "Return of the Mount Hua Sect",
+    "title": "Return of the Blossoming Blade",
     "title_kr": "화산귀환",
     "anilist_id": 132144,
     "platform": "webtoon",
@@ -1949,7 +1949,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B09NP7B4T9?tag=pecchia-20",
+        "url": "https://www.amazon.com/dp/1990778747?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -1960,7 +1960,7 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/dp/B09NP7B4T9?tag=pecchia-21",
+        "url": "https://www.amazon.fr/dp/1990778747?tag=pecchia-21",
         "countries": [
           "FR",
           "BE"
@@ -1969,7 +1969,7 @@
       {
         "retailer": "amazon_uk",
         "label": "Amazon UK",
-        "url": "https://www.amazon.co.uk/dp/B09NP7B4T9?tag=pecchia0e-21",
+        "url": "https://www.amazon.co.uk/dp/1990778747?tag=pecchia0e-21",
         "countries": [
           "GB",
           "IE"
@@ -1978,7 +1978,7 @@
       {
         "retailer": "amazon_de",
         "label": "Amazon.de",
-        "url": "https://www.amazon.de/dp/B09NP7B4T9?tag=pecchia07-21",
+        "url": "https://www.amazon.de/dp/1990778747?tag=pecchia07-21",
         "countries": [
           "DE",
           "AT",
@@ -1988,7 +1988,7 @@
       {
         "retailer": "amazon_es",
         "label": "Amazon.es",
-        "url": "https://www.amazon.es/dp/B09NP7B4T9?tag=pecchia06-21",
+        "url": "https://www.amazon.es/dp/1990778747?tag=pecchia06-21",
         "countries": [
           "ES"
         ]
@@ -1996,7 +1996,7 @@
       {
         "retailer": "amazon_it",
         "label": "Amazon.it",
-        "url": "https://www.amazon.it/dp/B09NP7B4T9?tag=pecchia0b-21",
+        "url": "https://www.amazon.it/dp/1990778747?tag=pecchia0b-21",
         "countries": [
           "IT"
         ]
@@ -2064,36 +2064,6 @@
     "anilist_score": 85
   },
   {
-    "id": "the-s-classes-that-i-raised",
-    "title": "The S-Classes That I Raised",
-    "title_kr": "내가 키운 S급들",
-    "anilist_id": 141958,
-    "platform": "webtoon",
-    "platform_label": "WEBTOON",
-    "read_url": "https://www.webtoons.com/en/action/my-s-class-hunters/list?title_no=3963",
-    "update_day": 4,
-    "update_day_name": "Thursday",
-    "release_hour_kst": 0,
-    "on_hiatus": false,
-    "genre": "Fantasy",
-    "tags": [
-      "fantasy",
-      "action",
-      "regression"
-    ],
-    "amazon_vol1": null,
-    "seo_description": "The S-Classes That I Raised updates every Thursday on WEBTOON.",
-    "platforms": [
-      {
-        "platform": "webtoon",
-        "label": "WEBTOON",
-        "read_url": "https://www.webtoons.com/en/action/my-s-class-hunters/list?title_no=3963"
-      }
-    ],
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141958-y46ASozodVNW.jpg",
-    "anilist_score": 75
-  },
-  {
     "id": "the-tutorial-is-too-hard",
     "title": "The Tutorial Is Too Hard",
     "title_kr": "튜토리얼이 너무 어렵다",
@@ -2128,13 +2098,13 @@
     "title": "The Live",
     "title_kr": "더 라이브",
     "anilist_id": 118608,
-    "platform": "manta",
-    "platform_label": "MANTA",
-    "read_url": "https://manta.net/series/1250",
+    "platform": "webtoon",
+    "platform_label": "WEBTOON",
+    "read_url": null,
     "update_day": 2,
     "update_day_name": "Tuesday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Fantasy",
     "tags": [
       "fantasy",
@@ -2145,9 +2115,9 @@
     "seo_description": "The Live updates every Tuesday on WEBTOON. Live countdown.",
     "platforms": [
       {
-        "platform": "manta",
-        "label": "MANTA",
-        "read_url": "https://manta.net/series/1250"
+        "platform": "webtoon",
+        "label": "WEBTOON",
+        "read_url": null
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b118608-9xFaGYcfPZk0.png",
@@ -2186,7 +2156,7 @@
       {
         "retailer": "amazon_us",
         "label": "Amazon US",
-        "url": "https://www.amazon.com/dp/B0BN7GCP4D?tag=pecchia-20",
+        "url": "https://www.amazon.com/dp/1975373030?tag=pecchia-20",
         "countries": [
           "US",
           "CA",
@@ -2197,7 +2167,7 @@
       {
         "retailer": "amazon_fr",
         "label": "Amazon.fr",
-        "url": "https://www.amazon.fr/dp/B0BN7GCP4D?tag=pecchia-21",
+        "url": "https://www.amazon.fr/dp/1975373030?tag=pecchia-21",
         "countries": [
           "FR",
           "BE"
@@ -2206,7 +2176,7 @@
       {
         "retailer": "amazon_uk",
         "label": "Amazon UK",
-        "url": "https://www.amazon.co.uk/dp/B0BN7GCP4D?tag=pecchia0e-21",
+        "url": "https://www.amazon.co.uk/dp/1975373030?tag=pecchia0e-21",
         "countries": [
           "GB",
           "IE"
@@ -2215,7 +2185,7 @@
       {
         "retailer": "amazon_de",
         "label": "Amazon.de",
-        "url": "https://www.amazon.de/dp/B0BN7GCP4D?tag=pecchia07-21",
+        "url": "https://www.amazon.de/dp/1975373030?tag=pecchia07-21",
         "countries": [
           "DE",
           "AT",
@@ -2225,7 +2195,7 @@
       {
         "retailer": "amazon_es",
         "label": "Amazon.es",
-        "url": "https://www.amazon.es/dp/B0BN7GCP4D?tag=pecchia06-21",
+        "url": "https://www.amazon.es/dp/1975373030?tag=pecchia06-21",
         "countries": [
           "ES"
         ]
@@ -2233,7 +2203,7 @@
       {
         "retailer": "amazon_it",
         "label": "Amazon.it",
-        "url": "https://www.amazon.it/dp/B0BN7GCP4D?tag=pecchia0b-21",
+        "url": "https://www.amazon.it/dp/1975373030?tag=pecchia0b-21",
         "countries": [
           "IT"
         ]
@@ -2245,9 +2215,9 @@
     "title": "Under the Oak Tree",
     "title_kr": "참나무 아래서",
     "anilist_id": 123739,
-    "platform": "tapas",
-    "platform_label": "TAPAS",
-    "read_url": "https://tapas.io/series/under-the-oak-tree-official/info",
+    "platform": "manta",
+    "platform_label": "MANTA",
+    "read_url": "https://manta.net/series/1250",
     "update_day": 6,
     "update_day_name": "Saturday",
     "release_hour_kst": 0,
@@ -2262,9 +2232,9 @@
     "seo_description": "Under the Oak Tree releases every Saturday on Tapas. Countdown.",
     "platforms": [
       {
-        "platform": "tapas",
-        "label": "TAPAS",
-        "read_url": "https://tapas.io/series/under-the-oak-tree-official/info"
+        "platform": "manta",
+        "label": "MANTA",
+        "read_url": "https://manta.net/series/1250"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx123739-qDrNrU0ZD6UX.jpg",
@@ -2521,7 +2491,7 @@
     "anilist_id": 116353,
     "platform": "tapas",
     "platform_label": "TAPAS",
-    "read_url": "https://tapas.io/series/Magic-Emperor/info",
+    "read_url": "https://tapas.io/series/magic-emperor/info",
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 0,
@@ -2538,7 +2508,7 @@
       {
         "platform": "tapas",
         "label": "TAPAS",
-        "read_url": "https://tapas.io/series/Magic-Emperor/info"
+        "read_url": "https://tapas.io/series/magic-emperor/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx116353-DYuIigXuPwpZ.jpg",
@@ -2581,7 +2551,7 @@
     "anilist_id": 144079,
     "platform": "tapas",
     "platform_label": "TAPAS",
-    "read_url": "https://tapas.io/series/demon-devourer/info",
+    "read_url": "https://tapas.io/series/Talent-Swallowing-magician/info",
     "update_day": 5,
     "update_day_name": "Friday",
     "release_hour_kst": 0,
@@ -2598,7 +2568,7 @@
       {
         "platform": "tapas",
         "label": "TAPAS",
-        "read_url": "https://tapas.io/series/demon-devourer/info"
+        "read_url": "https://tapas.io/series/Talent-Swallowing-magician/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx144079-ByjomNQKSo5s.jpg",
@@ -4028,7 +3998,7 @@
     "anilist_id": 137969,
     "platform": "tapas",
     "platform_label": "TAPAS",
-    "read_url": "https://tapas.io/series/rankers-return/info",
+    "read_url": "https://tapas.io/series/rankers-return-manhwa/info",
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
@@ -4043,7 +4013,7 @@
       {
         "platform": "tapas",
         "label": "TAPAS",
-        "read_url": "https://tapas.io/series/rankers-return/info"
+        "read_url": "https://tapas.io/series/rankers-return-manhwa/info"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx137969-3lgIaXzGgz65.png",
@@ -4082,9 +4052,9 @@
     "title": "Semantic Error",
     "title_kr": null,
     "anilist_id": 125167,
-    "platform": "tapas",
-    "platform_label": "TAPAS",
-    "read_url": "https://tapas.io/series/semantic-error/info",
+    "platform": "manta",
+    "platform_label": "MANTA",
+    "read_url": "https://manta.net/series/semantic-error",
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
@@ -4097,9 +4067,9 @@
     "seo_description": "Semantic Error releases on Tapas. Live countdown to the next episode.",
     "platforms": [
       {
-        "platform": "tapas",
-        "label": "TAPAS",
-        "read_url": "https://tapas.io/series/semantic-error/info"
+        "platform": "manta",
+        "label": "MANTA",
+        "read_url": "https://manta.net/series/semantic-error"
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125167-9IPJ3KINKJIq.jpg",
@@ -4427,12 +4397,12 @@
     "anilist_id": 103156,
     "platform": "tappytoon",
     "platform_label": "TAPPYTOON",
-    "read_url": "https://www.tappytoon.com/en/book/skeleton-soldier",
+    "read_url": "https://www.tappytoon.com/en/book/skeleton-soldier-failed-defend-dungeon",
     "platforms": [
       {
         "platform": "tappytoon",
         "label": "TAPPYTOON",
-        "read_url": "https://www.tappytoon.com/en/book/skeleton-soldier"
+        "read_url": "https://www.tappytoon.com/en/book/skeleton-soldier-failed-defend-dungeon"
       }
     ],
     "update_day": null,
@@ -6610,7 +6580,7 @@
   },
   {
     "id": "the-outcast-is-a-fighter",
-    "title": "The Bullied One Is Too Good at Fighting",
+    "title": "The Outcast is a Fighter",
     "title_kr": null,
     "anilist_id": null,
     "platform": "webtoon",
@@ -14994,7 +14964,7 @@
   },
   {
     "id": "my-s-class-hunters",
-    "title": "The S-Classes That I Raised, The S-Ranks That I Raised",
+    "title": "My S-Class Hunters",
     "title_kr": null,
     "anilist_id": null,
     "platform": "webtoon",
@@ -15075,7 +15045,7 @@
   },
   {
     "id": "a-dance-of-swords-in-the-night",
-    "title": "In the Night Consumed by Blades, I Walk, Sword Fanatic Wanders Through The Night",
+    "title": "A Dance of Swords in the Night",
     "title_kr": null,
     "anilist_id": null,
     "platform": "webtoon",
@@ -17741,7 +17711,7 @@
   },
   {
     "id": "best-teacher-baek",
-    "title": "Star Instructor, Master Baek",
+    "title": "Best Teacher Baek",
     "title_kr": null,
     "anilist_id": null,
     "platform": "webtoon",
@@ -19737,7 +19707,7 @@
   },
   {
     "id": "reborn-rich",
-    "title": "Reborn Rich – The Youngest Son of a Conglomerate",
+    "title": "Reborn Rich",
     "title_kr": null,
     "anilist_id": null,
     "platform": "webtoon",
@@ -22791,7 +22761,7 @@
   },
   {
     "id": "the-perfect-hybrid",
-    "title": "Genius Of The Unique Lineage",
+    "title": "The Perfect Hybrid",
     "title_kr": null,
     "anilist_id": null,
     "platform": "webtoon",
@@ -27176,7 +27146,7 @@
   },
   {
     "id": "designated-bully",
-    "title": "The Bully In Charge",
+    "title": "Designated Bully",
     "title_kr": null,
     "anilist_id": null,
     "platform": "webtoon",
