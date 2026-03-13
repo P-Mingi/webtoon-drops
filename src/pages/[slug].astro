@@ -510,10 +510,11 @@ const breadcrumbLd = {
     border: 1px solid var(--border);
   }
 
-  .series-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; align-items: flex-start; }
+  .series-actions { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; max-width: 380px; }
   .read-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 12px 20px;
     border-radius: 10px;
     font-family: 'Space Grotesk', sans-serif;
@@ -521,7 +522,6 @@ const breadcrumbLd = {
     font-weight: 700;
     text-decoration: none;
     color: white;
-    width: fit-content;
     transition: opacity 0.15s;
   }
   .read-btn:hover { opacity: 0.85; }
