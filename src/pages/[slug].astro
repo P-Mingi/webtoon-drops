@@ -72,6 +72,7 @@ const schemaJson = JSON.stringify({
       </a>
       <nav class="header-nav">
         <a href="/this-week" class="nav-link">This Week</a>
+        <a href="/genre" class="nav-link">Genres</a>
       </nav>
       <ThemeToggle />
     </div>
@@ -89,7 +90,9 @@ const schemaJson = JSON.stringify({
 
       <div class="series-info">
         <div class="series-badges">
-          <span class="badge-genre">{series.genre}</span>
+          <a href={`/genre/${series.genre?.toLowerCase().replace(/\s+/g, '-')}`} class="badge-genre genre-tag">
+            {series.genre}
+          </a>
           {platforms.map(p => (
             <span class={`badge-platform badge-${p.platform}`}>{p.label}</span>
           ))}
@@ -290,6 +293,8 @@ const schemaJson = JSON.stringify({
 
   /* Info */
   .series-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+  .genre-tag { text-decoration: none; }
+  .genre-tag:hover { opacity: 0.8; }
   .badge-genre, .badge-platform, .badge-hiatus {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 10px; font-weight: 700; letter-spacing: 0.8px;

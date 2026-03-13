@@ -13,6 +13,19 @@ export async function GET() {
     <priority>0.9</priority>
   </url>`;
 
+  const genreIndex = `  <url>
+    <loc>https://webtoondrops.com/genre</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>`;
+
+  const genres = [...new Set(seriesData.map(s => s.genre).filter(Boolean))];
+  const genreUrls = genres.map(g => `  <url>
+    <loc>https://webtoondrops.com/genre/${g.toLowerCase().replace(/\s+/g, '-')}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`);
+
   const seriesUrls = seriesData.map(s => `  <url>
     <loc>https://webtoondrops.com/${s.id}</loc>
     <changefreq>weekly</changefreq>
@@ -23,6 +36,8 @@ export async function GET() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${homepage}
 ${thisWeek}
+${genreIndex}
+${genreUrls.join('\n')}
 ${seriesUrls.join('\n')}
 </urlset>`;
 

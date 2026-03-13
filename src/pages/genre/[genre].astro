@@ -1,0 +1,298 @@
+---
+import Base from '../../layouts/Base.astro';
+import ThemeToggle from '../../components/ThemeToggle.astro';
+import SeriesCard from '../../components/SeriesCard.astro';
+import seriesData from '../../data/series-data.json';
+
+export async function getStaticPaths() {
+  const genres = [...new Set(seriesData.map(s => s.genre).filter(Boolean))];
+  return genres.map(genre => ({
+    params: { genre: genre.toLowerCase().replace(/\s+/g, '-') },
+    props: { genre }
+  }));
+}
+
+const { genre } = Astro.props;
+const slug = genre.toLowerCase().replace(/\s+/g, '-');
+
+// Get all series for this genre, active first sorted by countdown
+const allSeries = seriesData.filter(s => s.genre === genre);
+const activeSeries = allSeries
+  .filter(s => !s.on_hiatus && s.update_day !== null)
+  .sort((a, b) => {
+    const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
+    const nowKST = new Date(new Date().getTime() + KST_OFFSET_MS);
+    const dayKST = nowKST.getUTCDay();
+    const daysA = (a.update_day - dayKST + 7) % 7 || 7;
+    const daysB = (b.update_day - dayKST + 7) % 7 || 7;
+    return daysA - daysB;
+  });
+const hiatusSeries = allSeries.filter(s => s.on_hiatus);
+
+const GENRE_DESCRIPTIONS = {
+  'Action': 'Action manhwa and webtoons feature intense combat, powerful protagonists, and high-stakes battles. From solo leveling hunters to martial arts masters, these series deliver non-stop excitement every week.',
+  'Romance': 'Romance manhwa and webtoons explore love stories across fantasy kingdoms, modern schools, and historical courts. Whether villainess isekai or slice-of-life, these series update weekly with new chapters.',
+  'Fantasy': 'Fantasy manhwa and webtoons build rich worlds with magic systems, dungeon hunters, and regression storylines. Korean fantasy webtoons are among the most popular in the world.',
+  'Martial Arts': 'Martial arts manhwa feature masters of ancient techniques, sect warfare, and cultivation systems. These Korean action series blend historical settings with explosive combat.',
+  'Drama': 'Drama webtoons explore realistic relationships, social issues, and emotional storytelling. From school life to workplace tensions, these series update regularly with gripping new episodes.',
+  'Sports': 'Sports manhwa follow athletes pushing their limits across boxing, cycling, soccer, and more. These webtoons blend intense competition with deep character development.',
+  'Supernatural': 'Supernatural manhwa feature vampires, demons, hunters, and otherworldly powers. These series blend action and mystery with unique Korean mythology.',
+  'Thriller': 'Thriller manhwa keep readers on edge with suspense, mystery, and psychological tension. These webtoons update weekly with new twists and revelations.',
+  'Comedy': 'Comedy manhwa and webtoons deliver laughs through slice-of-life situations, absurd powers, and lovable characters. Light reads that update weekly.',
+};
+
+const description = GENRE_DESCRIPTIONS[genre] || `${genre} manhwa and webtoons with weekly episode countdowns.`;
+
+const pageTitle = `Best ${genre} Manhwa & Webtoons — Weekly Release Schedule`;
+const pageDescription = `${description} See live countdowns to every new ${genre} manhwa episode. Updated weekly.`;
+const canonical = `https://webtoondrops.com/genre/${slug}`;
+
+const allGenres = [...new Set(seriesData.map(s => s.genre).filter(Boolean))];
+---
+
+<Base title={pageTitle} description={pageDescription} canonical={canonical}>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="/" class="logo">
+        <span class="logo-drop">W</span>ebtoon<span class="logo-accent">Drops</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/this-week" class="nav-link">This Week</a>
+        <a href="/genre" class="nav-link active">Genres</a>
+      </nav>
+      <ThemeToggle />
+    </div>
+  </header>
+
+  <main class="genre-page container">
+
+    <header class="genre-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">WebtoonDrops</a>
+        <span>›</span>
+        <a href="/genre">Genre</a>
+        <span>›</span>
+        <span>{genre}</span>
+      </nav>
+
+      <h1>{genre} Manhwa & Webtoons</h1>
+      <p class="genre-description">{description}</p>
+
+      <div class="genre-stats">
+        <span>📚 {activeSeries.length} active series</span>
+        {hiatusSeries.length > 0 && (
+          <span>⏸ {hiatusSeries.length} on hiatus</span>
+        )}
+      </div>
+    </header>
+
+    <!-- Active series -->
+    {activeSeries.length > 0 && (
+      <section class="genre-section">
+        <h2>Currently Releasing</h2>
+        <div class="series-grid">
+          {activeSeries.map(s => <SeriesCard series={s} />)}
+        </div>
+      </section>
+    )}
+
+    <!-- Hiatus series -->
+    {hiatusSeries.length > 0 && (
+      <section class="genre-section hiatus-section">
+        <h2>On Hiatus</h2>
+        <div class="series-grid">
+          {hiatusSeries.map(s => <SeriesCard series={s} />)}
+        </div>
+      </section>
+    )}
+
+    <!-- SEO content block -->
+    <section class="seo-content">
+      <h2>About {genre} Manhwa on WebtoonDrops</h2>
+      <p>{description}</p>
+      <p>
+        WebtoonDrops tracks {activeSeries.length} active {genre.toLowerCase()} series
+        with live episode countdowns. Each series page shows exactly how many days,
+        hours, and minutes until the next chapter drops — based on the official
+        Korean Standard Time (KST) release schedule.
+      </p>
+      <p>
+        New to {genre.toLowerCase()} manhwa? Start with the series dropping soonest —
+        listed at the top. You can subscribe to browser notifications for any series
+        so you never miss an episode drop.
+      </p>
+
+      <h3>All {genre} Series on WebtoonDrops</h3>
+      <ul class="series-list-seo">
+        {allSeries.map(s => (
+          <li>
+            <a href={`/${s.id}`}>{s.title}</a>
+            {s.update_day_name && !s.on_hiatus
+              ? ` — releases every ${s.update_day_name} on ${s.platform_label}`
+              : s.on_hiatus ? ' — currently on hiatus' : ''
+            }
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- Cross-genre navigation -->
+    <nav class="genre-nav" aria-label="Other genres">
+      <h3>Browse Other Genres</h3>
+      <div class="genre-links">
+        {allGenres
+          .filter(g => g !== genre)
+          .map(g => (
+            <a href={`/genre/${g.toLowerCase().replace(/\s+/g, '-')}`} class="genre-link">
+              {g}
+            </a>
+          ))
+        }
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="/" class="back-link">← Back to all series</a>
+      <span>WebtoonDrops — countdowns in KST (UTC+9)</span>
+    </div>
+  </footer>
+
+  <script>
+    import { startCountdowns } from '../../scripts/countdown.js';
+    document.addEventListener('DOMContentLoaded', startCountdowns);
+  </script>
+</Base>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    position: sticky; top: 0;
+    background: var(--bg); z-index: 10;
+  }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px; font-weight: 700; color: var(--text); letter-spacing: -0.3px;
+    text-decoration: none;
+  }
+  .logo-drop { font-family: 'Orbitron', sans-serif; color: var(--accent); }
+  .logo-accent { color: var(--accent); }
+  .header-nav { display: flex; gap: 16px; flex: 1; justify-content: center; }
+  .nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600;
+    color: var(--muted); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-link:hover, .nav-link.active { color: var(--accent); }
+
+  .genre-page { padding: 2rem 20px; }
+
+  .breadcrumb {
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+    flex-wrap: wrap;
+  }
+  .breadcrumb a { color: var(--accent); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  .genre-header { margin-bottom: 2.5rem; }
+  .genre-header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800; margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .genre-description {
+    font-family: 'Inter', sans-serif;
+    color: var(--muted); font-size: 1rem; line-height: 1.6;
+    max-width: 680px; margin-bottom: 1rem;
+  }
+  .genre-stats {
+    display: flex; gap: 16px;
+    font-size: 14px; color: var(--muted);
+    font-weight: 600; font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .genre-section { margin-bottom: 3rem; }
+  .genre-section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.3rem; font-weight: 700;
+    margin-bottom: 1rem; padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+    color: var(--text);
+  }
+  .hiatus-section h2 { color: var(--muted); }
+
+  .series-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+
+  .seo-content { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .seo-content h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: var(--text);
+  }
+  .seo-content h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.75rem; color: var(--text);
+  }
+  .seo-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 0.8rem;
+  }
+
+  .series-list-seo {
+    list-style: none; padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 6px;
+  }
+  .series-list-seo li {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px; color: var(--muted);
+  }
+  .series-list-seo a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .series-list-seo a:hover { text-decoration: underline; }
+
+  .genre-nav { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .genre-nav h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text);
+  }
+  .genre-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .genre-link {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600;
+    transition: all 0.15s;
+  }
+  .genre-link:hover { border-color: var(--accent); color: var(--accent); }
+
+  .site-footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 2rem; }
+  .footer-inner {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    justify-content: space-between;
+    font-size: 12px; color: var(--muted);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .back-link { color: var(--accent); text-decoration: none; }
+  .back-link:active { opacity: 0.75; }
+
+  @media (max-width: 600px) {
+    .series-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+  }
+</style>

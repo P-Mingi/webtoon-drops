@@ -1,0 +1,124 @@
+---
+import Base from '../../layouts/Base.astro';
+import ThemeToggle from '../../components/ThemeToggle.astro';
+import seriesData from '../../data/series-data.json';
+
+const genres = [...new Set(seriesData.map(s => s.genre).filter(Boolean))].map(genre => ({
+  genre,
+  slug: genre.toLowerCase().replace(/\s+/g, '-'),
+  count: seriesData.filter(s => s.genre === genre && !s.on_hiatus).length,
+  sample: seriesData.filter(s => s.genre === genre && !s.on_hiatus).slice(0, 3).map(s => s.title)
+})).sort((a, b) => b.count - a.count);
+---
+
+<Base
+  title="Browse Manhwa & Webtoons by Genre — WebtoonDrops"
+  description="Browse all manhwa and webtoon series by genre. Action, romance, fantasy, martial arts and more — with live episode countdown timers."
+  canonical="https://webtoondrops.com/genre"
+>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="/" class="logo">
+        <span class="logo-drop">W</span>ebtoon<span class="logo-accent">Drops</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/this-week" class="nav-link">This Week</a>
+        <a href="/genre" class="nav-link active">Genres</a>
+      </nav>
+      <ThemeToggle />
+    </div>
+  </header>
+
+  <main class="genre-index container">
+    <h1>Browse by Genre</h1>
+    <p class="subtitle">Find your next favorite manhwa or webtoon series by genre.</p>
+
+    <div class="genre-grid">
+      {genres.map(({ genre, slug, count, sample }) => (
+        <a href={`/genre/${slug}`} class="genre-card">
+          <h2>{genre}</h2>
+          <p class="genre-count">{count} active series</p>
+          <p class="genre-sample">{sample.join(' · ')}</p>
+        </a>
+      ))}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="/" class="back-link">← Back to all series</a>
+      <span>WebtoonDrops — countdowns in KST (UTC+9)</span>
+    </div>
+  </footer>
+</Base>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    position: sticky; top: 0;
+    background: var(--bg); z-index: 10;
+  }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px; font-weight: 700; color: var(--text); letter-spacing: -0.3px;
+    text-decoration: none;
+  }
+  .logo-drop { font-family: 'Orbitron', sans-serif; color: var(--accent); }
+  .logo-accent { color: var(--accent); }
+  .header-nav { display: flex; gap: 16px; flex: 1; justify-content: center; }
+  .nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600;
+    color: var(--muted); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-link:hover, .nav-link.active { color: var(--accent); }
+
+  .genre-index { padding: 2rem 20px; }
+  .genre-index h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  .subtitle {
+    font-family: 'Inter', sans-serif;
+    color: var(--muted); margin-bottom: 2rem;
+  }
+
+  .genre-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .genre-card {
+    padding: 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: border-color 0.15s, transform 0.15s;
+    display: block;
+  }
+  .genre-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .genre-card h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 4px;
+  }
+  .genre-count {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 8px;
+  }
+  .genre-sample {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px; color: var(--muted); line-height: 1.5;
+  }
+
+  .site-footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 3rem; }
+  .footer-inner {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    justify-content: space-between;
+    font-size: 12px; color: var(--muted);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .back-link { color: var(--accent); text-decoration: none; }
+</style>
