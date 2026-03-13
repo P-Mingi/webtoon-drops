@@ -1242,10 +1242,10 @@
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/doom-breaker/list?title_no=3637",
-    "update_day": 6,
-    "update_day_name": "Saturday",
+    "update_day": null,
+    "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Fantasy",
     "tags": [
       "fantasy",
@@ -1254,7 +1254,7 @@
       "korean"
     ],
     "amazon_vol1": null,
-    "seo_description": "Doom Breaker drops every Saturday at midnight KST on WEBTOON. Live countdown to the next chapter release.",
+    "seo_description": "Doom Breaker is currently on hiatus on WEBTOON. Season 2 ended December 2023. No Season 3 return date announced.",
     "platforms": [
       {
         "platform": "webtoon",
@@ -1319,6 +1319,13 @@
         "countries": [
           "IT"
         ]
+      }
+    ],
+    "hiatus_history": [
+      {
+        "start": "2023-12-30",
+        "end": null,
+        "reason": "Season 2 ended. Creator (Cheongdam) on health hiatus. Season 3 has no announced return date as of March 2026."
       }
     ]
   },
