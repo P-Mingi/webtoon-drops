@@ -233,7 +233,7 @@
       }
     ],
     "total_episodes": null,
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx104652-lS0yplxsvEmj.jpg"
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20191218_81/1576635925277kNnsL_JPEG/5.jpg?type=crop540_540"
   },
   {
     "id": "reaper-of-the-drifting-moon",
@@ -294,7 +294,8 @@
         "read_url": "https://www.webtoons.com/en/romance/i-love-yoo/list?title_no=986"
       }
     ],
-    "total_episodes": 261
+    "total_episodes": 261,
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20170331_262/1490952144415HSV9x_JPEG/M_details.jpg?type=crop540_540"
   },
   {
     "id": "unordinary",
@@ -323,7 +324,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/super-hero/unordinary/list?title_no=679"
       }
-    ]
+    ],
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20211209_142/1639004918412lnBE6_JPEG/9unOrdinary_mobile_landingpage.jpg?type=crop540_540"
   },
   {
     "id": "lore-olympus",
@@ -360,7 +362,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/lore-olympus/list?title_no=1320"
       }
-    ]
+    ],
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20200802_207/1596323527203ga6Fa_JPEG/04_EC9E91ED9288EC8381EC84B8_mobile.jpg?type=crop540_540"
   },
   {
     "id": "true-beauty",
@@ -438,7 +441,7 @@
       }
     ],
     "total_episodes": null,
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx103039-SDa62a4AP625.jpg"
+    "cover_url": "https://swebtoon-phinf.pstatic.net/20181022_143/1540172646889wKMqQ_JPEG/04_EC9E91ED9288EC8381EC84B8_mobile.jpg?type=crop540_540"
   },
   {
     "id": "lets-play",
@@ -469,7 +472,7 @@
       }
     ],
     "total_episodes": null,
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98835-J7MppqI9oU0E.jpg"
+    "cover_url": null
   },
   {
     "id": "jungle-juice",
@@ -507,7 +510,7 @@
     "id": "doom-breaker",
     "title": "Doom Breaker",
     "title_kr": "둠 브레이커",
-    "anilist_id": null,
+    "anilist_id": 136220,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/doom-breaker/list?title_no=3637",
@@ -530,7 +533,9 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/doom-breaker/list?title_no=3637"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx136220-u9sewv3u02mN.jpg",
+    "anilist_score": 79
   },
   {
     "id": "solo-leveling-ragnarok",
@@ -568,7 +573,7 @@
     "id": "second-life-ranker",
     "title": "Second Life Ranker",
     "title_kr": "랭커의 귀환",
-    "anilist_id": null,
+    "anilist_id": 109957,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/second-life-ranker/list?title_no=1966",
@@ -590,13 +595,15 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/second-life-ranker/list?title_no=1966"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109957-EgJWdR7l9TBG.jpg",
+    "anilist_score": 77
   },
   {
     "id": "overgeared",
     "title": "Overgeared",
     "title_kr": "오버기어드",
-    "anilist_id": null,
+    "anilist_id": 117460,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/overgeared/list?title_no=2057",
@@ -618,13 +625,15 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/overgeared/list?title_no=2057"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117460-46JbftfHSXoc.jpg",
+    "anilist_score": 77
   },
   {
     "id": "kill-the-hero",
     "title": "Kill the Hero",
     "title_kr": "영웅을 죽여라",
-    "anilist_id": null,
+    "anilist_id": 117536,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/kill-the-hero/list?title_no=1948",
@@ -646,7 +655,9 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/kill-the-hero/list?title_no=1948"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117536-tnTMgXV1V5KB.jpg",
+    "anilist_score": 73
   },
   {
     "id": "return-of-the-mount-hua-sect",
@@ -684,7 +695,7 @@
     "id": "murim-login",
     "title": "Murim Login",
     "title_kr": "무림 로그인",
-    "anilist_id": null,
+    "anilist_id": 120385,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/action/murim-login/list?title_no=2676",
@@ -706,7 +717,9 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/murim-login/list?title_no=2676"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120385-4JYGuOR6cn72.jpg",
+    "anilist_score": 80
   },
   {
     "id": "teenage-mercenary",
@@ -873,7 +886,7 @@
     "id": "worn-and-torn-newbie",
     "title": "Worn and Torn Newbie",
     "title_kr": "닳고 닳은 뉴비",
-    "anilist_id": null,
+    "anilist_id": 127102,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/worn-and-torn-newbie/list?title_no=2720",
@@ -895,7 +908,9 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/worn-and-torn-newbie/list?title_no=2720"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127102-UUP1Oj14Wd4Y.jpg",
+    "anilist_score": 72
   },
   {
     "id": "legend-of-the-northern-blade",
@@ -931,7 +946,7 @@
     "id": "the-s-classes-that-i-raised",
     "title": "The S-Classes That I Raised",
     "title_kr": "내가 키운 S급들",
-    "anilist_id": null,
+    "anilist_id": 141958,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/the-s-classes-that-i-raised/list?title_no=2085",
@@ -953,13 +968,15 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-s-classes-that-i-raised/list?title_no=2085"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141958-y46ASozodVNW.jpg",
+    "anilist_score": 75
   },
   {
     "id": "the-tutorial-is-too-hard",
     "title": "The Tutorial Is Too Hard",
     "title_kr": "튜토리얼이 너무 어렵다",
-    "anilist_id": null,
+    "anilist_id": 129632,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/the-tutorial-is-too-hard/list?title_no=1891",
@@ -981,13 +998,15 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-tutorial-is-too-hard/list?title_no=1891"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129632-ArHo6qvYQoHs.jpg",
+    "anilist_score": 72
   },
   {
     "id": "the-live",
     "title": "The Live",
     "title_kr": "더 라이브",
-    "anilist_id": null,
+    "anilist_id": 118608,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/the-live/list?title_no=2119",
@@ -1009,7 +1028,9 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-live/list?title_no=2119"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b118608-9xFaGYcfPZk0.png",
+    "anilist_score": 70
   },
   {
     "id": "remarried-empress",
@@ -1046,7 +1067,7 @@
     "id": "under-the-oak-tree",
     "title": "Under the Oak Tree",
     "title_kr": "참나무 아래서",
-    "anilist_id": null,
+    "anilist_id": 123739,
     "platform": "tapas",
     "platform_label": "TAPAS",
     "read_url": "https://tapas.io/series/under-the-oak-tree-official/info",
@@ -1068,13 +1089,15 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/under-the-oak-tree-official/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx123739-qDrNrU0ZD6UX.jpg",
+    "anilist_score": 74
   },
   {
     "id": "who-made-me-a-princess",
     "title": "Who Made Me a Princess",
     "title_kr": "나에게 공주님이 생겼어요",
-    "anilist_id": null,
+    "anilist_id": 107521,
     "platform": "tapas",
     "platform_label": "TAPAS",
     "read_url": "https://tapas.io/series/who-made-me-a-princess/info",
@@ -1096,13 +1119,15 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/who-made-me-a-princess/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx107521-M4x3AUb7UGIM.png",
+    "anilist_score": 83
   },
   {
     "id": "the-villainess-turns-the-hourglass",
     "title": "The Villainess Turns the Hourglass",
     "title_kr": "악녀는 모래시계를 되돌린다",
-    "anilist_id": null,
+    "anilist_id": 116382,
     "platform": "tapas",
     "platform_label": "TAPAS",
     "read_url": "https://tapas.io/series/the-villainess-turns-the-hourglass/info",
@@ -1124,13 +1149,15 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/the-villainess-turns-the-hourglass/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx116382-EPyB5KDY9UEo.png",
+    "anilist_score": 78
   },
   {
     "id": "doctor-elise",
     "title": "Doctor Elise",
     "title_kr": "엘리제가 사랑한 의사",
-    "anilist_id": null,
+    "anilist_id": 107918,
     "platform": "tapas",
     "platform_label": "TAPAS",
     "read_url": "https://tapas.io/series/doctor-elise/info",
@@ -1152,13 +1179,15 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/doctor-elise/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx107918-dScBgkOyp8Rv.jpg",
+    "anilist_score": 76
   },
   {
     "id": "my-gently-raised-beast",
     "title": "My Gently Raised Beast",
     "title_kr": "부드럽게 키운 짐승",
-    "anilist_id": null,
+    "anilist_id": 127868,
     "platform": "tapas",
     "platform_label": "TAPAS",
     "read_url": "https://tapas.io/series/my-gently-raised-beast/info",
@@ -1180,13 +1209,15 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/my-gently-raised-beast/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127868-oVxq2qkYVS4L.jpg",
+    "anilist_score": 74
   },
   {
     "id": "the-villainess-lives-twice",
     "title": "The Villainess Lives Twice",
     "title_kr": "악녀는 두 번 산다",
-    "anilist_id": null,
+    "anilist_id": 119523,
     "platform": "tapas",
     "platform_label": "TAPAS",
     "read_url": "https://tapas.io/series/the-villainess-lives-twice/info",
@@ -1208,13 +1239,15 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/the-villainess-lives-twice/info"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119523-5OBKEF4D4Zfj.jpg",
+    "anilist_score": 72
   },
   {
     "id": "noblesse",
     "title": "Noblesse",
     "title_kr": "노블레스",
-    "anilist_id": null,
+    "anilist_id": 59983,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/supernatural/noblesse/list?title_no=87",
@@ -1236,13 +1269,15 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/supernatural/noblesse/list?title_no=87"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx59983-cfSjrRxuAlAD.png",
+    "anilist_score": 76
   },
   {
     "id": "magic-emperor",
     "title": "Magic Emperor",
     "title_kr": "마법황제",
-    "anilist_id": null,
+    "anilist_id": 116353,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/magic-emperor/list?title_no=2282",
@@ -1264,13 +1299,15 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/magic-emperor/list?title_no=2282"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx116353-DYuIigXuPwpZ.jpg",
+    "anilist_score": 82
   },
   {
     "id": "the-great-mage-returns-after-4000-years",
     "title": "The Great Mage Returns After 4000 Years",
     "title_kr": "4000년 만에 귀환한 대마법사",
-    "anilist_id": null,
+    "anilist_id": 118424,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/the-great-mage-returns-after-4000-years/list?title_no=1963",
@@ -1292,13 +1329,15 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-great-mage-returns-after-4000-years/list?title_no=1963"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118424-JbTApgnIP1ON.jpg",
+    "anilist_score": 76
   },
   {
     "id": "talent-swallowing-magician",
     "title": "Talent-Swallowing Magician",
     "title_kr": "재능을 삼키는 마법사",
-    "anilist_id": null,
+    "anilist_id": 144079,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/talent-swallowing-magician/list?title_no=2755",
@@ -1320,13 +1359,15 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/talent-swallowing-magician/list?title_no=2755"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx144079-ByjomNQKSo5s.jpg",
+    "anilist_score": 74
   },
   {
     "id": "a-returners-magic-should-be-special",
     "title": "A Returner's Magic Should Be Special",
     "title_kr": "귀환자의 마법은 특별해야 합니다",
-    "anilist_id": null,
+    "anilist_id": 105393,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/a-returners-magic-should-be-special/list?title_no=1697",
@@ -1349,13 +1390,15 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/a-returners-magic-should-be-special/list?title_no=1697"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105393-oiHumQoBGKG5.jpg",
+    "anilist_score": 76
   },
   {
     "id": "the-swordmasters-youngest-son",
     "title": "The Swordmaster's Youngest Son",
     "title_kr": "검술명가 막내아들",
-    "anilist_id": null,
+    "anilist_id": 149332,
     "platform": "webtoon",
     "platform_label": "WEBTOON",
     "read_url": "https://www.webtoons.com/en/fantasy/the-swordmasters-youngest-son/list?title_no=4751",
@@ -1377,7 +1420,9 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/fantasy/the-swordmasters-youngest-son/list?title_no=4751"
       }
-    ]
+    ],
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx149332-adkSyOFY3c5U.jpg",
+    "anilist_score": 79
   },
   {
     "id": "omniscient-reader",

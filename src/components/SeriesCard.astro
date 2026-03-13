@@ -19,10 +19,18 @@ const platformKeys = platforms.map(p => p.platform);
 >
   <a href={`/${series.id}`} class="card-inner">
     <div class="card-cover">
-      {series.cover_url
-        ? <img src={series.cover_url} alt={series.title} loading="lazy" decoding="async" />
-        : <div class="cover-fallback">{series.title}</div>
-      }
+      {series.cover_url && (
+        <img
+          src={series.cover_url}
+          alt={`${series.title} cover`}
+          loading="lazy"
+          decoding="async"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        />
+      )}
+      <div class="cover-placeholder" style={series.cover_url ? "display:none" : "display:flex"}>
+        <span class="placeholder-title">{series.title.slice(0, 2).toUpperCase()}</span>
+      </div>
       <div class="cover-overlay"></div>
       <span class="genre-pill">{series.genre}</span>
       {series.anilist_score && (
@@ -110,14 +118,20 @@ const platformKeys = platforms.map(p => p.platform);
     background: linear-gradient(to bottom, transparent 50%, var(--bg) 100%);
     opacity: 0.6;
   }
-  .cover-fallback {
+  .cover-placeholder {
     width: 100%; height: 100%;
-    display: flex; align-items: flex-end;
-    padding: 16px;
+    background: linear-gradient(135deg, var(--accent) 0%, #a855f7 100%);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+  }
+  .placeholder-title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    opacity: 0.8;
+    letter-spacing: 2px;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 13px; font-weight: 600;
-    color: var(--text);
-    background: linear-gradient(135deg, var(--surface2), var(--surface));
   }
   .genre-pill {
     position: absolute; top: 10px; right: 10px;
