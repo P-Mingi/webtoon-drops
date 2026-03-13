@@ -120,6 +120,11 @@ const description = `Complete schedule of all webtoon and manhwa episodes droppi
       <span>WebtoonDrops — countdowns in KST (UTC+9)</span>
     </div>
   </footer>
+
+  <script>
+    import { startCountdowns } from '../scripts/countdown.js';
+    document.addEventListener('DOMContentLoaded', startCountdowns);
+  </script>
 </Base>
 
 <style>
