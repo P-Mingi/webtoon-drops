@@ -29,9 +29,10 @@ const series = seriesData
 
 const genres = [...new Set(seriesData.map(s => s.genre))].sort();
 const platforms = [
-  { value: 'webtoon', label: 'WEBTOON' },
-  { value: 'tapas', label: 'TAPAS' },
+  { value: 'webtoon',   label: 'WEBTOON' },
+  { value: 'tapas',     label: 'TAPAS' },
   { value: 'mangaplus', label: 'MANGA PLUS' },
+  { value: 'tappytoon', label: 'TAPPYTOON' },
 ];
 ---
 
@@ -41,6 +42,9 @@ const platforms = [
       <a href="/" class="logo">
         <span class="logo-drop">W</span>ebtoon<span class="logo-accent">Drops</span>
       </a>
+      <nav class="header-nav">
+        <a href="/this-week" class="nav-link">This Week</a>
+      </nav>
       <ThemeToggle />
     </div>
   </header>
@@ -129,6 +133,14 @@ const platforms = [
     color: var(--accent);
   }
   .logo-accent { color: var(--accent); }
+  .header-nav { display: flex; gap: 16px; }
+  .nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600;
+    color: var(--muted); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-link:hover { color: var(--accent); }
 
   /* Hero */
   .hero {

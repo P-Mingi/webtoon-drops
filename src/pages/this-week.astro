@@ -1,0 +1,255 @@
+---
+import Base from '../layouts/Base.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+import SeriesCard from '../components/SeriesCard.astro';
+import seriesData from '../data/series-data.json';
+
+const DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+// Get current week's Monday–Sunday in KST
+function getWeekRange() {
+  const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
+  const now = new Date();
+  const nowKST = new Date(now.getTime() + KST_OFFSET_MS);
+  const dayKST = nowKST.getUTCDay(); // 0=Sun
+  const monday = new Date(nowKST);
+  monday.setUTCDate(nowKST.getUTCDate() - ((dayKST + 6) % 7));
+  monday.setUTCHours(0, 0, 0, 0);
+  const sunday = new Date(monday);
+  sunday.setUTCDate(monday.getUTCDate() + 6);
+  return { monday, sunday };
+}
+
+const { monday, sunday } = getWeekRange();
+
+const weekLabel = monday.toLocaleDateString('en-US', {
+  month: 'long', day: 'numeric', timeZone: 'UTC'
+}) + ' – ' + sunday.toLocaleDateString('en-US', {
+  month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC'
+});
+
+// Group active series by day
+const byDay = DAYS.map((dayName, dayIndex) => ({
+  dayName,
+  dayIndex,
+  series: seriesData
+    .filter(s => !s.on_hiatus && s.update_day !== null && s.update_day === dayIndex)
+    .sort((a, b) => (b.anilist_id || 0) - (a.anilist_id || 0))
+})).filter(d => d.series.length > 0);
+
+// Today's day index in KST (at build time)
+const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
+const todayKST = new Date(new Date().getTime() + KST_OFFSET_MS).getUTCDay();
+
+const title = `Webtoon & Manhwa Releases This Week — ${weekLabel}`;
+const description = `Complete schedule of all webtoon and manhwa episodes dropping this week (${weekLabel}). Updated weekly. WEBTOON, Tapas, MangaPlus and more.`;
+---
+
+<Base title={title} description={description} canonical="https://webtoondrops.com/this-week">
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="/" class="logo">
+        <span class="logo-drop">W</span>ebtoon<span class="logo-accent">Drops</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/this-week" class="nav-link active">This Week</a>
+      </nav>
+      <ThemeToggle />
+    </div>
+  </header>
+
+  <main class="this-week-page container">
+    <header class="page-header">
+      <h1>Drops This Week</h1>
+      <p class="week-range">{weekLabel}</p>
+      <p class="page-subtitle">
+        Every webtoon and manhwa episode releasing this week, grouped by day.
+      </p>
+    </header>
+
+    <!-- Quick jump nav -->
+    <nav class="day-nav" aria-label="Jump to day">
+      {byDay.map(({ dayName, dayIndex }) => (
+        <a
+          href={`#${dayName.toLowerCase()}`}
+          class={`day-nav-btn ${dayIndex === todayKST ? 'today' : ''}`}
+        >
+          {dayIndex === todayKST ? '⚡ ' : ''}{dayName}
+          <span class="day-count">{byDay.find(d => d.dayIndex === dayIndex)?.series.length}</span>
+        </a>
+      ))}
+    </nav>
+
+    <!-- Series grouped by day -->
+    {byDay.map(({ dayName, dayIndex, series }) => (
+      <section id={dayName.toLowerCase()} class="day-section">
+        <h2 class={`day-heading ${dayIndex === todayKST ? 'today' : ''}`}>
+          {dayIndex === todayKST ? '⚡ Today — ' : ''}{dayName}
+          <span class="series-count">{series.length} series</span>
+        </h2>
+        <div class="series-grid">
+          {series.map(s => <SeriesCard series={s} />)}
+        </div>
+      </section>
+    ))}
+
+    <!-- SEO prose -->
+    <section class="seo-content">
+      <h2>About This Week's Webtoon Schedule</h2>
+      <p>
+        This page lists every official webtoon and manhwa releasing a new episode this week,
+        across WEBTOON, Tapas, MangaPlus, and Tappytoon. The schedule updates automatically
+        every week — bookmark it and check back every Monday for the fresh weekly lineup.
+      </p>
+      <p>
+        All release times are based on Korean Standard Time (KST, UTC+9), which is when
+        episodes officially drop. If you're in a different timezone, episodes may appear
+        slightly earlier or later in your local time.
+      </p>
+      <p>
+        Looking for a specific series? Use the live countdown on each series page to see
+        exactly how many days, hours, and minutes until the next episode drops.
+        You can also subscribe to browser notifications for any series — no account required.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="/" class="back-link">← Back to all series</a>
+      <span>WebtoonDrops — countdowns in KST (UTC+9)</span>
+    </div>
+  </footer>
+</Base>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    position: sticky; top: 0;
+    background: var(--bg); z-index: 10;
+  }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px; font-weight: 700; color: var(--text); letter-spacing: -0.3px;
+    text-decoration: none;
+  }
+  .logo-drop { font-family: 'Orbitron', sans-serif; color: var(--accent); }
+  .logo-accent { color: var(--accent); }
+
+  .header-nav { display: flex; gap: 16px; flex: 1; justify-content: center; }
+  .nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600;
+    color: var(--muted); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-link:hover, .nav-link.active { color: var(--accent); }
+
+  .this-week-page { padding: 2rem 20px; }
+
+  .page-header { text-align: center; margin-bottom: 2rem; }
+  .page-header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800; margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  .week-range { color: var(--accent); font-weight: 600; font-size: 1rem; margin-bottom: 0.5rem; font-family: 'Space Grotesk', sans-serif; }
+  .page-subtitle { color: var(--muted); font-size: 0.95rem; font-family: 'Inter', sans-serif; }
+
+  .day-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .day-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+    transition: all 0.15s;
+  }
+  .day-nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .day-nav-btn.today { background: var(--accent); color: white; border-color: var(--accent); }
+
+  .day-count {
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 1px 7px;
+    font-size: 11px;
+  }
+
+  .day-section { margin-bottom: 3rem; scroll-margin-top: 80px; }
+
+  .day-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text);
+  }
+  .day-heading.today { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .series-count {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--muted);
+    font-family: 'Inter', sans-serif;
+  }
+
+  .series-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+  }
+
+  .seo-content {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+  .seo-content h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem;
+    color: var(--text);
+  }
+  .seo-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 0.8rem;
+  }
+
+  .site-footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 2rem; }
+  .footer-inner {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    justify-content: space-between;
+    font-size: 12px; color: var(--muted);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .back-link { color: var(--accent); text-decoration: none; }
+  .back-link:active { opacity: 0.75; }
+
+  @media (max-width: 600px) {
+    .series-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+    .page-header h1 { font-size: 1.8rem; }
+  }
+</style>

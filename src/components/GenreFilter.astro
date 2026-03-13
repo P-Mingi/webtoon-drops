@@ -25,9 +25,9 @@ const { genres, platforms } = Astro.props;
 
   function applyFilters() {
     cards.forEach(card => {
-      const platform = card.dataset.platform;
+      const cardPlatforms = JSON.parse(card.dataset.platforms || '[]');
       const genre = card.dataset.genre;
-      const platformMatch = activePlatform === 'all' || platform === activePlatform;
+      const platformMatch = activePlatform === 'all' || cardPlatforms.includes(activePlatform);
       const genreMatch = activeGenre === 'all' || genre === activeGenre;
       card.style.display = (platformMatch && genreMatch) ? '' : 'none';
     });

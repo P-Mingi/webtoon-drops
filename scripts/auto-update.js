@@ -30,6 +30,7 @@ async function fetchStatuses(ids) {
         media(id_in: $ids, type: MANGA) {
           id
           status
+          chapters
           title { english romaji native }
         }
       }
@@ -97,19 +98,34 @@ async function update() {
     const { status } = result;
     const title = result.title.english ?? result.title.romaji ?? series.title;
 
+    let updated = { ...series };
+    let hasChanges = false;
+
     // HIATUS or FINISHED → should be on_hiatus: true
     if ((status === 'HIATUS' || status === 'FINISHED' || status === 'CANCELLED') && !series.on_hiatus) {
       changes.push(`  ⏸  ${title}: ${status} → on_hiatus set to true`);
-      return { ...series, on_hiatus: true };
+      updated.on_hiatus = true;
+      hasChanges = true;
     }
 
     // RELEASING and was on_hiatus → resumed
     if (status === 'RELEASING' && series.on_hiatus) {
       changes.push(`  ▶  ${title}: RELEASING → on_hiatus set to false (resumed)`);
-      return { ...series, on_hiatus: false };
+      updated.on_hiatus = false;
+      hasChanges = true;
     }
 
-    return series;
+    // Sync total_episodes from AniList — only increase, never decrease
+    if (result.chapters && result.chapters > 0) {
+      const current = series.total_episodes || 0;
+      if (result.chapters > current) {
+        updated.total_episodes = result.chapters;
+        hasChanges = true;
+        changes.push(`  📊 ${title}: episodes updated ${current} → ${result.chapters}`);
+      }
+    }
+
+    return hasChanges ? updated : series;
   });
 
   if (warnings.length > 0) {

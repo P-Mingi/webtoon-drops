@@ -1,17 +1,21 @@
 ---
 const { series } = Astro.props;
 const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-const PLATFORM_COLORS = {
-  webtoon:   '#6C63FF',
-  tapas:     '#F5821F',
-  mangaplus: '#E40026',
-};
+const platforms = series.platforms || [{
+  platform: series.platform,
+  label: series.platform_label,
+  read_url: series.read_url,
+}];
+const platformKeys = platforms.map(p => p.platform);
 ---
 
 <div
   class="card"
   data-genre={series.genre}
   data-platform={series.platform}
+  data-platforms={JSON.stringify(platformKeys)}
+  data-update-day={series.update_day ?? ''}
+  data-on-hiatus={series.on_hiatus ? 'true' : 'false'}
 >
   <a href={`/${series.id}`} class="card-inner">
     <div class="card-cover">
@@ -21,12 +25,14 @@ const PLATFORM_COLORS = {
       }
       <div class="cover-overlay"></div>
       <span class="genre-pill">{series.genre}</span>
-      <span
-        class="platform-pill"
-        style={`background: ${PLATFORM_COLORS[series.platform] ?? '#6C63FF'}`}
-      >
-        {series.platform_label}
-      </span>
+      <div class="platform-badges">
+        {platforms.slice(0, 2).map(p => (
+          <span class={`platform-badge platform-${p.platform}`}>{p.label}</span>
+        ))}
+        {platforms.length > 2 && (
+          <span class="platform-badge platform-more">+{platforms.length - 2}</span>
+        )}
+      </div>
     </div>
     <div class="card-body">
       <div class="card-title">{series.title}</div>
@@ -119,15 +125,26 @@ const PLATFORM_COLORS = {
     letter-spacing: 0.5px;
     font-family: 'Space Grotesk', sans-serif;
   }
-  .platform-pill {
+  .platform-badges {
     position: absolute; bottom: 10px; left: 10px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .platform-badge {
+    display: inline-block;
     color: white;
     font-size: 9px; font-weight: 700;
     padding: 3px 7px; border-radius: 100px;
     letter-spacing: 0.5px;
     font-family: 'Space Grotesk', sans-serif;
     opacity: 0.9;
+    width: fit-content;
   }
+  .platform-webtoon   { background: #6C63FF; }
+  .platform-tapas     { background: #F5821F; }
+  .platform-mangaplus { background: #E40026; }
+  .platform-tappytoon { background: #00C4B4; }
+  .platform-more      { background: rgba(255,255,255,0.2); }
+
   .card-body { padding: 14px; }
   .card-title {
     font-family: 'Space Grotesk', sans-serif;

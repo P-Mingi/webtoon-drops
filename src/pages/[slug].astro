@@ -4,6 +4,7 @@ import ThemeToggle from '../components/ThemeToggle.astro';
 import SeriesCard from '../components/SeriesCard.astro';
 import seriesData from '../data/series-data.json';
 import { fetchManhwaCovers } from '../lib/anilist.js';
+import { getEpisodeHistory, formatHistoryDate } from '../lib/episode-history.js';
 
 export async function getStaticPaths() {
   return seriesData.map(s => ({ params: { slug: s.id }, props: { series: s } }));
@@ -18,6 +19,12 @@ const anilist = anilistData[0] ?? null;
 const cover = anilist?.coverImage?.large ?? null;
 const description = anilist?.description ?? series.seo_description;
 
+const platforms = series.platforms || [{
+  platform: series.platform,
+  label: series.platform_label,
+  read_url: series.read_url,
+}];
+
 // "Also dropping this week" — same week as this series, different id, not on hiatus
 const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const related = seriesData
@@ -25,17 +32,26 @@ const related = seriesData
   .slice(0, 4)
   .map(s => ({ ...s, cover: null })); // covers omitted for related cards (build perf)
 
+const history = getEpisodeHistory(series, 20);
+const hasHistory = history.length > 0;
+const primaryPlatform = platforms[0];
+
 const schemaJson = JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": `${series.title} Next Episode Countdown`,
-  "description": series.seo_description,
+  "@type": "ComicSeries",
+  "name": series.title,
+  "alternateName": series.title_kr || undefined,
   "url": `https://webtoondrops.com/${series.id}`,
-  "about": {
-    "@type": "Book",
-    "name": series.title,
-    "genre": series.genre,
-    "inLanguage": "ko"
+  "image": cover || undefined,
+  "genre": series.genre,
+  "publisher": {
+    "@type": "Organization",
+    "name": primaryPlatform.label
+  },
+  "numberOfEpisodes": series.total_episodes || undefined,
+  "countryOfOrigin": {
+    "@type": "Country",
+    "name": "South Korea"
   }
 });
 ---
@@ -54,6 +70,9 @@ const schemaJson = JSON.stringify({
       <a href="/" class="logo">
         <span class="logo-drop">W</span>ebtoon<span class="logo-accent">Drops</span>
       </a>
+      <nav class="header-nav">
+        <a href="/this-week" class="nav-link">This Week</a>
+      </nav>
       <ThemeToggle />
     </div>
   </header>
@@ -71,7 +90,9 @@ const schemaJson = JSON.stringify({
       <div class="series-info">
         <div class="series-badges">
           <span class="badge-genre">{series.genre}</span>
-          <span class={`badge-platform badge-${series.platform}`}>{series.platform_label}</span>
+          {platforms.map(p => (
+            <span class={`badge-platform badge-${p.platform}`}>{p.label}</span>
+          ))}
           {series.on_hiatus && <span class="badge-hiatus">On Break</span>}
           {series.update_day === null && !series.on_hiatus && <span class="badge-tbd">Schedule TBD</span>}
         </div>
@@ -96,9 +117,11 @@ const schemaJson = JSON.stringify({
         }
 
         <div class="series-actions">
-          <a href={series.read_url} class="btn-primary" target="_blank" rel="noopener noreferrer">
-            Read on {series.platform_label} →
-          </a>
+          {platforms.map(p => (
+            <a href={p.read_url} class={`btn-platform btn-${p.platform}`} target="_blank" rel="noopener noreferrer">
+              Read on {p.label} →
+            </a>
+          ))}
           {series.amazon_vol1 && (
             <a href={series.amazon_vol1} class="btn-secondary" target="_blank" rel="noopener noreferrer">
               Buy Vol. 1 on Amazon
@@ -106,11 +129,84 @@ const schemaJson = JSON.stringify({
           )}
         </div>
 
+        {series.update_day_name && !series.on_hiatus && (
+          <p class="schedule-link">
+            See all series dropping on <a href={`/this-week#${series.update_day_name.toLowerCase()}`}>
+              {series.update_day_name}s this week →
+            </a>
+          </p>
+        )}
+
         {description && (
           <p class="series-desc">{description.replace(/<[^>]+>/g, '')}</p>
         )}
       </div>
     </div>
+
+    {hasHistory && (
+      <section class="episode-history" id="episode-history">
+        <details>
+          <summary class="history-toggle">
+            <span>📅 Episode Release History</span>
+            <span class="history-toggle-icon">▾</span>
+          </summary>
+
+          <div class="history-list">
+            {history.map(item => item.type === 'hiatus' ? (
+              <div class="history-hiatus">
+                <span class="hiatus-icon">⏸</span>
+                <span class="hiatus-label">
+                  Hiatus — {item.start} to {item.end}
+                  {item.reason && <span class="hiatus-reason"> · {item.reason}</span>}
+                </span>
+              </div>
+            ) : (
+              <div class="history-episode">
+                <span class="episode-label">
+                  {item.episodeNumber ? `Ep ${item.episodeNumber}` : 'Episode'}
+                </span>
+                <span class="episode-date">{formatHistoryDate(item.date)}</span>
+              </div>
+            ))}
+          </div>
+
+          <p class="history-note">
+            Dates are calculated from the series' weekly schedule and may vary slightly
+            from actual release dates due to holidays or unannounced breaks.
+          </p>
+        </details>
+      </section>
+    )}
+
+    <section class="seo-content">
+      <h2>{series.title} Release Schedule</h2>
+      <p>
+        {series.update_day !== null
+          ? `${series.title} releases new episodes every ${series.update_day_name} on ${primaryPlatform.label}.`
+          : `${series.title} releases on ${primaryPlatform.label}.`
+        }
+        {' '}
+        {series.on_hiatus
+          ? `The series is currently on hiatus. Check back for updates on when ${series.title} will resume.`
+          : `Use the live countdown above to see exactly how long until the next ${series.title} episode drops.`
+        }
+        {series.total_episodes
+          ? ` The series has released ${series.total_episodes} episodes to date.`
+          : ''
+        }
+      </p>
+      <p>
+        Bookmark this page to always know when {series.title} updates.
+        You can also click the 🔔 button to get a browser notification 1 hour before each new episode drops — no account required.
+      </p>
+      {series.update_day !== null && !series.on_hiatus && (
+        <p class="schedule-link">
+          See all series dropping on <a href={`/this-week#${series.update_day_name?.toLowerCase()}`}>
+            {series.update_day_name}s this week →
+          </a>
+        </p>
+      )}
+    </section>
 
     {related.length > 0 && (
       <section class="related">
@@ -152,6 +248,14 @@ const schemaJson = JSON.stringify({
   }
   .logo-drop { font-family: 'Orbitron', sans-serif; color: var(--accent); }
   .logo-accent { color: var(--accent); }
+  .header-nav { display: flex; gap: 16px; flex: 1; justify-content: center; }
+  .nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600;
+    color: var(--muted); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-link:hover { color: var(--accent); }
 
   /* Hero */
   .series-hero {
@@ -193,9 +297,10 @@ const schemaJson = JSON.stringify({
   }
   .badge-genre { background: rgba(108,99,255,0.2); color: var(--accent); border: 1px solid var(--accent); }
   .badge-platform { color: white; }
-  .badge-webtoon { background: #6C63FF; }
-  .badge-tapas { background: #F5821F; }
+  .badge-webtoon   { background: #6C63FF; }
+  .badge-tapas     { background: #F5821F; }
   .badge-mangaplus { background: #E40026; }
+  .badge-tappytoon { background: #00C4B4; }
   .badge-hiatus { background: var(--tag-bg); color: var(--hiatus); border: 1px solid var(--border); }
   .badge-tbd    { background: var(--surface2); color: var(--muted); border: 1px solid var(--border); }
 
@@ -244,14 +349,18 @@ const schemaJson = JSON.stringify({
   }
 
   .series-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
-  .btn-primary, .btn-secondary {
+  .btn-platform, .btn-secondary {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 14px; font-weight: 600;
     padding: 12px 24px; border-radius: 8px;
     text-decoration: none; display: inline-block;
   }
-  .btn-primary { background: var(--accent); color: white; }
-  .btn-primary:active { opacity: 0.85; }
+  .btn-platform { color: white; }
+  .btn-platform:active { opacity: 0.85; }
+  .btn-webtoon   { background: #6C63FF; }
+  .btn-tapas     { background: #F5821F; }
+  .btn-mangaplus { background: #E40026; }
+  .btn-tappytoon { background: #00C4B4; }
   .btn-secondary {
     background: var(--surface);
     color: var(--text);
@@ -259,11 +368,105 @@ const schemaJson = JSON.stringify({
   }
   .btn-secondary:active { border-color: var(--accent); }
 
+  .schedule-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .schedule-link a { color: var(--accent); text-decoration: none; }
+  .schedule-link a:hover { text-decoration: underline; }
+
   .series-desc {
     font-family: 'Inter', sans-serif;
     font-size: 14px; color: var(--muted);
     line-height: 1.7; max-width: 560px;
   }
+
+  /* Episode History */
+  .episode-history {
+    margin-top: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .history-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    list-style: none;
+    background: var(--surface);
+    transition: background 0.15s;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .history-toggle::-webkit-details-marker { display: none; }
+  .history-toggle:hover { background: var(--surface2); }
+  details[open] .history-toggle-icon { transform: rotate(180deg); }
+  .history-toggle-icon { transition: transform 0.2s; }
+  .history-list { border-top: 1px solid var(--border); }
+  .history-episode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .history-episode:last-child { border-bottom: none; }
+  .episode-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: var(--accent);
+    min-width: 80px;
+  }
+  .episode-date { color: var(--muted); font-family: 'Inter', sans-serif; }
+  .history-hiatus {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: rgba(255, 165, 0, 0.08);
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    color: #F5821F;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .hiatus-reason { opacity: 0.7; }
+  .history-note {
+    padding: 12px 20px;
+    font-size: 12px;
+    color: var(--muted);
+    font-style: italic;
+    border-top: 1px solid var(--border);
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* SEO Content */
+  .seo-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 4px;
+  }
+  .seo-content h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .seo-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  .schedule-link a { color: var(--accent); }
 
   /* Related */
   .related { padding-bottom: 64px; }

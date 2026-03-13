@@ -20,6 +20,24 @@
     ],
     "amazon_vol1": "https://www.amazon.com/dp/1990259766?tag=YOUR_TAG",
     "seo_description": "Tower of God drops every Monday at midnight KST on WEBTOON. Live countdown to the next episode. Never miss a release.",
+    "total_episodes": 235,
+    "hiatus_history": [
+      {
+        "start": "2020-06",
+        "end": "2021-05",
+        "reason": "Author health"
+      },
+      {
+        "start": "2022-07",
+        "end": "2023-05",
+        "reason": "Author health"
+      },
+      {
+        "start": "2025-02",
+        "end": null,
+        "reason": "Season 3 finale"
+      }
+    ],
     "platforms": [
       {
         "platform": "webtoon",
@@ -49,6 +67,7 @@
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=omniscient+reader+viewpoint+manga&tag=YOUR_TAG",
     "seo_description": "Omniscient Reader's Viewpoint drops every Tuesday at midnight KST on WEBTOON. Live countdown to the next chapter release.",
+    "total_episodes": null,
     "platforms": [
       {
         "platform": "webtoon",
@@ -78,6 +97,7 @@
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=eleceed+manga&tag=YOUR_TAG",
     "seo_description": "Eleceed drops every Wednesday at midnight KST on WEBTOON. See the live countdown to the next episode.",
+    "total_episodes": null,
     "platforms": [
       {
         "platform": "webtoon",
@@ -107,6 +127,7 @@
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=nano+machine+manhwa&tag=YOUR_TAG",
     "seo_description": "Nano Machine drops every Thursday at midnight KST on WEBTOON. Live countdown to the next episode release.",
+    "total_episodes": null,
     "platforms": [
       {
         "platform": "webtoon",
@@ -136,6 +157,7 @@
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=mercenary+enrollment+manhwa&tag=YOUR_TAG",
     "seo_description": "Mercenary Enrollment drops every Friday at midnight KST on WEBTOON. Live countdown to the next episode.",
+    "total_episodes": null,
     "platforms": [
       {
         "platform": "webtoon",
@@ -171,7 +193,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/tbate-comic/info"
       }
-    ]
+    ],
+    "total_episodes": null
   },
   {
     "id": "reaper-of-the-drifting-moon",
@@ -200,7 +223,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/reaper-of-the-drifting-moon/list?title_no=2306"
       }
-    ]
+    ],
+    "total_episodes": null
   },
   {
     "id": "i-love-yoo",
@@ -228,7 +252,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/i-love-yoo/list?title_no=986"
       }
-    ]
+    ],
+    "total_episodes": 261
   },
   {
     "id": "unordinary",
@@ -280,6 +305,14 @@
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=lore+olympus+book&tag=YOUR_TAG",
     "seo_description": "Lore Olympus release schedule and next episode countdown on WEBTOON. Check the latest episode release date.",
+    "total_episodes": 273,
+    "hiatus_history": [
+      {
+        "start": "2022-03",
+        "end": "2022-06",
+        "reason": "Hiatus"
+      }
+    ],
     "platforms": [
       {
         "platform": "webtoon",
@@ -309,6 +342,14 @@
     ],
     "amazon_vol1": "https://www.amazon.com/s?k=true+beauty+manhwa&tag=YOUR_TAG",
     "seo_description": "True Beauty drops every Thursday on WEBTOON. Live countdown to the next episode of 여신강림.",
+    "total_episodes": 207,
+    "hiatus_history": [
+      {
+        "start": "2023-06",
+        "end": "2023-11",
+        "reason": "Hiatus"
+      }
+    ],
     "platforms": [
       {
         "platform": "webtoon",
@@ -344,7 +385,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/subzero/list?title_no=1468"
       }
-    ]
+    ],
+    "total_episodes": null
   },
   {
     "id": "lets-play",
@@ -373,7 +415,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/letsplay/list?title_no=1218"
       }
-    ]
+    ],
+    "total_episodes": null
   },
   {
     "id": "jungle-juice",
@@ -402,7 +445,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/jungle-juice/list?title_no=2535"
       }
-    ]
+    ],
+    "total_episodes": null
   },
   {
     "id": "doom-breaker",
@@ -460,7 +504,8 @@
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/solo-leveling-ragnarok/info"
       }
-    ]
+    ],
+    "total_episodes": null
   },
   {
     "id": "second-life-ranker",
@@ -573,7 +618,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/return-of-the-mount-hua-sect/list?title_no=3892"
       }
-    ]
+    ],
+    "total_episodes": null
   },
   {
     "id": "murim-login",
@@ -629,7 +675,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/action/teenage-mercenary/list?title_no=2116"
       }
-    ]
+    ],
+    "total_episodes": null
   },
   {
     "id": "lookism",
@@ -707,6 +754,7 @@
     ],
     "amazon_vol1": null,
     "seo_description": "Windbreaker releases every Sunday on WEBTOON. Countdown.",
+    "total_episodes": null,
     "platforms": [
       {
         "platform": "webtoon",
@@ -735,6 +783,7 @@
     ],
     "amazon_vol1": null,
     "seo_description": "The God of High School releases every Sunday on WEBTOON. Live countdown.",
+    "total_episodes": null,
     "platforms": [
       {
         "platform": "webtoon",
@@ -909,7 +958,8 @@
         "label": "WEBTOON",
         "read_url": "https://www.webtoons.com/en/romance/remarried-empress/list?title_no=2135"
       }
-    ]
+    ],
+    "total_episodes": null
   },
   {
     "id": "under-the-oak-tree",
@@ -2259,6 +2309,11 @@
         "platform": "tapas",
         "label": "TAPAS",
         "read_url": "https://tapas.io/series/villains-are-destined-to-die/info"
+      },
+      {
+        "platform": "tappytoon",
+        "label": "TAPPYTOON",
+        "read_url": "https://www.tappytoon.com/en/comics/villains-are-destined-to-die"
       }
     ]
   },
@@ -2755,5 +2810,33 @@
         "read_url": "https://anilist.co/manga/153513"
       }
     ]
+  },
+  {
+    "id": "the-skeleton-soldier-failed-to-defend-the-dungeon",
+    "title": "The Skeleton Soldier Failed to Defend the Dungeon",
+    "title_kr": "해골 병사는 던전을 지키지 못했다",
+    "anilist_id": 103156,
+    "platform": "tappytoon",
+    "platform_label": "TAPPYTOON",
+    "read_url": "https://www.tappytoon.com/en/comics/skeleton-soldier",
+    "platforms": [
+      {
+        "platform": "tappytoon",
+        "label": "TAPPYTOON",
+        "read_url": "https://www.tappytoon.com/en/comics/skeleton-soldier"
+      }
+    ],
+    "update_day": null,
+    "update_day_name": null,
+    "release_hour_kst": 0,
+    "on_hiatus": false,
+    "genre": "Fantasy",
+    "tags": [
+      "fantasy",
+      "action",
+      "regression"
+    ],
+    "amazon_vol1": null,
+    "seo_description": "The Skeleton Soldier Failed to Defend the Dungeon releases on Tappytoon. Live countdown."
   }
 ]
