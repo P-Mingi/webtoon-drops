@@ -145,9 +145,26 @@ const platformKeys = platforms.map(p => p.platform);
     left: 6px;
     z-index: 2;
   }
-  .card-star .star-btn {
-    background: rgba(0, 0, 0, 0.45);
+  .card-star :global(.star-btn) {
+    background: rgba(0, 0, 0, 0.55);
     border-radius: 50%;
+    color: white;
+    opacity: 0.85;
+    width: 32px;
+    height: 32px;
+  }
+  .card-star :global(.star-btn .star-icon) {
+    width: 18px;
+    height: 18px;
+    stroke-width: 1.8;
+  }
+  .card-star :global(.star-btn:hover) {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .card-star :global(.star-btn.bookmarked) {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
   }
 
   .genre-pill {
