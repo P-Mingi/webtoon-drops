@@ -18,6 +18,7 @@ const platformKeys = platforms.map(p => p.platform);
   data-update-day={series.update_day ?? ''}
   data-on-hiatus={series.on_hiatus ? 'true' : 'false'}
   data-title={series.title.toLowerCase()}
+  data-anilist-score={series.anilist_score ?? ''}
 >
   <a href={`/${series.id}`} class="card-inner">
     <div class="card-cover">

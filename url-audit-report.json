@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-03-13T19:31:24.433Z",
+  "timestamp": "2026-03-13T20:46:59.324Z",
   "summary": {
-    "ok": 64,
-    "wrong": 27,
+    "ok": 940,
+    "wrong": 24,
     "error": 0,
-    "noUrl": 5,
-    "redirectedOk": 4
+    "noUrl": 1,
+    "redirectedOk": 5
   },
   "wrongPages": [
     {
@@ -17,20 +17,12 @@
       "finalUrl": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154"
     },
     {
-      "id": "nano-machine",
-      "title": "Nano Machine",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/action/nano-machine/list?title_no=2202",
-      "gotPage": "Human Forest",
-      "finalUrl": "https://www.webtoons.com/id/horror/human-forest/list?title_no=2202"
-    },
-    {
       "id": "mercenary-enrollment",
       "title": "Mercenary Enrollment",
       "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/action/mercenary-enrollment/list?title_no=2304",
-      "gotPage": "Witch's Wedding Diary",
-      "finalUrl": "https://www.webtoons.com/id/romantic-fantasy/wedding-diary/list?title_no=2304"
+      "ourUrl": "https://www.webtoons.com/en/action/teenage-mercenary/list?title_no=2677",
+      "gotPage": "Teenage Mercenary",
+      "finalUrl": "https://www.webtoons.com/en/action/teenage-mercenary/list?title_no=2677"
     },
     {
       "id": "reaper-of-the-drifting-moon",
@@ -49,60 +41,20 @@
       "finalUrl": "https://www.webtoons.com/en/romance/letsplay/list?title_no=1218"
     },
     {
-      "id": "jungle-juice",
-      "title": "Jungle Juice",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/action/jungle-juice/list?title_no=2535",
-      "gotPage": "只有我能看見！",
-      "finalUrl": "https://www.webtoons.com/zh-hant/school/only-i-can-see/list?title_no=2535"
-    },
-    {
-      "id": "doom-breaker",
-      "title": "Doom Breaker",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/doom-breaker/list?title_no=3637",
-      "gotPage": "牽紅線：Match the string",
-      "finalUrl": "https://www.webtoons.com/zh-hant/local/match-the-string/list?title_no=3637"
-    },
-    {
-      "id": "second-life-ranker",
-      "title": "Second Life Ranker",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/second-life-ranker/list?title_no=1966",
-      "gotPage": "Revenge Girl",
-      "finalUrl": "https://www.webtoons.com/id/drama/revenge-girl/list?title_no=1966"
-    },
-    {
-      "id": "overgeared",
-      "title": "Overgeared",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/overgeared/list?title_no=2057",
-      "gotPage": "迷狐戀人",
-      "finalUrl": "https://www.webtoons.com/zh-hant/romance/golilove/list?title_no=2057"
-    },
-    {
-      "id": "kill-the-hero",
-      "title": "Kill the Hero",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/kill-the-hero/list?title_no=1948",
-      "gotPage": "White Blood",
-      "finalUrl": "https://www.webtoons.com/th/action/white-blood/list?title_no=1948"
-    },
-    {
       "id": "return-of-the-mount-hua-sect",
       "title": "Return of the Mount Hua Sect",
       "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/action/return-of-the-mount-hua-sect/list?title_no=3892",
-      "gotPage": "L'unique parfumeuse du tyran",
-      "finalUrl": "https://www.webtoons.com/fr/fantasy/unique-parfumeuse-du-tyran/list?title_no=3892"
+      "ourUrl": "https://www.webtoons.com/en/action/return-of-the-blossoming-blade/list?title_no=2849",
+      "gotPage": "Return of the Blossoming Blade",
+      "finalUrl": "https://www.webtoons.com/en/action/return-of-the-blossoming-blade/list?title_no=2849"
     },
     {
       "id": "murim-login",
       "title": "Murim Login",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/action/murim-login/list?title_no=2676",
-      "gotPage": "Infinite Leveling: Murim",
-      "finalUrl": "https://www.webtoons.com/en/action/infinite-leveling-murim/list?title_no=2676"
+      "platform": "tappytoon",
+      "ourUrl": "https://www.tappytoon.com/en/book/murim-login",
+      "gotPage": "Tappytoon Comics &amp; Novels",
+      "finalUrl": "https://www.tappytoon.com/en/book/murim-login"
     },
     {
       "id": "windbreaker",
@@ -113,44 +65,12 @@
       "finalUrl": "https://www.webtoons.com/en/sports/wind-breaker/list?title_no=372"
     },
     {
-      "id": "worn-and-torn-newbie",
-      "title": "Worn and Torn Newbie",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/worn-and-torn-newbie/list?title_no=2720",
-      "gotPage": "Of What Remains",
-      "finalUrl": "https://www.webtoons.com/en/thriller/of-what-remains/list?title_no=2720"
-    },
-    {
-      "id": "legend-of-the-northern-blade",
-      "title": "Legend of the Northern Blade",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/action/legend-of-the-northern-blade/list?title_no=1874",
-      "gotPage": "ชิงชีวิตพลิกลิขิตชะตา",
-      "finalUrl": "https://www.webtoons.com/th/romantic-fantasy/i-wanna-be-u/list?title_no=1874"
-    },
-    {
       "id": "the-s-classes-that-i-raised",
       "title": "The S-Classes That I Raised",
       "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/the-s-classes-that-i-raised/list?title_no=2085",
-      "gotPage": "奈米魔神",
-      "finalUrl": "https://www.webtoons.com/zh-hant/martial-arts/nanomasin/list?title_no=2085"
-    },
-    {
-      "id": "the-tutorial-is-too-hard",
-      "title": "The Tutorial Is Too Hard",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/the-tutorial-is-too-hard/list?title_no=1891",
-      "gotPage": "Silente",
-      "finalUrl": "https://www.webtoons.com/es/fantasy/muted/list?title_no=1891"
-    },
-    {
-      "id": "the-live",
-      "title": "The Live",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/the-live/list?title_no=2119",
-      "gotPage": "Aime-moi follement",
-      "finalUrl": "https://www.webtoons.com/fr/thriller/girls-trial/list?title_no=2119"
+      "ourUrl": "https://www.webtoons.com/en/action/my-s-class-hunters/list?title_no=3963",
+      "gotPage": "My S-Class Hunters",
+      "finalUrl": "https://www.webtoons.com/en/action/my-s-class-hunters/list?title_no=3963"
     },
     {
       "id": "under-the-oak-tree",
@@ -161,14 +81,6 @@
       "finalUrl": "https://tapas.io/series/under-the-oak-tree-official/info"
     },
     {
-      "id": "my-gently-raised-beast",
-      "title": "My Gently Raised Beast",
-      "platform": "tapas",
-      "ourUrl": "https://tapas.io/series/my-gently-raised-beast/info",
-      "gotPage": "Tapas: Stories You Crave",
-      "finalUrl": "https://tapas.io/series/my-gently-raised-beast/info"
-    },
-    {
       "id": "the-villainess-lives-twice",
       "title": "The Villainess Lives Twice",
       "platform": "tapas",
@@ -177,85 +89,125 @@
       "finalUrl": "https://tapas.io/series/the-villainess-lives-twice/info"
     },
     {
-      "id": "magic-emperor",
-      "title": "Magic Emperor",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/magic-emperor/list?title_no=2282",
-      "gotPage": "The Red Hook: Blackout &amp; PTSD",
-      "finalUrl": "https://www.webtoons.com/en/super-hero/the-red-hook-blackout/list?title_no=2282"
-    },
-    {
-      "id": "the-great-mage-returns-after-4000-years",
-      "title": "The Great Mage Returns After 4000 Years",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/the-great-mage-returns-after-4000-years/list?title_no=1963",
-      "gotPage": "Staying Healthy Together",
-      "finalUrl": "https://www.webtoons.com/en/tiptoon/staying-healthy-together/list?title_no=1963"
-    },
-    {
       "id": "talent-swallowing-magician",
       "title": "Talent-Swallowing Magician",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/talent-swallowing-magician/list?title_no=2755",
-      "gotPage": "โปรดระวังด้ายแดง",
-      "finalUrl": "https://www.webtoons.com/th/romantic-fantasy/beware-the-red-thread/list?title_no=2755"
-    },
-    {
-      "id": "a-returners-magic-should-be-special",
-      "title": "A Returner's Magic Should Be Special",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/a-returners-magic-should-be-special/list?title_no=1697",
-      "gotPage": "I'm the Grim Reaper",
-      "finalUrl": "https://www.webtoons.com/en/supernatural/im-the-grim-reaper/list?title_no=1697"
-    },
-    {
-      "id": "the-swordmasters-youngest-son",
-      "title": "The Swordmaster's Youngest Son",
-      "platform": "webtoon",
-      "ourUrl": "https://www.webtoons.com/en/fantasy/the-swordmasters-youngest-son/list?title_no=4751",
-      "gotPage": "30 ซม. ระยะห่างระหว่างเรา",
-      "finalUrl": "https://www.webtoons.com/th/romance/the-distance-between-us/list?title_no=4751"
+      "platform": "tapas",
+      "ourUrl": "https://tapas.io/series/demon-devourer/info",
+      "gotPage": "Read Demon Devourer | Tapas Web Comics",
+      "finalUrl": "https://tapas.io/series/demon-devourer/info"
     },
     {
       "id": "the-skeleton-soldier-failed-to-defend-the-dungeon",
       "title": "The Skeleton Soldier Failed to Defend the Dungeon",
       "platform": "tappytoon",
-      "ourUrl": "https://www.tappytoon.com/en/comics/skeleton-soldier",
+      "ourUrl": "https://www.tappytoon.com/en/book/skeleton-soldier",
       "gotPage": "Tappytoon Comics &amp; Novels",
       "finalUrl": "https://www.tappytoon.com/en/book/skeleton-soldier"
+    },
+    {
+      "id": "the-outcast-is-a-fighter",
+      "title": "The Bullied One Is Too Good at Fighting",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/action/the-outcast-is-a-fighter/list?title_no=5893",
+      "gotPage": "The Outcast is a Fighter",
+      "finalUrl": "https://www.webtoons.com/en/action/the-outcast-is-a-fighter/list?title_no=5893"
+    },
+    {
+      "id": "iseops-romance",
+      "title": "Iseop's Romance",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/romance/iseops-romance/list?title_no=5753",
+      "gotPage": "Iseop&rsquo;s Romance",
+      "finalUrl": "https://www.webtoons.com/en/romance/iseops-romance/list?title_no=5753"
+    },
+    {
+      "id": "itll-be-okay",
+      "title": "It'll Be Okay",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/slice-of-life/itll-be-okay/list?title_no=9221",
+      "gotPage": "It&rsquo;ll Be Okay",
+      "finalUrl": "https://www.webtoons.com/en/slice-of-life/itll-be-okay/list?title_no=9221"
+    },
+    {
+      "id": "my-s-class-hunters",
+      "title": "The S-Classes That I Raised, The S-Ranks That I Raised",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/action/my-s-class-hunters/list?title_no=3963",
+      "gotPage": "My S-Class Hunters",
+      "finalUrl": "https://www.webtoons.com/en/action/my-s-class-hunters/list?title_no=3963"
+    },
+    {
+      "id": "a-dance-of-swords-in-the-night",
+      "title": "In the Night Consumed by Blades, I Walk, Sword Fanatic Wanders Through The Night",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/action/a-dance-of-swords-in-the-night/list?title_no=4596",
+      "gotPage": "A Dance of Swords in the Night",
+      "finalUrl": "https://www.webtoons.com/en/action/a-dance-of-swords-in-the-night/list?title_no=4596"
+    },
+    {
+      "id": "its-my-life",
+      "title": "It's My Life",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/comedy/its-my-life/list?title_no=7926",
+      "gotPage": "It&rsquo;s My Life",
+      "finalUrl": "https://www.webtoons.com/en/comedy/its-my-life/list?title_no=7926"
+    },
+    {
+      "id": "best-teacher-baek",
+      "title": "Star Instructor, Master Baek",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/action/best-teacher-baek/list?title_no=4153",
+      "gotPage": "Best Teacher Baek",
+      "finalUrl": "https://www.webtoons.com/en/action/best-teacher-baek/list?title_no=4153"
+    },
+    {
+      "id": "observing-my-moms-friends-son",
+      "title": "Observing My Mom's Friend's Son",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/romance/observing-my-moms-friends-son/list?title_no=9698",
+      "gotPage": "Observing My Mom&rsquo;s Friend&rsquo;s Son",
+      "finalUrl": "https://www.webtoons.com/en/romance/observing-my-moms-friends-son/list?title_no=9698"
+    },
+    {
+      "id": "reborn-rich",
+      "title": "Reborn Rich – The Youngest Son of a Conglomerate",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/drama/reborn-rich/list?title_no=4956",
+      "gotPage": "Reborn Rich",
+      "finalUrl": "https://www.webtoons.com/en/drama/reborn-rich/list?title_no=4956"
+    },
+    {
+      "id": "the-perfect-hybrid",
+      "title": "Genius Of The Unique Lineage",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/action/the-perfect-hybrid/list?title_no=5050",
+      "gotPage": "The Perfect Hybrid",
+      "finalUrl": "https://www.webtoons.com/en/action/the-perfect-hybrid/list?title_no=5050"
+    },
+    {
+      "id": "kowloon-copoka",
+      "title": "Kowloon: COPÓKA",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/action/kowloon-copoka/list?title_no=7371",
+      "gotPage": "Kowloon: COP&Oacute;KA",
+      "finalUrl": "https://www.webtoons.com/en/action/kowloon-copoka/list?title_no=7371"
+    },
+    {
+      "id": "designated-bully",
+      "title": "The Bully In Charge",
+      "platform": "webtoon",
+      "ourUrl": "https://www.webtoons.com/en/action/designated-bully/list?title_no=4866",
+      "gotPage": "Designated Bully",
+      "finalUrl": "https://www.webtoons.com/en/action/designated-bully/list?title_no=4866"
     }
   ],
   "errors": [],
   "noUrl": [
     {
-      "id": "pick-me-up",
-      "title": "Pick Me Up",
-      "platform": "mangaplus",
-      "note": "AniList placeholder URL"
-    },
-    {
-      "id": "the-infinite-mage",
-      "title": "The Infinite Mage",
-      "platform": "mangaplus",
-      "note": "AniList placeholder URL"
-    },
-    {
-      "id": "god-of-blackfield",
-      "title": "God of Blackfield",
-      "platform": "mangaplus",
-      "note": "AniList placeholder URL"
-    },
-    {
       "id": "player",
       "title": "Player",
       "platform": "mangaplus",
-      "note": "AniList placeholder URL"
-    },
-    {
-      "id": "tyrant-of-the-tower-defense-game",
-      "title": "Tyrant of the Tower Defense Game",
-      "platform": "mangaplus",
-      "note": "AniList placeholder URL"
+      "note": "missing"
     }
   ]
 }
