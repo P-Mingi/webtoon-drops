@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-// fetch-covers.js — bulk fetch cover images from AniList and store in series-data.json.
-// Safe to re-run: refreshes all covers with latest AniList URLs.
+// fetch-covers.js — bulk fetch cover images + AniList scores without type filter.
+// Uses alias queries to query each ID directly (bypasses manga/anime type mismatch).
+// Flags series where AniList returns ANIME type — those need manual anilist_id fix.
+// Safe to re-run.
 
 import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
@@ -10,80 +12,107 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = join(__dirname, '../src/data/series-data.json');
 const ANILIST_API = 'https://graphql.anilist.co';
 
-async function fetchCovers(ids) {
-  const query = `
-    query ($ids: [Int]) {
-      Page(perPage: 50) {
-        media(id_in: $ids, type: MANGA) {
-          id
-          coverImage {
-            extraLarge
-            large
-          }
-          title { english romaji }
-        }
-      }
+// Query without type filter — returns the exact entry for that ID
+async function fetchMediaBatch(seriesBatch) {
+  const aliases = seriesBatch.map((s, i) => `
+    m${i}: Media(id: ${s.anilist_id}) {
+      id
+      type
+      coverImage { extraLarge large }
+      meanScore
+      title { english romaji native }
     }
-  `;
+  `).join('\n');
+
+  const query = `{ ${aliases} }`;
 
   const response = await fetch(ANILIST_API, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query, variables: { ids } })
+    body: JSON.stringify({ query })
   });
 
-  if (!response.ok) throw new Error(`AniList error: ${response.status}`);
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`AniList error ${response.status}: ${text.slice(0, 200)}`);
+  }
+
   const data = await response.json();
-  return data.data?.Page?.media || [];
+
+  if (data.errors) {
+    console.warn('  AniList errors:', data.errors.map(e => e.message).join(', '));
+  }
+
+  const results = [];
+  if (data.data) {
+    for (const key of Object.keys(data.data)) {
+      const item = data.data[key];
+      if (item) results.push(item);
+    }
+  }
+  return results;
 }
 
 async function main() {
   const series = JSON.parse(readFileSync(DATA_PATH, 'utf-8'));
-
   const toFetch = series.filter(s => s.anilist_id);
-  console.log(`Fetching covers for ${toFetch.length} series...`);
 
+  console.log(`Fetching covers + scores for ${toFetch.length} series...`);
+
+  const BATCH_SIZE = 20;
   const batches = [];
-  for (let i = 0; i < toFetch.length; i += 50) {
-    batches.push(toFetch.slice(i, i + 50).map(s => s.anilist_id));
+  for (let i = 0; i < toFetch.length; i += BATCH_SIZE) {
+    batches.push(toFetch.slice(i, i + BATCH_SIZE));
   }
 
-  const results = new Map();
+  const results = new Map(); // anilist_id → { cover_url, anilist_score, type }
 
   for (let i = 0; i < batches.length; i++) {
-    process.stdout.write(`  Batch ${i + 1}/${batches.length}...`);
-    const data = await fetchCovers(batches[i]);
-    for (const item of data) {
-      const url = item.coverImage?.extraLarge || item.coverImage?.large;
-      if (url) results.set(item.id, url);
+    console.log(`\nBatch ${i + 1}/${batches.length} (${batches[i].length} series)...`);
+    try {
+      const data = await fetchMediaBatch(batches[i]);
+      for (const item of data) {
+        const cover = item.coverImage?.extraLarge || item.coverImage?.large || null;
+        const score = item.meanScore || null;
+        results.set(item.id, { cover_url: cover, anilist_score: score, type: item.type });
+        const titleStr = item.title?.english || item.title?.romaji || '?';
+        console.log(`  ✓ [${item.type}] ${titleStr} | score:${score ?? '—'} | cover:${cover ? 'yes' : 'no'}`);
+      }
+    } catch (err) {
+      console.error(`  Batch ${i + 1} failed:`, err.message);
     }
-    console.log(` ${data.filter(d => d.coverImage?.extraLarge || d.coverImage?.large).length} covers`);
-    if (i < batches.length - 1) await new Promise(r => setTimeout(r, 700));
+    await new Promise(r => setTimeout(r, 800));
   }
 
-  let updated = 0;
+  let updatedCovers = 0;
+  let updatedScores = 0;
   let missing = 0;
 
   const updatedSeries = series.map(s => {
-    const url = results.get(s.anilist_id);
-    if (url) {
-      updated++;
-      return { ...s, cover_url: url };
+    const result = results.get(s.anilist_id);
+    if (!result) {
+      if (s.anilist_id) missing++;
+      return s;
     }
-    if (!s.cover_url && s.anilist_id) missing++;
-    return s;
+
+    const updated = { ...s };
+    if (result.cover_url) { updated.cover_url = result.cover_url; updatedCovers++; }
+    if (result.anilist_score) { updated.anilist_score = result.anilist_score; updatedScores++; }
+    return updated;
   });
 
   writeFileSync(DATA_PATH, JSON.stringify(updatedSeries, null, 2) + '\n');
 
   console.log(`\n✅ Done:`);
-  console.log(`  Updated: ${updated} covers`);
-  console.log(`  Still missing (no AniList data): ${missing}`);
+  console.log(`  Covers updated: ${updatedCovers}`);
+  console.log(`  Scores updated: ${updatedScores}`);
+  console.log(`  IDs not found in AniList: ${missing}`);
 
-  const noAnilist = series.filter(s => !s.anilist_id && !s.cover_url);
-  if (noAnilist.length > 0) {
-    console.log(`\n⚠️  No anilist_id AND no cover_url (need manual cover):`);
-    noAnilist.forEach(s => console.log(`  - ${s.title}`));
+  const animeFlagged = updatedSeries.filter(s => results.get(s.anilist_id)?.type === 'ANIME');
+  if (animeFlagged.length > 0) {
+    console.log(`\n⚠️  These series have ANIME anilist_ids — covers may be wrong:`);
+    animeFlagged.forEach(s => console.log(`  - ${s.title} (id: ${s.anilist_id})`));
+    console.log(`  Fix: find the correct MANGA id at https://anilist.co and update series-data.json`);
   }
 }
 

@@ -31,6 +31,7 @@ async function fetchStatuses(ids) {
           id
           status
           chapters
+          meanScore
           title { english romaji native }
         }
       }
@@ -123,6 +124,13 @@ async function update() {
         hasChanges = true;
         changes.push(`  📊 ${title}: episodes updated ${current} → ${result.chapters}`);
       }
+    }
+
+    // Sync AniList score
+    if (result.meanScore > 0 && series.anilist_score !== result.meanScore) {
+      updated.anilist_score = result.meanScore;
+      hasChanges = true;
+      changes.push(`  ⭐ ${title}: score updated ${series.anilist_score ?? '—'} → ${result.meanScore}`);
     }
 
     return hasChanges ? updated : series;

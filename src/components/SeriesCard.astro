@@ -25,6 +25,9 @@ const platformKeys = platforms.map(p => p.platform);
       }
       <div class="cover-overlay"></div>
       <span class="genre-pill">{series.genre}</span>
+      {series.anilist_score && (
+        <div class="score-badge" title="AniList score">★ {(series.anilist_score / 10).toFixed(1)}</div>
+      )}
       <div class="platform-badges">
         {platforms.slice(0, 2).map(p => (
           <span class={`platform-badge platform-${p.platform}`}>{p.label}</span>
@@ -125,6 +128,14 @@ const platformKeys = platforms.map(p => p.platform);
     letter-spacing: 0.5px;
     font-family: 'Space Grotesk', sans-serif;
   }
+  .score-badge {
+    position: absolute; bottom: 8px; right: 8px;
+    background: rgba(0,0,0,0.75); color: #FFD700;
+    font-size: 11px; font-weight: 700;
+    padding: 3px 7px; border-radius: 6px;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
   .platform-badges {
     position: absolute; bottom: 10px; left: 10px;
     display: flex; flex-direction: column; gap: 4px;
