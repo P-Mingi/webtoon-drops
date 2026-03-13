@@ -45,6 +45,20 @@ const RETAILER_FLAGS = {
 
 const hasBuyLinks = !!(series.buy_links && series.buy_links.length > 0);
 
+const PLATFORM_LABELS: Record<string, string> = {
+  webtoon: 'WEBTOON',
+  tapas: 'Tapas',
+  tappytoon: 'Tappytoon',
+  mangaplus: 'MANGA Plus',
+};
+
+const PLATFORM_COLORS: Record<string, string> = {
+  webtoon: '#6650f5',
+  tapas: '#e85d2f',
+  tappytoon: '#00aaff',
+  mangaplus: '#e40026',
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ComicSeries",
@@ -155,8 +169,14 @@ const breadcrumbLd = {
 
         <div class="series-actions">
           {platforms.map(p => (
-            <a href={p.read_url} class={`btn-platform btn-${p.platform}`} target="_blank" rel="noopener noreferrer">
-              Read on {p.label} →
+            <a
+              href={p.read_url}
+              target="_blank"
+              rel="noopener"
+              class="read-btn"
+              style={`background: ${PLATFORM_COLORS[p.platform] ?? '#6650f5'}`}
+            >
+              Read on {PLATFORM_LABELS[p.platform] ?? p.label} →
             </a>
           ))}
           {hasBuyLinks && (
@@ -490,24 +510,20 @@ const breadcrumbLd = {
   }
 
   .series-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
-  .btn-platform, .btn-secondary {
+  .read-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 10px;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 14px; font-weight: 600;
-    padding: 12px 24px; border-radius: 8px;
-    text-decoration: none; display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    transition: opacity 0.15s;
   }
-  .btn-platform { color: white; }
-  .btn-platform:active { opacity: 0.85; }
-  .btn-webtoon   { background: #6C63FF; }
-  .btn-tapas     { background: #F5821F; }
-  .btn-mangaplus { background: #E40026; }
-  .btn-tappytoon { background: #00C4B4; }
-  .btn-secondary {
-    background: var(--surface);
-    color: var(--text);
-    border: 1px solid var(--border);
-  }
-  .btn-secondary:active { border-color: var(--accent); }
+  .read-btn:hover { opacity: 0.85; }
 
   .schedule-link {
     font-family: 'Space Grotesk', sans-serif;
