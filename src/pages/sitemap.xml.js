@@ -1,4 +1,5 @@
 import seriesData from '../data/series-data.json';
+import comparePairs from '../data/compare-pairs.json';
 
 export async function GET() {
   const homepage = `  <url>
@@ -32,6 +33,12 @@ export async function GET() {
     <priority>0.8</priority>
   </url>`);
 
+  const compareUrls = comparePairs.map(([a, b]) => `  <url>
+    <loc>https://webtoondrops.com/compare/${a}-vs-${b}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>`);
+
   const seriesUrls = seriesData.map(s => `  <url>
     <loc>https://webtoondrops.com/${s.id}</loc>
     <changefreq>weekly</changefreq>
@@ -45,6 +52,7 @@ ${justDropped}
 ${thisWeek}
 ${genreIndex}
 ${genreUrls.join('\n')}
+${compareUrls.join('\n')}
 ${seriesUrls.join('\n')}
 </urlset>`;
 

@@ -1,0 +1,414 @@
+---
+import Base from '../../layouts/Base.astro';
+import ThemeToggle from '../../components/ThemeToggle.astro';
+import seriesData from '../../data/series-data.json';
+import comparePairs from '../../data/compare-pairs.json';
+
+export async function getStaticPaths() {
+  const seriesMap = Object.fromEntries(seriesData.map(s => [s.id, s]));
+
+  return comparePairs
+    .filter(([a, b]) => seriesMap[a] && seriesMap[b])
+    .map(([aId, bId]) => ({
+      params: { pair: `${aId}-vs-${bId}` },
+      props: { seriesA: seriesMap[aId], seriesB: seriesMap[bId] }
+    }));
+}
+
+const { seriesA, seriesB } = Astro.props;
+
+// Resolve primary platform for each series (multi-platform schema)
+const platformA = seriesA.platforms?.[0] ?? { platform: seriesA.platform, label: seriesA.platform_label, read_url: seriesA.read_url };
+const platformB = seriesB.platforms?.[0] ?? { platform: seriesB.platform, label: seriesB.platform_label, read_url: seriesB.read_url };
+
+// Which drops sooner?
+function daysUntilDrop(series) {
+  if (series.on_hiatus || series.update_day === null) return Infinity;
+  const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
+  const nowKST = new Date(new Date().getTime() + KST_OFFSET_MS);
+  const dayKST = nowKST.getUTCDay();
+  const days = (series.update_day - dayKST + 7) % 7 || 7;
+  return days;
+}
+
+const daysA = daysUntilDrop(seriesA);
+const daysB = daysUntilDrop(seriesB);
+const dropsFirst = daysA <= daysB ? seriesA : seriesB;
+const dropsSecond = daysA <= daysB ? seriesB : seriesA;
+
+const title = `${seriesA.title} vs ${seriesB.title} — Which Drops Next? | WebtoonDrops`;
+const description = `Compare ${seriesA.title} and ${seriesB.title} release schedules. ${seriesA.title} drops every ${seriesA.update_day_name || 'TBD'}, ${seriesB.title} drops every ${seriesB.update_day_name || 'TBD'}. See live countdowns for both.`;
+const canonical = `https://webtoondrops.com/compare/${seriesA.id}-vs-${seriesB.id}`;
+---
+
+<Base title={title} description={description} canonical={canonical}>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="/" class="logo">
+        <span class="logo-drop">W</span>ebtoon<span class="logo-accent">Drops</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/just-dropped" class="nav-link">Today</a>
+        <a href="/this-week" class="nav-link">This Week</a>
+        <a href="/genre" class="nav-link">Genres</a>
+      </nav>
+      <ThemeToggle />
+    </div>
+  </header>
+
+  <main class="compare-page container">
+
+    <header class="compare-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">WebtoonDrops</a>
+        <span>›</span>
+        <span>Compare</span>
+      </nav>
+      <h1>{seriesA.title} vs {seriesB.title}</h1>
+      <p class="compare-subtitle">Live release schedule comparison</p>
+    </header>
+
+    <!-- Winner banner -->
+    {!seriesA.on_hiatus && !seriesB.on_hiatus && daysA !== daysB && (
+      <div class="drops-first-banner">
+        ⚡ <strong>{dropsFirst.title}</strong> drops next
+        — {daysUntilDrop(dropsFirst) === 1 ? 'tomorrow' : `in ${daysUntilDrop(dropsFirst)} days`}
+        {dropsFirst.update_day_name ? ` (${dropsFirst.update_day_name})` : ''}
+      </div>
+    )}
+
+    {daysA === daysB && !seriesA.on_hiatus && !seriesB.on_hiatus && (
+      <div class="drops-first-banner same-day">
+        🎉 Both series drop on <strong>{seriesA.update_day_name}</strong>!
+      </div>
+    )}
+
+    <!-- Side by side comparison -->
+    <div class="compare-grid">
+
+      <!-- Series A -->
+      <div class={`compare-card ${daysA <= daysB && !seriesA.on_hiatus ? 'winner' : ''}`}>
+        {seriesA.cover_url && (
+          <img src={seriesA.cover_url} alt={`${seriesA.title} cover`} class="compare-cover" loading="lazy" />
+        )}
+        <div class="compare-info">
+          <span class={`platform-badge platform-${platformA.platform}`}>{platformA.label}</span>
+          <h2><a href={`/${seriesA.id}`}>{seriesA.title}</a></h2>
+          <div class="compare-meta">
+            <span>📅 {seriesA.on_hiatus ? 'On Hiatus' : `Every ${seriesA.update_day_name || 'TBD'}`}</span>
+            <span>🏷️ {seriesA.genre}</span>
+          </div>
+          {!seriesA.on_hiatus && seriesA.update_day !== null && (
+            <div class="mini-countdown" data-update-day={seriesA.update_day} data-release-hour={seriesA.release_hour_kst || 0}>
+              Loading countdown...
+            </div>
+          )}
+          {seriesA.on_hiatus && <div class="status-badge hiatus">ON BREAK</div>}
+          <a href={platformA.read_url} target="_blank" rel="noopener" class={`read-btn platform-${platformA.platform}`}>
+            Read on {platformA.label} →
+          </a>
+        </div>
+      </div>
+
+      <!-- VS divider -->
+      <div class="vs-divider">VS</div>
+
+      <!-- Series B -->
+      <div class={`compare-card ${daysB < daysA && !seriesB.on_hiatus ? 'winner' : ''}`}>
+        {seriesB.cover_url && (
+          <img src={seriesB.cover_url} alt={`${seriesB.title} cover`} class="compare-cover" loading="lazy" />
+        )}
+        <div class="compare-info">
+          <span class={`platform-badge platform-${platformB.platform}`}>{platformB.label}</span>
+          <h2><a href={`/${seriesB.id}`}>{seriesB.title}</a></h2>
+          <div class="compare-meta">
+            <span>📅 {seriesB.on_hiatus ? 'On Hiatus' : `Every ${seriesB.update_day_name || 'TBD'}`}</span>
+            <span>🏷️ {seriesB.genre}</span>
+          </div>
+          {!seriesB.on_hiatus && seriesB.update_day !== null && (
+            <div class="mini-countdown" data-update-day={seriesB.update_day} data-release-hour={seriesB.release_hour_kst || 0}>
+              Loading countdown...
+            </div>
+          )}
+          {seriesB.on_hiatus && <div class="status-badge hiatus">ON BREAK</div>}
+          <a href={platformB.read_url} target="_blank" rel="noopener" class={`read-btn platform-${platformB.platform}`}>
+            Read on {platformB.label} →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO content -->
+    <section class="seo-content">
+      <h2>{seriesA.title} vs {seriesB.title}: Release Schedule</h2>
+      <p>
+        {seriesA.title} {seriesA.on_hiatus ? 'is currently on hiatus' : `releases new episodes every ${seriesA.update_day_name} on ${platformA.label}`}.
+        {' '}{seriesB.title} {seriesB.on_hiatus ? 'is currently on hiatus' : `releases new episodes every ${seriesB.update_day_name} on ${platformB.label}`}.
+        {!seriesA.on_hiatus && !seriesB.on_hiatus && seriesA.update_day !== null && seriesB.update_day !== null && (
+          daysA === daysB
+            ? ` Both series drop on the same day — ${seriesA.update_day_name} — so you can read both in the same sitting.`
+            : ` ${dropsFirst.title} is next to drop, followed by ${dropsSecond.title}.`
+        )}
+      </p>
+      <p>
+        Use the live countdowns above to see exactly how long until each series
+        drops its next episode. Click 🔔 on any series page to get a browser
+        notification 1 hour before each drop.
+      </p>
+    </section>
+
+    <!-- Related comparisons -->
+    <section class="related-comparisons">
+      <h3>More Comparisons</h3>
+      <div class="compare-links">
+        {comparePairs
+          .filter(([a, b]) =>
+            (a === seriesA.id || b === seriesA.id || a === seriesB.id || b === seriesB.id) &&
+            !(a === seriesA.id && b === seriesB.id) &&
+            !(a === seriesB.id && b === seriesA.id)
+          )
+          .slice(0, 6)
+          .map(([a, b]) => {
+            const sa = seriesData.find(s => s.id === a);
+            const sb = seriesData.find(s => s.id === b);
+            if (!sa || !sb) return null;
+            return (
+              <a href={`/compare/${a}-vs-${b}`} class="compare-link">
+                {sa.title} vs {sb.title}
+              </a>
+            );
+          })
+        }
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="/" class="back-link">← Back to all series</a>
+      <span>WebtoonDrops — countdowns in KST (UTC+9)</span>
+    </div>
+  </footer>
+
+  <script>
+  // Mini countdown for compare page — UTC-only KST logic
+  function getNextDropUTC(dayOfWeek, releaseHour) {
+    const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
+    const now = new Date();
+    const nowKST = new Date(now.getTime() + KST_OFFSET_MS);
+    const currentDayKST = nowKST.getUTCDay();
+    let daysAhead = (dayOfWeek - currentDayKST + 7) % 7;
+    if (daysAhead === 0) daysAhead = 7;
+    const nextDropKST = new Date(nowKST);
+    nextDropKST.setUTCDate(nextDropKST.getUTCDate() + daysAhead);
+    nextDropKST.setUTCHours(releaseHour, 0, 0, 0);
+    return new Date(nextDropKST.getTime() - KST_OFFSET_MS);
+  }
+
+  function tick() {
+    document.querySelectorAll('.mini-countdown').forEach(el => {
+      const day = parseInt(el.dataset.updateDay);
+      const hour = parseInt(el.dataset.releaseHour || '0');
+      const target = getNextDropUTC(day, hour);
+      const diff = target - new Date();
+      if (diff <= 0) { el.textContent = 'Out now!'; return; }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      el.textContent = d > 0 ? `${d}d ${h}h ${m}m` : `${h}h ${m}m`;
+    });
+  }
+
+  tick();
+  setInterval(tick, 60000);
+  </script>
+</Base>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    position: sticky; top: 0;
+    background: var(--bg); z-index: 10;
+  }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px; font-weight: 700; color: var(--text); letter-spacing: -0.3px;
+    text-decoration: none;
+  }
+  .logo-drop { font-family: 'Orbitron', sans-serif; color: var(--accent); }
+  .logo-accent { color: var(--accent); }
+  .header-nav { display: flex; gap: 16px; flex: 1; justify-content: center; }
+  .nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 600;
+    color: var(--muted); text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-link:hover, .nav-link.active { color: var(--accent); }
+
+  .compare-page { padding: 2rem 20px; max-width: 900px; }
+
+  .breadcrumb {
+    display: flex; gap: 8px;
+    font-size: 13px; color: var(--muted);
+    margin-bottom: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .breadcrumb a { color: var(--accent); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  .compare-header { margin-bottom: 2rem; }
+  .compare-header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+    font-weight: 800; margin-bottom: 0.4rem;
+    color: var(--text);
+  }
+  .compare-subtitle { color: var(--muted); font-family: 'Inter', sans-serif; }
+
+  .drops-first-banner {
+    background: rgba(108,99,255,0.1);
+    border: 1px solid rgba(108,99,255,0.3);
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    margin-bottom: 2rem;
+    color: var(--accent);
+  }
+  .drops-first-banner.same-day {
+    background: rgba(56,202,100,0.1);
+    border-color: rgba(56,202,100,0.3);
+    color: #38ca64;
+  }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+
+  .compare-card {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .compare-card.winner { border-color: var(--accent); }
+
+  .compare-cover { width: 100%; aspect-ratio: 2/3; object-fit: cover; }
+
+  .compare-info { padding: 16px; }
+  .compare-info h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem; font-weight: 700; margin: 8px 0;
+  }
+  .compare-info h2 a { color: var(--text); text-decoration: none; }
+  .compare-info h2 a:hover { color: var(--accent); }
+
+  .compare-meta {
+    display: flex; flex-direction: column; gap: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px; color: var(--muted); margin-bottom: 12px;
+  }
+
+  .platform-badge {
+    display: inline-block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px; font-weight: 700;
+    padding: 2px 8px; border-radius: 4px;
+    color: white; letter-spacing: 0.5px;
+  }
+  .platform-badge.platform-webtoon   { background: #6C63FF; }
+  .platform-badge.platform-tapas     { background: #F5821F; }
+  .platform-badge.platform-mangaplus { background: #E40026; }
+  .platform-badge.platform-tappytoon { background: #00C4B4; }
+
+  .mini-countdown {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.3rem; font-weight: 700;
+    color: var(--accent); margin: 8px 0;
+  }
+
+  .status-badge.hiatus {
+    display: inline-block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px; font-weight: 700;
+    padding: 4px 10px; border-radius: 6px;
+    background: var(--border); color: var(--muted);
+    margin: 8px 0;
+  }
+
+  .vs-divider {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem; font-weight: 900;
+    color: var(--muted);
+    display: flex; align-items: center;
+    padding: 0 8px; margin-top: 80px;
+  }
+
+  .read-btn {
+    display: block; text-align: center;
+    padding: 10px; border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; font-weight: 700;
+    color: white; text-decoration: none; margin-top: 12px;
+  }
+  .read-btn.platform-webtoon   { background: #6C63FF; }
+  .read-btn.platform-tapas     { background: #F5821F; }
+  .read-btn.platform-mangaplus { background: #E40026; }
+  .read-btn.platform-tappytoon { background: #00C4B4; }
+
+  .seo-content { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .seo-content h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .seo-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 0.75rem;
+  }
+
+  .related-comparisons { margin-top: 2.5rem; }
+  .related-comparisons h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .compare-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .compare-link {
+    padding: 6px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; color: var(--text);
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .compare-link:hover { border-color: var(--accent); color: var(--accent); }
+
+  .site-footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 2rem; }
+  .footer-inner {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    justify-content: space-between;
+    font-size: 12px; color: var(--muted);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .back-link { color: var(--accent); text-decoration: none; }
+  .back-link:active { opacity: 0.75; }
+
+  @media (max-width: 600px) {
+    .compare-grid { grid-template-columns: 1fr; }
+    .vs-divider { text-align: center; margin-top: 0; justify-content: center; }
+  }
+</style>
