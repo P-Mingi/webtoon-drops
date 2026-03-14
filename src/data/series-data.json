@@ -10,7 +10,7 @@
     "update_day": 1,
     "update_day_name": "Monday",
     "release_hour_kst": 0,
-    "on_hiatus": true,
+    "on_hiatus": false,
     "genre": "Fantasy",
     "tags": [
       "action",
@@ -887,7 +887,7 @@
     "update_day": 4,
     "update_day_name": "Thursday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance",
@@ -896,7 +896,7 @@
       "korean"
     ],
     "seo_description": "True Beauty drops every Thursday on WEBTOON. Live countdown to the next episode of 여신강림.",
-    "total_episodes": 207,
+    "total_episodes": 257,
     "hiatus_history": [
       {
         "start": "2023-06",
@@ -1259,7 +1259,7 @@
     "update_day": 6,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": true,
+    "on_hiatus": false,
     "genre": "Fantasy",
     "tags": [
       "fantasy",
@@ -1616,7 +1616,7 @@
     "update_day": 1,
     "update_day_name": "Monday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Fantasy",
     "tags": [
       "fantasy",
@@ -1633,7 +1633,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117536-tnTMgXV1V5KB.jpg",
-    "anilist_score": 73
+    "anilist_score": 73,
+    "total_episodes": 153
   },
   {
     "id": "return-of-the-mount-hua-sect",
@@ -1851,7 +1852,7 @@
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Sports",
     "tags": [
       "sports",
@@ -1868,7 +1869,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b119174-nFMZSHbrDDbt.png",
-    "anilist_score": 83
+    "anilist_score": 83,
+    "total_episodes": 133
   },
   {
     "id": "windbreaker",
@@ -1919,7 +1921,7 @@
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Martial Arts",
     "tags": [
       "action",
@@ -1927,7 +1929,7 @@
       "tournament"
     ],
     "seo_description": "The God of High School releases every Sunday on WEBTOON. Live countdown.",
-    "total_episodes": null,
+    "total_episodes": 569,
     "platforms": [
       {
         "platform": "webtoon",
@@ -2014,7 +2016,7 @@
     "update_day": 2,
     "update_day_name": "Tuesday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Fantasy",
     "tags": [
       "fantasy",
@@ -2031,7 +2033,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127102-UUP1Oj14Wd4Y.jpg",
-    "anilist_score": 72
+    "anilist_score": 72,
+    "total_episodes": 243
   },
   {
     "id": "legend-of-the-northern-blade",
@@ -2044,7 +2047,7 @@
     "update_day": 6,
     "update_day_name": "Saturday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Martial Arts",
     "tags": [
       "action",
@@ -2061,7 +2064,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119521-qYqxFvn0NnXo.png",
-    "anilist_score": 85
+    "anilist_score": 85,
+    "total_episodes": 202
   },
   {
     "id": "the-tutorial-is-too-hard",
@@ -2121,7 +2125,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b118608-9xFaGYcfPZk0.png",
-    "anilist_score": 70
+    "anilist_score": 70,
+    "total_episodes": 176
   },
   {
     "id": "remarried-empress",
@@ -2251,7 +2256,7 @@
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance",
@@ -2268,7 +2273,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx107521-M4x3AUb7UGIM.png",
-    "anilist_score": 83
+    "anilist_score": 83,
+    "total_episodes": 135
   },
   {
     "id": "the-villainess-turns-the-hourglass",
@@ -2281,7 +2287,7 @@
     "update_day": 3,
     "update_day_name": "Wednesday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance",
@@ -2298,7 +2304,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx116382-EPyB5KDY9UEo.png",
-    "anilist_score": 78
+    "anilist_score": 78,
+    "total_episodes": 125
   },
   {
     "id": "doctor-elise",
@@ -2311,7 +2318,7 @@
     "update_day": 5,
     "update_day_name": "Friday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance",
@@ -2328,7 +2335,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx107918-dScBgkOyp8Rv.jpg",
-    "anilist_score": 76
+    "anilist_score": 76,
+    "total_episodes": 156
   },
   {
     "id": "my-gently-raised-beast",
@@ -2341,7 +2349,7 @@
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance",
@@ -2415,7 +2423,8 @@
           "IT"
         ]
       }
-    ]
+    ],
+    "total_episodes": 106
   },
   {
     "id": "the-villainess-lives-twice",
@@ -2428,7 +2437,7 @@
     "update_day": 5,
     "update_day_name": "Friday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance",
@@ -2445,7 +2454,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119523-5OBKEF4D4Zfj.jpg",
-    "anilist_score": 72
+    "anilist_score": 72,
+    "total_episodes": 230
   },
   {
     "id": "noblesse",
@@ -2482,7 +2492,8 @@
         "end": "2019-01-07",
         "reason": "Series completed — 543 episodes, January 2019"
       }
-    ]
+    ],
+    "total_episodes": 544
   },
   {
     "id": "magic-emperor",
@@ -2585,7 +2596,7 @@
     "update_day": 3,
     "update_day_name": "Wednesday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Fantasy",
     "tags": [
       "fantasy",
@@ -2608,7 +2619,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105393-oiHumQoBGKG5.jpg",
-    "anilist_score": 76
+    "anilist_score": 76,
+    "total_episodes": 268
   },
   {
     "id": "the-swordmasters-youngest-son",
@@ -3346,7 +3358,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141705-2OMBDYY5Tguc.jpg",
-    "anilist_score": 74
+    "anilist_score": 75
   },
   {
     "id": "hero-killer",
@@ -4129,7 +4141,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132359-UGmIwX97cCeU.jpg",
-    "anilist_score": 75
+    "anilist_score": 74
   },
   {
     "id": "beware-the-villainess",
@@ -4142,7 +4154,7 @@
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": true,
+    "on_hiatus": false,
     "genre": "Romance",
     "tags": [
       "romance"
