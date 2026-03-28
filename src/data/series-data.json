@@ -1546,7 +1546,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117460-46JbftfHSXoc.jpg",
-    "anilist_score": 77,
+    "anilist_score": 78,
     "buy_links": [
       {
         "retailer": "amazon_us",
@@ -3153,7 +3153,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx136204-D4ON9gggIHeX.jpg",
-    "anilist_score": 78
+    "anilist_score": 77
   },
   {
     "id": "study-group",
@@ -3313,7 +3313,7 @@
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 11,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Fantasy",
     "tags": [
       "action",
@@ -3329,7 +3329,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139572-e3vwLcOVQISn.jpg",
-    "anilist_score": 71
+    "anilist_score": 71,
+    "total_episodes": 223
   },
   {
     "id": "reality-quest",
@@ -4141,7 +4142,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132359-UGmIwX97cCeU.jpg",
-    "anilist_score": 74
+    "anilist_score": 75
   },
   {
     "id": "beware-the-villainess",
