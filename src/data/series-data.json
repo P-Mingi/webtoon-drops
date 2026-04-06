@@ -2139,7 +2139,7 @@
     "update_day": 4,
     "update_day_name": "Thursday",
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance",
@@ -2154,7 +2154,7 @@
         "read_url": "https://www.webtoons.com/en/romance/remarried-empress/list?title_no=2135"
       }
     ],
-    "total_episodes": null,
+    "total_episodes": 247,
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx113055-pGB4A5nzhFdF.jpg",
     "anilist_score": 78,
     "buy_links": [
@@ -4043,7 +4043,7 @@
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance"
@@ -4058,7 +4058,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124783-Q3DuRbP7Rqmo.jpg",
-    "anilist_score": 74
+    "anilist_score": 74,
+    "total_episodes": 160
   },
   {
     "id": "semantic-error",
