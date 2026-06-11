@@ -4157,7 +4157,7 @@
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance"
@@ -4179,7 +4179,8 @@
         "end": null,
         "reason": "Completed — 133 episodes on Tapas"
       }
-    ]
+    ],
+    "total_episodes": 144
   },
   {
     "id": "my-life-as-an-internet-novel",
