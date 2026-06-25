@@ -3079,7 +3079,7 @@
     "update_day": 0,
     "update_day_name": "Sunday",
     "release_hour_kst": 11,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Fantasy",
     "tags": [
       "action",
@@ -3096,7 +3096,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124577-UkF19gsGyBoG.jpg",
-    "anilist_score": 72
+    "anilist_score": 72,
+    "total_episodes": 250
   },
   {
     "id": "i-killed-the-main-player",
@@ -3891,7 +3892,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114605-MYUWMsdjry6m.jpg",
-    "anilist_score": 76
+    "anilist_score": 77
   },
   {
     "id": "the-sss-ranker-returns",
@@ -4320,7 +4321,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159930-qK1P4BNQL0zG.jpg",
-    "anilist_score": 78
+    "anilist_score": 79
   },
   {
     "id": "god-of-blackfield",
