@@ -3626,7 +3626,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141076-QqiuAFLz3S6T.jpg",
-    "anilist_score": 75
+    "anilist_score": 74
   },
   {
     "id": "the-top-dungeon-farmer",
@@ -3892,7 +3892,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114605-MYUWMsdjry6m.jpg",
-    "anilist_score": 77
+    "anilist_score": 76
   },
   {
     "id": "the-sss-ranker-returns",
@@ -4321,7 +4321,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159930-qK1P4BNQL0zG.jpg",
-    "anilist_score": 79
+    "anilist_score": 78
   },
   {
     "id": "god-of-blackfield",
@@ -4362,7 +4362,7 @@
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Action",
     "tags": [
       "action"
@@ -4377,7 +4377,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119363-ogH6cjF0JW2x.jpg",
-    "anilist_score": 78
+    "anilist_score": 78,
+    "total_episodes": 264
   },
   {
     "id": "tyrant-of-the-tower-defense-game",
