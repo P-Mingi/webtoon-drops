@@ -3273,7 +3273,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx149483-dmXE1sBUcGsX.jpg",
-    "anilist_score": 74
+    "anilist_score": 75
   },
   {
     "id": "time-limited-genius-dark-knight",
@@ -3626,7 +3626,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141076-QqiuAFLz3S6T.jpg",
-    "anilist_score": 74
+    "anilist_score": 75
   },
   {
     "id": "the-top-dungeon-farmer",
@@ -3788,7 +3788,7 @@
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance"
@@ -3864,7 +3864,8 @@
           "IT"
         ]
       }
-    ]
+    ],
+    "total_episodes": 214
   },
   {
     "id": "latna-saga-survival-of-a-sword-king",
