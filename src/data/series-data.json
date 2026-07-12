@@ -3788,7 +3788,7 @@
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": true,
+    "on_hiatus": false,
     "genre": "Romance",
     "tags": [
       "romance"
