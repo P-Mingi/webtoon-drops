@@ -3626,7 +3626,7 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141076-QqiuAFLz3S6T.jpg",
-    "anilist_score": 75
+    "anilist_score": 74
   },
   {
     "id": "the-top-dungeon-farmer",
@@ -4075,7 +4075,7 @@
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Romance",
     "tags": [
       "romance"
@@ -4090,7 +4090,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125167-9IPJ3KINKJIq.jpg",
-    "anilist_score": 82
+    "anilist_score": 82,
+    "total_episodes": 109
   },
   {
     "id": "the-male-lead-s-little-lion-daughter",
