@@ -3906,7 +3906,7 @@
     "update_day": null,
     "update_day_name": null,
     "release_hour_kst": 0,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Action",
     "tags": [
       "action"
@@ -3921,7 +3921,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153883-thHiGEnqxFoB.jpg",
-    "anilist_score": 71
+    "anilist_score": 71,
+    "total_episodes": 200
   },
   {
     "id": "the-archmage-returns-after-4000-years",
