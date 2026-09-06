@@ -3727,7 +3727,7 @@
     "update_day": 6,
     "update_day_name": "Saturday",
     "release_hour_kst": 11,
-    "on_hiatus": false,
+    "on_hiatus": true,
     "genre": "Fantasy",
     "tags": [
       "action",
@@ -3744,7 +3744,8 @@
       }
     ],
     "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx152608-hA5NKaYNqfyy.png",
-    "anilist_score": 72
+    "anilist_score": 72,
+    "total_episodes": 220
   },
   {
     "id": "infinite-leveling-murim",
